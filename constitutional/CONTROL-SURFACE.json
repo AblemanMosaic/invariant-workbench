@@ -1,0 +1,24 @@
+{
+  "schema": "miw.constitutional-control-surface.v1",
+  "standing": "LOCAL_ENGINEERING_CANDIDATE",
+  "authority_effect": "NONE",
+  "observability_levels": [
+    {"level":"SENTINEL","purpose":"Current bounded health blockers and freshness summary","persistence":"VOLATILE_OR_EXPORTED_SNAPSHOT"},
+    {"level":"RECEIPT","purpose":"Rooted consequential operation outcomes","persistence":"CREATE_ONLY_EVIDENCE"},
+    {"level":"DIAGNOSTIC","purpose":"Bounded explanatory detail and suggested next observation","persistence":"CREATE_ONLY_WHEN_EXPORTED"}
+  ],
+  "effect_atomicity": {
+    "current_scope":"CREATE_ONLY_LOCAL_EVIDENCE_FILES",
+    "protocol":["VALIDATE_INPUTS","FREEZE_CANONICAL_RESULT","EXCLUSIVE_CREATE","FLUSH_AND_FSYNC","RETURN_ROOT"],
+    "refuses":["EXISTING_OUTPUT","ALIASED_OUTPUT","UNDECLARED_EFFECT","AUTHORITY_BY_PLAN"],
+    "not_claimed":["DATABASE_ATOMICITY","DEVICE_ATOMICITY","MULTI_FILE_CRASH_INSEPARABILITY","HOSTILE_ADMINISTRATOR_RESISTANCE"]
+  },
+  "families": {
+    "ESA":"Exact roots capabilities gaps and open assumptions are legible.",
+    "EVS":"Proof example and imported execution evidence are checked without promotion.",
+    "COP":"Sentinel Receipt and Diagnostic projections expose bounded status.",
+    "SRSA":"Reliance and next-observation advice remain defeasible and read-only."
+  },
+  "native_ugk_runtime":"NOT_INVOKED",
+  "claim_ceiling":"Consumer-owned local control surface only; it neither carries canonical UGK law nor grants execution authority."
+}

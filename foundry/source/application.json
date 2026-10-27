@@ -1,0 +1,858 @@
+{
+  "application_id": "MIW-INVARIANT-WORKBENCH-V0.1",
+  "declared_operation_ids": [
+    "navigate_overview",
+    "navigate_workbench",
+    "navigate_control",
+    "navigate_rules",
+    "navigate_proof",
+    "navigate_orders",
+    "navigate_proposals",
+    "navigate_integration",
+    "workbench_validate",
+    "workbench_explain",
+    "workbench_bind",
+    "workbench_lower",
+    "workbench_run",
+    "control_refresh",
+    "control_compile",
+    "control_diagnose",
+    "control_headless"
+  ],
+  "tree": {
+    "kind": "WINDOW",
+    "node_id": "window",
+    "semantics": {
+      "role": "window",
+      "name": "Mosaic Invariant Workbench",
+      "description": "",
+      "focusable": false,
+      "actions": []
+    },
+    "props": {
+      "layout_provider": "miw.turn3.native"
+    },
+    "children": [
+      {
+        "kind": "LABEL",
+        "node_id": "sun",
+        "semantics": {
+          "role": "label",
+          "name": "Mosaic rainbow sun",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "presentation_role": "SUN",
+          "realization_key": "sun"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "brand",
+        "semantics": {
+          "role": "label",
+          "name": "MOSAIC",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "style": "heading",
+          "realization_key": "brand"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "subtitle",
+        "semantics": {
+          "role": "label",
+          "name": "Invariant Workbench",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "realization_key": "subtitle"
+        },
+        "children": []
+      },
+      {
+        "kind": "BUTTON",
+        "node_id": "nav_overview",
+        "semantics": {
+          "role": "button",
+          "name": "Overview",
+          "description": "",
+          "focusable": true,
+          "actions": [
+            "activate"
+          ]
+        },
+        "props": {
+          "target_view": "overview",
+          "realization_key": "nav_overview"
+        },
+        "children": [],
+        "operation_ref": "navigate_overview"
+      },
+      {
+        "kind": "BUTTON",
+        "node_id": "nav_rules",
+        "semantics": {
+          "role": "button",
+          "name": "Rules and Code",
+          "description": "",
+          "focusable": true,
+          "actions": [
+            "activate"
+          ]
+        },
+        "props": {
+          "target_view": "rules",
+          "realization_key": "nav_rules"
+        },
+        "children": [],
+        "operation_ref": "navigate_rules"
+      },
+      {
+        "kind": "BUTTON",
+        "node_id": "nav_workbench",
+        "semantics": {"role":"button","name":"Obligation Board","description":"Interactive invariant-evidence workspace","focusable":true,"actions":["activate"]},
+        "props": {"target_view":"workbench","realization_key":"nav_workbench"},
+        "children": [],
+        "operation_ref": "navigate_workbench"
+      },
+      {
+        "kind": "BUTTON",
+        "node_id": "nav_proof",
+        "semantics": {
+          "role": "button",
+          "name": "Proof and Tests",
+          "description": "",
+          "focusable": true,
+          "actions": [
+            "activate"
+          ]
+        },
+        "props": {
+          "target_view": "proof",
+          "realization_key": "nav_proof"
+        },
+        "children": [],
+        "operation_ref": "navigate_proof"
+      },
+      {
+        "kind": "BUTTON",
+        "node_id": "nav_orders",
+        "semantics": {
+          "role": "button",
+          "name": "Work Orders",
+          "description": "",
+          "focusable": true,
+          "actions": [
+            "activate"
+          ]
+        },
+        "props": {
+          "target_view": "orders",
+          "realization_key": "nav_orders"
+        },
+        "children": [],
+        "operation_ref": "navigate_orders"
+      },
+      {
+        "kind": "BUTTON",
+        "node_id": "nav_proposals",
+        "semantics": {
+          "role": "button",
+          "name": "Proposals and Changes",
+          "description": "",
+          "focusable": true,
+          "actions": [
+            "activate"
+          ]
+        },
+        "props": {
+          "target_view": "proposals",
+          "realization_key": "nav_proposals"
+        },
+        "children": [],
+        "operation_ref": "navigate_proposals"
+      },
+      {
+        "kind": "BUTTON",
+        "node_id": "nav_integration",
+        "semantics": {
+          "role": "button",
+          "name": "Integrations",
+          "description": "",
+          "focusable": true,
+          "actions": [
+            "activate"
+          ]
+        },
+        "props": {
+          "target_view": "integration",
+          "realization_key": "nav_integration"
+        },
+        "children": [],
+        "operation_ref": "navigate_integration"
+      },
+      {
+        "kind": "BUTTON",
+        "node_id": "nav_control",
+        "semantics": {"role":"button","name":"Control Surface","description":"Capabilities, constitutional plans, posture, and diagnostics","focusable":true,"actions":["activate"]},
+        "props": {"target_view":"control","realization_key":"nav_control"},
+        "children": [],
+        "operation_ref": "navigate_control"
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "claim",
+        "semantics": {
+          "role": "label",
+          "name": "Evidence before action.",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "realization_key": "claim"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "build",
+        "semantics": {
+          "role": "label",
+          "name": "TURN 4 / CANDIDATE",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "style": "mono",
+          "realization_key": "build"
+        },
+        "children": []
+      },
+      {
+        "kind": "STATUS",
+        "node_id": "status",
+        "semantics": {
+          "role": "status",
+          "name": "INFORMATION ONLY | No production authority",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "default": "INFORMATION ONLY | No production authority",
+          "realization_key": "status"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "overview_title",
+        "semantics": {
+          "role": "label",
+          "name": "Overview",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "style": "title",
+          "realization_key": "overview_title",
+          "view": "overview"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "overview_scope",
+        "semantics": {
+          "role": "label",
+          "name": "Exact subjects. Separate kinds of evidence.",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "realization_key": "overview_scope",
+          "view": "overview"
+        },
+        "children": []
+      },
+      {
+        "kind": "TABLE",
+        "node_id": "overview_table",
+        "semantics": {
+          "role": "table",
+          "name": "Overview summary",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "columns": [
+            "Subject",
+            "Observation",
+            "Boundary"
+          ],
+          "default": [],
+          "realization_key": "overview_table",
+          "view": "overview"
+        },
+        "children": []
+      },
+      {
+        "kind": "TEXT_FIELD",
+        "node_id": "overview_detail",
+        "semantics": {
+          "role": "text_field",
+          "name": "Overview detail",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "readonly": true,
+          "multiline": true,
+          "default": "No evidence loaded.",
+          "realization_key": "overview_detail",
+          "view": "overview"
+        },
+        "children": []
+      },
+      {
+        "kind":"LABEL","node_id":"workbench_title",
+        "semantics":{"role":"label","name":"Obligation Board","description":"","focusable":false,"actions":[]},
+        "props":{"style":"title","realization_key":"workbench_title","view":"workbench"},"children":[]
+      },
+      {
+        "kind":"LABEL","node_id":"workbench_scope",
+        "semantics":{"role":"label","name":"Bind, select, lower, explain, compare evidence without promotion.","description":"","focusable":false,"actions":[]},
+        "props":{"realization_key":"workbench_scope","view":"workbench"},"children":[]
+      },
+      {
+        "kind":"TABLE","node_id":"workbench_table",
+        "semantics":{"role":"table","name":"Requirement obligation matrix","description":"","focusable":true,"actions":[]},
+        "props":{"columns":["Requirement","Proof","Examples","Zucchini"],"default":[],"realization_key":"workbench_table","view":"workbench"},"children":[]
+      },
+      {
+        "kind":"TEXT_FIELD","node_id":"workbench_requirement",
+        "semantics":{"role":"text_field","name":"Requirement","description":"Enter an exact requirement identifier","focusable":true,"actions":["edit"]},
+        "props":{"readonly":false,"multiline":false,"required":true,"min_length":5,"max_length":64,"default":"REQ_ACCEPTANCE","realization_key":"workbench_requirement","view":"workbench"},"children":[]
+      },
+      {
+        "kind":"TEXT_FIELD","node_id":"workbench_lane",
+        "semantics":{"role":"text_field","name":"Evidence lane","description":"Enter INSPECT, PROOF_RECHECK, BDD_RERUN, ZUCCHINI_REVIEW, or CONFORMANCE_WITNESS","focusable":true,"actions":["edit"]},
+        "props":{"readonly":false,"multiline":false,"required":true,"min_length":3,"max_length":32,"default":"INSPECT","realization_key":"workbench_lane","view":"workbench"},"children":[]
+      },
+      {
+        "kind":"BUTTON","node_id":"workbench_validate",
+        "semantics":{"role":"button","name":"Validate","description":"Rebuild and validate the exact workspace","focusable":true,"actions":["activate"]},
+        "props":{"realization_key":"workbench_validate","view":"workbench"},"children":[],"operation_ref":"workbench_validate"
+      },
+      {
+        "kind":"BUTTON","node_id":"workbench_explain",
+        "semantics":{"role":"button","name":"Explain","description":"Explain the selected obligation","focusable":true,"actions":["activate"]},
+        "props":{"realization_key":"workbench_explain","view":"workbench"},"children":[],"operation_ref":"workbench_explain"
+      },
+      {
+        "kind":"TEXT_FIELD","node_id":"workbench_zucchini_tag",
+        "semantics":{"role":"text_field","name":"Zucchini requirement","description":"Enter an exact imported Zucchini tag","focusable":true,"actions":["edit"]},
+        "props":{"readonly":false,"multiline":false,"required":true,"min_length":1,"max_length":128,"default":"NoAssemblyWithoutStock","realization_key":"workbench_zucchini_tag","view":"workbench"},"children":[]
+      },
+      {
+        "kind":"TEXT_FIELD","node_id":"workbench_relation",
+        "semantics":{"role":"text_field","name":"Binding relation","description":"Enter a permitted proposal relation","focusable":true,"actions":["edit"]},
+        "props":{"readonly":false,"multiline":false,"required":true,"min_length":8,"max_length":32,"default":"CANDIDATE_CORRESPONDENCE","realization_key":"workbench_relation","view":"workbench"},"children":[]
+      },
+      {
+        "kind":"BUTTON","node_id":"workbench_lower",
+        "semantics":{"role":"button","name":"Lower","description":"Create a bounded plan or typed refusal","focusable":true,"actions":["activate"]},
+        "props":{"realization_key":"workbench_lower","view":"workbench"},"children":[],"operation_ref":"workbench_lower"
+      },
+      {
+        "kind":"BUTTON","node_id":"workbench_run",
+        "semantics":{"role":"button","name":"Run local","description":"Execute the current local-only plan","focusable":true,"actions":["activate"]},
+        "props":{"realization_key":"workbench_run","view":"workbench"},"children":[],"operation_ref":"workbench_run"
+      },
+      {
+        "kind":"TEXT_FIELD","node_id":"workbench_rationale",
+        "semantics":{"role":"text_field","name":"Binding rationale","description":"Required rationale for a proposed binding","focusable":true,"actions":["edit"]},
+        "props":{"readonly":false,"multiline":false,"required":true,"min_length":8,"max_length":500,"default":"Review meanings before adoption.","realization_key":"workbench_rationale","view":"workbench"},"children":[]
+      },
+      {
+        "kind":"BUTTON","node_id":"workbench_bind",
+        "semantics":{"role":"button","name":"Propose binding","description":"Create an in-memory proposal only","focusable":true,"actions":["activate"]},
+        "props":{"realization_key":"workbench_bind","view":"workbench"},"children":[],"operation_ref":"workbench_bind"
+      },
+      {
+        "kind":"TEXT_FIELD","node_id":"workbench_detail",
+        "semantics":{"role":"text_field","name":"Workbench receipt","description":"Exact operation or refusal detail","focusable":true,"actions":[]},
+        "props":{"readonly":true,"multiline":true,"default":"Load a dossier to begin.","realization_key":"workbench_detail","view":"workbench"},"children":[]
+      },
+      {
+        "kind":"LABEL","node_id":"control_title",
+        "semantics":{"role":"label","name":"Constitutional Control Surface","description":"","focusable":false,"actions":[]},
+        "props":{"style":"title","realization_key":"control_title","view":"control"},"children":[]
+      },
+      {
+        "kind":"LABEL","node_id":"control_scope",
+        "semantics":{"role":"label","name":"Compile plans, inspect capabilities, diagnose gaps. No operation plan grants authority.","description":"","focusable":false,"actions":[]},
+        "props":{"realization_key":"control_scope","view":"control"},"children":[]
+      },
+      {
+        "kind":"TABLE","node_id":"control_table",
+        "semantics":{"role":"table","name":"Agent capability surface","description":"","focusable":true,"actions":[]},
+        "props":{"columns":["Capability","Family","Operations"],"default":[],"realization_key":"control_table","view":"control"},"children":[]
+      },
+      {
+        "kind":"BUTTON","node_id":"control_refresh",
+        "semantics":{"role":"button","name":"Validate capabilities","description":"Validate and project the closed operation registry","focusable":true,"actions":["activate"]},
+        "props":{"realization_key":"control_refresh","view":"control"},"children":[],"operation_ref":"control_refresh"
+      },
+      {
+        "kind":"BUTTON","node_id":"control_compile",
+        "semantics":{"role":"button","name":"Compile plan","description":"Compile an operation into independent commitments","focusable":true,"actions":["activate"]},
+        "props":{"realization_key":"control_compile","view":"control"},"children":[],"operation_ref":"control_compile"
+      },
+      {
+        "kind":"BUTTON","node_id":"control_diagnose",
+        "semantics":{"role":"button","name":"Diagnose","description":"Derive zero-authority posture and suggested observations","focusable":true,"actions":["activate"]},
+        "props":{"realization_key":"control_diagnose","view":"control"},"children":[],"operation_ref":"control_diagnose"
+      },
+      {
+        "kind":"BUTTON","node_id":"control_headless",
+        "semantics":{"role":"button","name":"Run headless court","description":"Exercise the real semantic application/controller flow","focusable":true,"actions":["activate"]},
+        "props":{"realization_key":"control_headless","view":"control"},"children":[],"operation_ref":"control_headless"
+      },
+      {
+        "kind":"TEXT_FIELD","node_id":"control_detail",
+        "semantics":{"role":"text_field","name":"Control receipt and diagnostic","description":"","focusable":true,"actions":[]},
+        "props":{"readonly":true,"multiline":true,"default":"Validate the capability surface to begin.","realization_key":"control_detail","view":"control"},"children":[]
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "rules_title",
+        "semantics": {
+          "role": "label",
+          "name": "Rules and Code",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "style": "title",
+          "realization_key": "rules_title",
+          "view": "rules"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "rules_scope",
+        "semantics": {
+          "role": "label",
+          "name": "Exact subjects. Separate kinds of evidence.",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "realization_key": "rules_scope",
+          "view": "rules"
+        },
+        "children": []
+      },
+      {
+        "kind": "TABLE",
+        "node_id": "rules_table",
+        "semantics": {
+          "role": "table",
+          "name": "Rules and Code summary",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "columns": [
+            "Subject",
+            "Observation",
+            "Boundary"
+          ],
+          "default": [],
+          "realization_key": "rules_table",
+          "view": "rules"
+        },
+        "children": []
+      },
+      {
+        "kind": "TEXT_FIELD",
+        "node_id": "rules_detail",
+        "semantics": {
+          "role": "text_field",
+          "name": "Rules and Code detail",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "readonly": true,
+          "multiline": true,
+          "default": "No evidence loaded.",
+          "realization_key": "rules_detail",
+          "view": "rules"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "proof_title",
+        "semantics": {
+          "role": "label",
+          "name": "Proof and Tests",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "style": "title",
+          "realization_key": "proof_title",
+          "view": "proof"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "proof_scope",
+        "semantics": {
+          "role": "label",
+          "name": "Exact subjects. Separate kinds of evidence.",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "realization_key": "proof_scope",
+          "view": "proof"
+        },
+        "children": []
+      },
+      {
+        "kind": "TABLE",
+        "node_id": "proof_table",
+        "semantics": {
+          "role": "table",
+          "name": "Proof and Tests summary",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "columns": [
+            "Subject",
+            "Observation",
+            "Boundary"
+          ],
+          "default": [],
+          "realization_key": "proof_table",
+          "view": "proof"
+        },
+        "children": []
+      },
+      {
+        "kind": "TEXT_FIELD",
+        "node_id": "proof_detail",
+        "semantics": {
+          "role": "text_field",
+          "name": "Proof and Tests detail",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "readonly": true,
+          "multiline": true,
+          "default": "No evidence loaded.",
+          "realization_key": "proof_detail",
+          "view": "proof"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "orders_title",
+        "semantics": {
+          "role": "label",
+          "name": "Work Orders",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "style": "title",
+          "realization_key": "orders_title",
+          "view": "orders"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "orders_scope",
+        "semantics": {
+          "role": "label",
+          "name": "Exact subjects. Separate kinds of evidence.",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "realization_key": "orders_scope",
+          "view": "orders"
+        },
+        "children": []
+      },
+      {
+        "kind": "TABLE",
+        "node_id": "orders_table",
+        "semantics": {
+          "role": "table",
+          "name": "Work Orders summary",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "columns": [
+            "Subject",
+            "Observation",
+            "Boundary"
+          ],
+          "default": [],
+          "realization_key": "orders_table",
+          "view": "orders"
+        },
+        "children": []
+      },
+      {
+        "kind": "TEXT_FIELD",
+        "node_id": "orders_detail",
+        "semantics": {
+          "role": "text_field",
+          "name": "Work Orders detail",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "readonly": true,
+          "multiline": true,
+          "default": "No evidence loaded.",
+          "realization_key": "orders_detail",
+          "view": "orders"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "proposals_title",
+        "semantics": {
+          "role": "label",
+          "name": "Proposals and Changes",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "style": "title",
+          "realization_key": "proposals_title",
+          "view": "proposals"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "proposals_scope",
+        "semantics": {
+          "role": "label",
+          "name": "Exact subjects. Separate kinds of evidence.",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "realization_key": "proposals_scope",
+          "view": "proposals"
+        },
+        "children": []
+      },
+      {
+        "kind": "TABLE",
+        "node_id": "proposals_table",
+        "semantics": {
+          "role": "table",
+          "name": "Proposals and Changes summary",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "columns": [
+            "Subject",
+            "Observation",
+            "Boundary"
+          ],
+          "default": [],
+          "realization_key": "proposals_table",
+          "view": "proposals"
+        },
+        "children": []
+      },
+      {
+        "kind": "TEXT_FIELD",
+        "node_id": "proposals_detail",
+        "semantics": {
+          "role": "text_field",
+          "name": "Proposals and Changes detail",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "readonly": true,
+          "multiline": true,
+          "default": "No evidence loaded.",
+          "realization_key": "proposals_detail",
+          "view": "proposals"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "integration_title",
+        "semantics": {
+          "role": "label",
+          "name": "Integrations",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "style": "title",
+          "realization_key": "integration_title",
+          "view": "integration"
+        },
+        "children": []
+      },
+      {
+        "kind": "LABEL",
+        "node_id": "integration_scope",
+        "semantics": {
+          "role": "label",
+          "name": "Exact subjects. Separate kinds of evidence.",
+          "description": "",
+          "focusable": false,
+          "actions": []
+        },
+        "props": {
+          "realization_key": "integration_scope",
+          "view": "integration"
+        },
+        "children": []
+      },
+      {
+        "kind": "TABLE",
+        "node_id": "integration_table",
+        "semantics": {
+          "role": "table",
+          "name": "Integrations summary",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "columns": [
+            "Subject",
+            "Observation",
+            "Boundary"
+          ],
+          "default": [],
+          "realization_key": "integration_table",
+          "view": "integration"
+        },
+        "children": []
+      },
+      {
+        "kind": "TEXT_FIELD",
+        "node_id": "integration_detail",
+        "semantics": {
+          "role": "text_field",
+          "name": "Integrations detail",
+          "description": "",
+          "focusable": true,
+          "actions": []
+        },
+        "props": {
+          "readonly": true,
+          "multiline": true,
+          "default": "No evidence loaded.",
+          "realization_key": "integration_detail",
+          "view": "integration"
+        },
+        "children": []
+      }
+    ]
+  },
+  "lifecycle": {
+    "schema": "mosaic.ui.std.lifecycle-binding.v0.1",
+    "initial_view": "overview",
+    "operation_controls": {
+      "cancel_key": null,
+      "progress_key": null
+    },
+    "operation_classes": {
+      "NAVIGATE": [
+        "navigate_overview",
+        "navigate_workbench",
+        "navigate_control",
+        "navigate_rules",
+        "navigate_proof",
+        "navigate_orders",
+        "navigate_proposals",
+        "navigate_integration"
+      ],
+      "LONG_RUNNING": [],
+      "CANCEL": [],
+      "TOGGLE_DISCLOSURE": [],
+      "HOST_WITHHELD": [
+        "workbench_validate",
+        "workbench_explain",
+        "workbench_bind",
+        "workbench_lower",
+        "workbench_run",
+        "control_refresh",
+        "control_compile",
+        "control_diagnose",
+        "control_headless"
+      ]
+    },
+    "status_templates": {
+      "initial": "INFORMATION ONLY",
+      "queued": "{operation_phrase}",
+      "progress": "{stage_phrase} {percent}",
+      "terminal": "{operation} {terminal}: {message}",
+      "cancelled": "{operation}"
+    },
+    "progress_default_stage": "Read-only inspection"
+  }
+}

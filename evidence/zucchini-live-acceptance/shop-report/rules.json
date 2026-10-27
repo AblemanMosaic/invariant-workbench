@@ -1,0 +1,861 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AnarchoSystems/Zucchini/main/schemas/rules-report.v2.2.0.schema.json",
+  "assertion_justification": {
+    "asserted_facts": 13,
+    "enforced": false,
+    "scenarios": 4,
+    "scenarios_without_assertions": 0,
+    "unjustified_facts": 4
+  },
+  "build_id": "4128872:-4644587351019000247",
+  "discovered_at_ms": 1793076649006,
+  "discovery_diagnostics": [],
+  "discovery_id": "c784cabb2ed9af4a",
+  "discovery_success": true,
+  "executable": "BusinessRulesTest",
+  "feature_directory": "/work/source-work/Examples/Good/BusinessRules/features",
+  "fixture": "Shop",
+  "rules": [
+    {
+      "description": "Set up the shop, declare each purchase outcome, and refund only an accepted purchase.",
+      "events": [],
+      "kind": "dsl",
+      "name": "Purchase protocol",
+      "requirements": [
+        {
+          "description": "Shop setup must precede every purchase.",
+          "tag": "Setup before purchase",
+          "value": 0
+        },
+        {
+          "description": "Item prices must be positive.",
+          "tag": "Positive price",
+          "value": 1
+        },
+        {
+          "description": "Set wallet, stock, and positive price; request a positive quantity with no pending outcome.",
+          "tag": "Purchase preconditions",
+          "value": 2
+        },
+        {
+          "description": "Each outcome assertion must follow a pending purchase.",
+          "tag": "Outcome follows purchase",
+          "value": 3
+        },
+        {
+          "description": "Only an accepted purchase can be refunded, once.",
+          "tag": "Refund accepted purchase",
+          "value": 4
+        },
+        {
+          "description": "Assert the purchase outcome before its effects.",
+          "tag": "Outcome before effects",
+          "value": 5
+        },
+        {
+          "description": "Every purchase must have an outcome assertion before the scenario ends.",
+          "tag": "Completed purchase",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "description": "Purchases debit their price, rejected purchases preserve credits, and refunds restore them.",
+      "events": [
+        {
+          "column": 7,
+          "feature": "Prepaid shop",
+          "feature_relative_path": "Shop.feature",
+          "gherkin_rule": "Purchases preserve money and stock",
+          "kind": "coverage",
+          "line": 15,
+          "message": "The scenario asserts the expected wallet balance of 36 credits",
+          "scenario": "Buying two items",
+          "scenario_accepted": true,
+          "scenario_id": 0,
+          "scenario_line": 10,
+          "scenario_tags": [],
+          "step": "my wallet balance is 36 credits",
+          "tag": "Purchase Debits Price",
+          "test_name": "Prepaid_shop__Purchases_preserve_money_and_stock__Buying_two_items",
+          "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+        },
+        {
+          "column": 7,
+          "feature": "Prepaid shop",
+          "feature_relative_path": "Shop.feature",
+          "gherkin_rule": "Purchases preserve money and stock",
+          "kind": "coverage",
+          "line": 23,
+          "message": "The scenario asserts the expected wallet balance of 5 credits",
+          "scenario": "Insufficient funds change nothing",
+          "scenario_accepted": true,
+          "scenario_id": 1,
+          "scenario_line": 18,
+          "scenario_tags": [],
+          "step": "my wallet balance is 5 credits",
+          "tag": "Rejected Purchase Keeps Balance",
+          "test_name": "Prepaid_shop__Purchases_preserve_money_and_stock__Insufficient_funds_change_nothing",
+          "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+        },
+        {
+          "column": 7,
+          "feature": "Prepaid shop",
+          "feature_relative_path": "Shop.feature",
+          "gherkin_rule": "Purchases preserve money and stock",
+          "kind": "coverage",
+          "line": 31,
+          "message": "The scenario asserts the expected wallet balance of 50 credits",
+          "scenario": "Sold out purchases change nothing",
+          "scenario_accepted": true,
+          "scenario_id": 2,
+          "scenario_line": 26,
+          "scenario_tags": [],
+          "step": "my wallet balance is 50 credits",
+          "tag": "Rejected Purchase Keeps Balance",
+          "test_name": "Prepaid_shop__Purchases_preserve_money_and_stock__Sold_out_purchases_change_nothing",
+          "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+        },
+        {
+          "column": 7,
+          "feature": "Prepaid shop",
+          "feature_relative_path": "Shop.feature",
+          "gherkin_rule": "Refunds restore the state before the purchase",
+          "kind": "coverage",
+          "line": 42,
+          "message": "The scenario asserts the expected wallet balance of 36 credits",
+          "scenario": "Refund checked for stock but not wallet balance",
+          "scenario_accepted": true,
+          "scenario_id": 3,
+          "scenario_line": 37,
+          "scenario_tags": [
+            "@coverage_gap"
+          ],
+          "step": "my wallet balance is 36 credits",
+          "tag": "Purchase Debits Price",
+          "test_name": "Prepaid_shop__Refunds_restore_the_state_before_the_purchase__Refund_checked_for_stock_but_not_wallet_balance",
+          "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+        }
+      ],
+      "kind": "business",
+      "name": "Wallet conservation",
+      "requirements": [
+        {
+          "description": "An accepted purchase is followed by an assertion of the exact wallet debit.",
+          "strictness": "exact",
+          "tag": "Purchase Debits Price",
+          "value": 0
+        },
+        {
+          "description": "A rejected purchase is followed by an assertion that wallet credits did not change.",
+          "strictness": "exact",
+          "tag": "Rejected Purchase Keeps Balance",
+          "value": 1
+        },
+        {
+          "description": "A refund is followed by an assertion that the debited credits were restored.",
+          "strictness": "exact",
+          "tag": "Refund Restores Balance",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "description": "Purchases consume items, rejected purchases preserve stock, and refunds restock items.",
+      "events": [
+        {
+          "column": 7,
+          "feature": "Prepaid shop",
+          "feature_relative_path": "Shop.feature",
+          "gherkin_rule": "Purchases preserve money and stock",
+          "kind": "coverage",
+          "line": 16,
+          "message": "The scenario asserts the expected inventory of 3 items",
+          "scenario": "Buying two items",
+          "scenario_accepted": true,
+          "scenario_id": 0,
+          "scenario_line": 10,
+          "scenario_tags": [],
+          "step": "the remaining stock is 3",
+          "tag": "Purchase Consumes Stock",
+          "test_name": "Prepaid_shop__Purchases_preserve_money_and_stock__Buying_two_items",
+          "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+        },
+        {
+          "column": 7,
+          "feature": "Prepaid shop",
+          "feature_relative_path": "Shop.feature",
+          "gherkin_rule": "Purchases preserve money and stock",
+          "kind": "coverage",
+          "line": 24,
+          "message": "The scenario asserts the expected inventory of 10 items",
+          "scenario": "Insufficient funds change nothing",
+          "scenario_accepted": true,
+          "scenario_id": 1,
+          "scenario_line": 18,
+          "scenario_tags": [],
+          "step": "the remaining stock is 10",
+          "tag": "Rejected Purchase Keeps Stock",
+          "test_name": "Prepaid_shop__Purchases_preserve_money_and_stock__Insufficient_funds_change_nothing",
+          "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+        },
+        {
+          "column": 7,
+          "feature": "Prepaid shop",
+          "feature_relative_path": "Shop.feature",
+          "gherkin_rule": "Purchases preserve money and stock",
+          "kind": "coverage",
+          "line": 32,
+          "message": "The scenario asserts the expected inventory of 0 items",
+          "scenario": "Sold out purchases change nothing",
+          "scenario_accepted": true,
+          "scenario_id": 2,
+          "scenario_line": 26,
+          "scenario_tags": [],
+          "step": "the remaining stock is 0",
+          "tag": "Rejected Purchase Keeps Stock",
+          "test_name": "Prepaid_shop__Purchases_preserve_money_and_stock__Sold_out_purchases_change_nothing",
+          "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+        },
+        {
+          "column": 7,
+          "feature": "Prepaid shop",
+          "feature_relative_path": "Shop.feature",
+          "gherkin_rule": "Refunds restore the state before the purchase",
+          "kind": "coverage",
+          "line": 43,
+          "message": "The scenario asserts the expected inventory of 3 items",
+          "scenario": "Refund checked for stock but not wallet balance",
+          "scenario_accepted": true,
+          "scenario_id": 3,
+          "scenario_line": 37,
+          "scenario_tags": [
+            "@coverage_gap"
+          ],
+          "step": "the remaining stock is 3",
+          "tag": "Purchase Consumes Stock",
+          "test_name": "Prepaid_shop__Refunds_restore_the_state_before_the_purchase__Refund_checked_for_stock_but_not_wallet_balance",
+          "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+        },
+        {
+          "column": 7,
+          "feature": "Prepaid shop",
+          "feature_relative_path": "Shop.feature",
+          "gherkin_rule": "Refunds restore the state before the purchase",
+          "kind": "coverage",
+          "line": 45,
+          "message": "The scenario asserts the expected inventory of 5 items",
+          "scenario": "Refund checked for stock but not wallet balance",
+          "scenario_accepted": true,
+          "scenario_id": 3,
+          "scenario_line": 37,
+          "scenario_tags": [
+            "@coverage_gap"
+          ],
+          "step": "the remaining stock is 5",
+          "tag": "Refund Restocks Items",
+          "test_name": "Prepaid_shop__Refunds_restore_the_state_before_the_purchase__Refund_checked_for_stock_but_not_wallet_balance",
+          "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+        }
+      ],
+      "kind": "business",
+      "name": "Inventory conservation",
+      "requirements": [
+        {
+          "description": "An accepted purchase is followed by an assertion of the exact inventory decrement.",
+          "strictness": "exact",
+          "tag": "Purchase Consumes Stock",
+          "value": 0
+        },
+        {
+          "description": "A rejected purchase is followed by an assertion that inventory did not change.",
+          "strictness": "exact",
+          "tag": "Rejected Purchase Keeps Stock",
+          "value": 1
+        },
+        {
+          "description": "A refund is followed by an assertion that the purchased items were returned to stock.",
+          "strictness": "exact",
+          "tag": "Refund Restocks Items",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "accepted": true,
+      "asserted_facts": 3,
+      "feature": "Prepaid shop",
+      "feature_relative_path": "Shop.feature",
+      "gherkin_rule": "Purchases preserve money and stock",
+      "id": 0,
+      "line": 10,
+      "name": "Buying two items",
+      "plan_fingerprint": "36c241e9332e829d",
+      "result_key": "ad16f28956ec2df0",
+      "steps": [
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 7
+            }
+          ],
+          "column": 5,
+          "keywordType": "context",
+          "line": 6,
+          "methodName": "itemCosts",
+          "regex": "^each item costs (\\d+) credits$",
+          "text": "each item costs 7 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 50
+            }
+          ],
+          "column": 7,
+          "keywordType": "context",
+          "line": 11,
+          "methodName": "walletHas",
+          "regex": "^my wallet has (\\d+) credits$",
+          "text": "my wallet has 50 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 5
+            }
+          ],
+          "column": 7,
+          "keywordType": "context",
+          "line": 12,
+          "methodName": "stockHas",
+          "regex": "^the shop has (\\d+) items$",
+          "text": "the shop has 5 items"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "quantity",
+              "value": 2
+            }
+          ],
+          "column": 7,
+          "keywordType": "action",
+          "line": 13,
+          "methodName": "buy",
+          "regex": "^I buy (\\d+) items$",
+          "text": "I buy 2 items"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 14,
+          "methodName": "purchaseAccepted",
+          "regex": "^the purchase is accepted$",
+          "text": "the purchase is accepted"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 36
+            }
+          ],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 15,
+          "methodName": "balanceIs",
+          "regex": "^my wallet balance is (\\d+) credits$",
+          "text": "my wallet balance is 36 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 3
+            }
+          ],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 16,
+          "methodName": "stockIs",
+          "regex": "^the remaining stock is (\\d+)$",
+          "text": "the remaining stock is 3"
+        }
+      ],
+      "tags": [],
+      "test_name": "Prepaid_shop__Purchases_preserve_money_and_stock__Buying_two_items",
+      "unjustified_facts": [
+        {
+          "column": 7,
+          "line": 14,
+          "step_index": 4
+        }
+      ],
+      "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+    },
+    {
+      "accepted": true,
+      "asserted_facts": 3,
+      "feature": "Prepaid shop",
+      "feature_relative_path": "Shop.feature",
+      "gherkin_rule": "Purchases preserve money and stock",
+      "id": 1,
+      "line": 18,
+      "name": "Insufficient funds change nothing",
+      "plan_fingerprint": "2671c3522ce7da99",
+      "result_key": "7394dfdd74596e1d",
+      "steps": [
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 7
+            }
+          ],
+          "column": 5,
+          "keywordType": "context",
+          "line": 6,
+          "methodName": "itemCosts",
+          "regex": "^each item costs (\\d+) credits$",
+          "text": "each item costs 7 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 5
+            }
+          ],
+          "column": 7,
+          "keywordType": "context",
+          "line": 19,
+          "methodName": "walletHas",
+          "regex": "^my wallet has (\\d+) credits$",
+          "text": "my wallet has 5 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 10
+            }
+          ],
+          "column": 7,
+          "keywordType": "context",
+          "line": 20,
+          "methodName": "stockHas",
+          "regex": "^the shop has (\\d+) items$",
+          "text": "the shop has 10 items"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "quantity",
+              "value": 1
+            }
+          ],
+          "column": 7,
+          "keywordType": "action",
+          "line": 21,
+          "methodName": "buy",
+          "regex": "^I buy (\\d+) items$",
+          "text": "I buy 1 items"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 22,
+          "methodName": "purchaseRejected",
+          "regex": "^the purchase is rejected$",
+          "text": "the purchase is rejected"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 5
+            }
+          ],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 23,
+          "methodName": "balanceIs",
+          "regex": "^my wallet balance is (\\d+) credits$",
+          "text": "my wallet balance is 5 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 10
+            }
+          ],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 24,
+          "methodName": "stockIs",
+          "regex": "^the remaining stock is (\\d+)$",
+          "text": "the remaining stock is 10"
+        }
+      ],
+      "tags": [],
+      "test_name": "Prepaid_shop__Purchases_preserve_money_and_stock__Insufficient_funds_change_nothing",
+      "unjustified_facts": [
+        {
+          "column": 7,
+          "line": 22,
+          "step_index": 4
+        }
+      ],
+      "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+    },
+    {
+      "accepted": true,
+      "asserted_facts": 3,
+      "feature": "Prepaid shop",
+      "feature_relative_path": "Shop.feature",
+      "gherkin_rule": "Purchases preserve money and stock",
+      "id": 2,
+      "line": 26,
+      "name": "Sold out purchases change nothing",
+      "plan_fingerprint": "ad31ea2e86a2c8c9",
+      "result_key": "8194e158faa193fb",
+      "steps": [
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 7
+            }
+          ],
+          "column": 5,
+          "keywordType": "context",
+          "line": 6,
+          "methodName": "itemCosts",
+          "regex": "^each item costs (\\d+) credits$",
+          "text": "each item costs 7 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 50
+            }
+          ],
+          "column": 7,
+          "keywordType": "context",
+          "line": 27,
+          "methodName": "walletHas",
+          "regex": "^my wallet has (\\d+) credits$",
+          "text": "my wallet has 50 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 0
+            }
+          ],
+          "column": 7,
+          "keywordType": "context",
+          "line": 28,
+          "methodName": "stockHas",
+          "regex": "^the shop has (\\d+) items$",
+          "text": "the shop has 0 items"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "quantity",
+              "value": 1
+            }
+          ],
+          "column": 7,
+          "keywordType": "action",
+          "line": 29,
+          "methodName": "buy",
+          "regex": "^I buy (\\d+) items$",
+          "text": "I buy 1 items"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 30,
+          "methodName": "purchaseRejected",
+          "regex": "^the purchase is rejected$",
+          "text": "the purchase is rejected"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 50
+            }
+          ],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 31,
+          "methodName": "balanceIs",
+          "regex": "^my wallet balance is (\\d+) credits$",
+          "text": "my wallet balance is 50 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 0
+            }
+          ],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 32,
+          "methodName": "stockIs",
+          "regex": "^the remaining stock is (\\d+)$",
+          "text": "the remaining stock is 0"
+        }
+      ],
+      "tags": [],
+      "test_name": "Prepaid_shop__Purchases_preserve_money_and_stock__Sold_out_purchases_change_nothing",
+      "unjustified_facts": [
+        {
+          "column": 7,
+          "line": 30,
+          "step_index": 4
+        }
+      ],
+      "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+    },
+    {
+      "accepted": true,
+      "asserted_facts": 4,
+      "feature": "Prepaid shop",
+      "feature_relative_path": "Shop.feature",
+      "gherkin_rule": "Refunds restore the state before the purchase",
+      "id": 3,
+      "line": 37,
+      "name": "Refund checked for stock but not wallet balance",
+      "plan_fingerprint": "2c84eef5e7e07d22",
+      "result_key": "09cd4fd27dd68799",
+      "steps": [
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 7
+            }
+          ],
+          "column": 5,
+          "keywordType": "context",
+          "line": 6,
+          "methodName": "itemCosts",
+          "regex": "^each item costs (\\d+) credits$",
+          "text": "each item costs 7 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 50
+            }
+          ],
+          "column": 7,
+          "keywordType": "context",
+          "line": 38,
+          "methodName": "walletHas",
+          "regex": "^my wallet has (\\d+) credits$",
+          "text": "my wallet has 50 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 5
+            }
+          ],
+          "column": 7,
+          "keywordType": "context",
+          "line": 39,
+          "methodName": "stockHas",
+          "regex": "^the shop has (\\d+) items$",
+          "text": "the shop has 5 items"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "quantity",
+              "value": 2
+            }
+          ],
+          "column": 7,
+          "keywordType": "action",
+          "line": 40,
+          "methodName": "buy",
+          "regex": "^I buy (\\d+) items$",
+          "text": "I buy 2 items"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 41,
+          "methodName": "purchaseAccepted",
+          "regex": "^the purchase is accepted$",
+          "text": "the purchase is accepted"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 36
+            }
+          ],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 42,
+          "methodName": "balanceIs",
+          "regex": "^my wallet balance is (\\d+) credits$",
+          "text": "my wallet balance is 36 credits"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 3
+            }
+          ],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 43,
+          "methodName": "stockIs",
+          "regex": "^the remaining stock is (\\d+)$",
+          "text": "the remaining stock is 3"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 7,
+          "keywordType": "action",
+          "line": 44,
+          "methodName": "refund",
+          "regex": "^I refund the purchase$",
+          "text": "I refund the purchase"
+        },
+        {
+          "argument": null,
+          "captures": [
+            {
+              "name": "value",
+              "value": 5
+            }
+          ],
+          "column": 7,
+          "keywordType": "outcome",
+          "line": 45,
+          "methodName": "stockIs",
+          "regex": "^the remaining stock is (\\d+)$",
+          "text": "the remaining stock is 5"
+        }
+      ],
+      "tags": [
+        "@coverage_gap"
+      ],
+      "test_name": "Prepaid_shop__Refunds_restore_the_state_before_the_purchase__Refund_checked_for_stock_but_not_wallet_balance",
+      "unjustified_facts": [
+        {
+          "column": 7,
+          "line": 41,
+          "step_index": 4
+        }
+      ],
+      "uri": "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature"
+    }
+  ],
+  "schema_version": "2.2.0",
+  "sources": {
+    "/work/source-work/Examples/Good/BusinessRules/features/Shop.feature": [
+      "Feature: Prepaid shop",
+      "  A purchase spends wallet credits and consumes inventory.",
+      "  A rejected purchase changes neither. A refund reverses both effects.",
+      "",
+      "  Background:",
+      "    Given each item costs 7 credits",
+      "",
+      "  Rule: Purchases preserve money and stock",
+      "",
+      "    Scenario: Buying two items",
+      "      Given my wallet has 50 credits",
+      "      And the shop has 5 items",
+      "      When I buy 2 items",
+      "      Then the purchase is accepted",
+      "      And my wallet balance is 36 credits",
+      "      And the remaining stock is 3",
+      "",
+      "    Scenario: Insufficient funds change nothing",
+      "      Given my wallet has 5 credits",
+      "      And the shop has 10 items",
+      "      When I buy 1 items",
+      "      Then the purchase is rejected",
+      "      And my wallet balance is 5 credits",
+      "      And the remaining stock is 10",
+      "",
+      "    Scenario: Sold out purchases change nothing",
+      "      Given my wallet has 50 credits",
+      "      And the shop has 0 items",
+      "      When I buy 1 items",
+      "      Then the purchase is rejected",
+      "      And my wallet balance is 50 credits",
+      "      And the remaining stock is 0",
+      "",
+      "  Rule: Refunds restore the state before the purchase",
+      "",
+      "    @coverage_gap",
+      "    Scenario: Refund checked for stock but not wallet balance",
+      "      Given my wallet has 50 credits",
+      "      And the shop has 5 items",
+      "      When I buy 2 items",
+      "      Then the purchase is accepted",
+      "      And my wallet balance is 36 credits",
+      "      And the remaining stock is 3",
+      "      When I refund the purchase",
+      "      Then the remaining stock is 5",
+      "      # This test passes, but never asserts that the refund restored the wallet."
+    ]
+  }
+}

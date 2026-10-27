@@ -1,0 +1,46 @@
+{
+  "schema":"miw.workbench-realizer-registry.v0.1",
+  "registry_id":"MIW_WORKBENCH_REALIZERS_V0_1",
+  "dictionary_root":"278128e8390cc10dfe1853084ecea6640eef59194affcc4bc9210767b08457ea",
+  "authority_effect":"NONE",
+  "standing":"LOCAL_ENGINEERING_CANDIDATE",
+  "status_algebra":{
+    "SUPPORTED":["EXACT","BOUNDED"],
+    "FALLBACK":["FALLBACK"],
+    "EXPERIMENTAL":["BOUNDED","REFUSED"],
+    "UNSUPPORTED":["REFUSED"],
+    "UNDECLARED":["REFUSED"]
+  },
+  "profiles":[
+    {
+      "id":"MIW_LOCAL_CANDIDATE",
+      "realizers":["MIW_CLI","MOSAIC_FOUNDRY_HEADLESS","MOSAIC_WIN32"],
+      "uniform_across_realizers":false,
+      "realizer_overrides":{"MOSAIC_WIN32":{"MOSAIC_NATIVE_UI":"HOST_DEPENDENT"}},
+      "realizer_capabilities":{
+        "OBLIGATION_LEDGER":{"status":"SUPPORTED","standing":"DECLARED","lowering_result":"EXACT"},
+        "NATIVE_SCALAR_PROOF":{"status":"SUPPORTED","standing":"DECLARED","lowering_result":"BOUNDED"},
+        "BDD_EXECUTION":{"status":"SUPPORTED","standing":"DECLARED","lowering_result":"BOUNDED"},
+        "ZUCCHINI_IMPORT":{"status":"SUPPORTED","standing":"DECLARED","lowering_result":"EXACT"},
+        "JUNIT_LINK":{"status":"SUPPORTED","standing":"DECLARED","lowering_result":"BOUNDED"},
+        "DRIFT_COMPARE":{"status":"SUPPORTED","standing":"DECLARED","lowering_result":"EXACT"},
+        "RECEIPT_EXPORT":{"status":"SUPPORTED","standing":"DECLARED","lowering_result":"EXACT"},
+        "MOSAIC_NATIVE_UI":{"status":"EXPERIMENTAL","standing":"DECLARED","experimental_result":"BOUNDED","opt_in_required":true},
+        "POSTGRES_REFERENCE":{"status":"UNSUPPORTED","standing":"DECLARED"},
+        "CPP_CORRESPONDENCE":{"status":"EXPERIMENTAL","standing":"DECLARED","experimental_result":"BOUNDED","opt_in_required":true},
+        "UCM_CUSTODY":{"status":"EXPERIMENTAL","standing":"DECLARED","experimental_result":"BOUNDED","opt_in_required":true},
+        "CONFORMANCE_WITNESS":{"status":"SUPPORTED","standing":"DECLARED","lowering_result":"EXACT"}
+      }
+    },
+    {
+      "id":"MIW_MINIMAL",
+      "realizers":["MIW_CLI_MINIMAL"],
+      "uniform_across_realizers":true,
+      "realizer_capabilities":{
+        "OBLIGATION_LEDGER":{"status":"SUPPORTED","standing":"DECLARED","lowering_result":"EXACT"},
+        "RECEIPT_EXPORT":{"status":"SUPPORTED","standing":"DECLARED","lowering_result":"EXACT"}
+      }
+    }
+  ],
+  "nonclaims":["Declarations are not measurements.","No profile grants execution authority.","Host-dependent integrations require their own acceptance evidence."]
+}

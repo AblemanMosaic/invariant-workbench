@@ -1,0 +1,113 @@
+{
+  "authority_effect": "NONE",
+  "files": [
+    {
+      "bytes": 204,
+      "path": "vendor/ucm/uclop/__init__.py",
+      "sha256": "af190bc9f4b2e7dc2f1bd4a2dbd02d375044838d5902c2a3f430af44ef509b8c",
+      "source_path": "src/uclop/__init__.py"
+    },
+    {
+      "bytes": 4957,
+      "path": "vendor/ucm/uclop/canonical.py",
+      "sha256": "ded8082f84c52ea3ee24d1d0e92c5e4b3850b702dc3178c1ad1e3778d1381db0",
+      "source_path": "src/uclop/canonical.py"
+    },
+    {
+      "bytes": 32635,
+      "path": "vendor/ucm/uclop/deductive_proofs.py",
+      "sha256": "933677edd228bc530417ea75ba77d07424a415e8fd008a2cba0f513618171619",
+      "source_path": "src/uclop/deductive_proofs.py"
+    },
+    {
+      "bytes": 10078,
+      "path": "vendor/ucm/uclop/checkers.py",
+      "sha256": "6be3462072b3670c515a6c057f059f94fc553a1f6bf225d794456b389cbd46aa",
+      "source_path": "src/uclop/checkers.py"
+    },
+    {
+      "bytes": 8866,
+      "path": "vendor/ucm/uclop/obligations.py",
+      "sha256": "96ac56ee6b927c6f429d7832e889ac8f9a61bc1a87d8116a7c196e95ac9cda6e",
+      "source_path": "src/uclop/obligations.py"
+    },
+    {
+      "bytes": 6790,
+      "path": "vendor/ucm/uclop/eligibility.py",
+      "sha256": "769834f0a2a94df5fbff0dff28ffac99b6fbbb6980bc1dcfb2d0cd0306e8a6fc",
+      "source_path": "src/uclop/eligibility.py"
+    },
+    {
+      "bytes": 3493,
+      "path": "vendor/ucm/uclop/proofs.py",
+      "sha256": "3ee0d50e520d5092d8e33052a225dea7338ff52254b75a0520e489d6b56f74fb",
+      "source_path": "src/uclop/proofs.py"
+    },
+    {
+      "bytes": 3929,
+      "path": "vendor/ucm/uclop/resources.py",
+      "sha256": "fa73dba218c574b686de0a48fa0ddde376051218c7a099c1026d925b9874b615",
+      "source_path": "src/uclop/resources.py"
+    },
+    {
+      "bytes": 13091,
+      "path": "vendor/ucm/tests/test_deductive_proofs.py",
+      "sha256": "fc045cf6ab64aa358502be178a7543d5245941d34aa6fcbf4aff7974cca5c3e4",
+      "source_path": "tests/test_deductive_proofs.py"
+    },
+    {
+      "bytes": 973,
+      "path": "vendor/ucm/fixtures/native-proof-contract.json",
+      "sha256": "2ae027428de9d9ccba52906c31a32d260009126c3bb04c80836d316d0d189d26",
+      "source_path": "fixtures/native-proof-contract.json"
+    },
+    {
+      "bytes": 3221,
+      "path": "vendor/ucm/fixtures/native-proof-bundle.json",
+      "sha256": "457febb0ddfed14c498d27d6182cb65e76a0fd998ce987f785de2abb85d0a6c4",
+      "source_path": "fixtures/native-proof-bundle.json"
+    },
+    {
+      "bytes": 950,
+      "path": "vendor/ucm/fixtures/native-proof-check.json",
+      "sha256": "5a05bf18b2d948c8cc860354174c527441fe2bf60e432ee80e117101555403db",
+      "source_path": "fixtures/native-proof-check.json"
+    },
+    {
+      "bytes": 2283,
+      "path": "vendor/ucm/spec/UCM-NATIVE-DEDUCTIVE-PROOF-V1.json",
+      "sha256": "38366910ea208acd3d608a7b5a2460b85e7ebb1b67f29f58c75566e36daeffe5",
+      "source_path": "spec/UCM-NATIVE-DEDUCTIVE-PROOF-V1.json"
+    },
+    {
+      "bytes": 5830,
+      "path": "vendor/ucm/docs/INHERITED-C3-REVIEW.md",
+      "sha256": "75a3e825f43b76db1a3a9943ca1f37df4c49c28c2c830f33f74d1f34bf327af8",
+      "source_path": "reviews/awb-c3/REPORT.md"
+    },
+    {
+      "bytes": 3754,
+      "path": "vendor/ucm/docs/UCM-NATIVE-DEDUCTIVE-PROOF-SUBSYSTEM.md",
+      "sha256": "43909167dc6dc72167d568ac6eb98631639f95027759465a290922d7a3a07f6d",
+      "source_path": "docs/UCM-NATIVE-DEDUCTIVE-PROOF-SUBSYSTEM.md"
+    },
+    {
+      "bytes": 2844,
+      "path": "vendor/ucm/docs/WORKBENCH-C1-INTERFACES-AND-LIMITS.md",
+      "sha256": "8c2abdbd1b41c5c2a5160addaa2d9f4fa56e210c787eddb2cec175149023a61a",
+      "source_path": "docs/WORKBENCH-C1-INTERFACES-AND-LIMITS.md"
+    },
+    {
+      "bytes": 12043,
+      "path": "vendor/ucm/docs/WORKBENCH-C1-PROJECT-MANAGEMENT.md",
+      "sha256": "9347f8394289f0532a8d352753cfb04d3e5afb89966f7c33041da60ec5b8476d",
+      "source_path": "docs/WORKBENCH-C1-PROJECT-MANAGEMENT.md"
+    }
+  ],
+  "full_source_root": "a72df68ad073cc3ea8605cb5458bc3c07e420d2993fbd375b04aa151eb1bd86a",
+  "handoff_sha256": "6bb3d7eb05cfb830d9dbe4253be5326ce67f7b306c6646b94107a321e355cd69",
+  "mode": "BYTE_IDENTICAL_SELECTED_MODULES_NOT_A_NEW_UCM_RELEASE",
+  "schema": "miw.vendor_pin.v1",
+  "standing": "INFORMATION_ONLY",
+  "transport_sha256": "26588c9f219ac270f4566c53bae51ba202c8f0e84041968397468014b991b17b"
+}

@@ -1,0 +1,24 @@
+{
+  "schema":"miw.invariant-workbench-campaign-state.v1",
+  "program_id":"MIW-INVARIANT-WORKBENCH-V0.1-2026-10-27",
+  "fixed_workstream_denominator":6,
+  "current_phase":"SHARED_INTEGRATION",
+  "feature_progress":{"candidate_built":3,"denominator":6,"percent":50},
+  "campaign_credit":{"accepted":0,"denominator":6,"percent":0},
+  "workstreams":[
+    {"id":1,"name":"contract foundation","status":"CANDIDATE_BUILT"},
+    {"id":2,"name":"obligation ledger","status":"CANDIDATE_BUILT"},
+    {"id":3,"name":"interactive invariant workbench","status":"CANDIDATE_BUILT_LOCAL_QUALIFICATION_PENDING"},
+    {"id":4,"name":"Zucchini and BDD correspondence","status":"INHERITED_PINNED_BASELINE_PRESENT_NEW_MES_ACCEPTANCE_OPEN"},
+    {"id":5,"name":"proof and effect integrations","status":"ADAPTERS_PRESENT_EXTERNAL_ACCEPTANCE_OPEN"},
+    {"id":6,"name":"qualification portability and delivery","status":"IN_PROGRESS"}
+  ],
+  "preserved_predecessors":[
+    {"sha256":"96f97de385de9aaee18f193dc9318468cdf81ea8d8f365d7bef1e177cd19036f","status":"UNCHANGED"},
+    {"sha256":"91935d6011f0bcec99fe74f0ee43c7e7d85e57317307e7d1d0de9cd6f924237b","status":"UNCHANGED"}
+  ],
+  "lattice_state":"UNAVAILABLE_PINNED_SSH_IDENTITY_AND_HOST_PERMISSION_DENIED",
+  "authority_effect":"NONE",
+  "largest_remaining_common_gap":"Fresh whole-candidate qualification and exact-package replay",
+  "next_action":"Run full regression, regenerate final dossier, replay UI and package exact successor"
+}

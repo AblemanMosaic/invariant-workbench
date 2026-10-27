@@ -1,0 +1,17 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"urn:miw:workbench-realizer-registry:v0.1",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["schema","registry_id","dictionary_root","authority_effect","standing","status_algebra","profiles","nonclaims"],
+  "properties":{
+    "schema":{"const":"miw.workbench-realizer-registry.v0.1"},
+    "registry_id":{"type":"string"},
+    "dictionary_root":{"type":"string","pattern":"^[0-9a-f]{64}$"},
+    "authority_effect":{"const":"NONE"},
+    "standing":{"type":"string"},
+    "status_algebra":{"type":"object"},
+    "profiles":{"type":"array","minItems":1,"items":{"type":"object","required":["id","realizers","uniform_across_realizers","realizer_capabilities"],"properties":{"id":{"type":"string","pattern":"^[A-Z][A-Z0-9_]{0,63}$"},"realizers":{"type":"array","minItems":1,"items":{"type":"string"}},"uniform_across_realizers":{"type":"boolean"},"realizer_overrides":{"type":"object"},"realizer_capabilities":{"type":"object","additionalProperties":{"type":"object","required":["status","standing"],"properties":{"status":{"enum":["SUPPORTED","EXPERIMENTAL","FALLBACK","UNSUPPORTED"]},"standing":{"enum":["DECLARED","MEASURED"]},"lowering_result":{"enum":["EXACT","BOUNDED"]},"fallback_to":{"type":"string"},"known_losses":{"type":"array","items":{"type":"string"}},"experimental_result":{"enum":["BOUNDED","REFUSED"]},"opt_in_required":{"type":"boolean"},"evidence_root":{"type":"string","pattern":"^[0-9a-f]{64}$"},"host_id":{"type":"string"},"adapter_version":{"type":"string"}}}}}}},
+    "nonclaims":{"type":"array","items":{"type":"string"}}
+  }
+}

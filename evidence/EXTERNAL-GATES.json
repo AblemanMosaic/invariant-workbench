@@ -1,0 +1,100 @@
+{
+  "all_required_external_gates_closed": false,
+  "authority_effect": "NONE",
+  "gates": [
+    {
+      "id": "UPSTREAM_ZUCCHINI",
+      "accepted_scope": {
+        "build_config": "Release",
+        "commit": "e8595c9ae94e45c1e28a3effeb7555725c3ac741",
+        "ctest_failed": 0,
+        "ctest_passed": 267,
+        "dependency_envelope_manifest_sha256": "796f72bd327c21f8102061e125d519a50acedb9a430c1b518aef3416285d7029",
+        "diagnostic_discovery_failure_reports": 16,
+        "generator": "Ninja",
+        "matched_named_shop_executions": 4,
+        "observed_report_refusals": 0,
+        "platform": "WSL2 Ubuntu Linux x86_64",
+        "source_root": "e948fc1830887feeaff4f591d6064efdfea9ee93b9b7778c4c552e17ba224b1b",
+        "successful_discovery_reports": 19,
+        "supported_report_structures": 35
+      },
+      "local_evidence": "Exact source snapshot, dependency envelope, terminal custody, raw CTest XML, 35 supported generated report structures, and four named Shop links are retained under evidence/zucchini-live-acceptance/.",
+      "prior_reason": "Complete immutable upstream source/dependency closure unavailable; runtime DNS/source download attempts failed.",
+      "reason": "Closed only for the exact accepted scope. Nineteen reports record successful discovery; sixteen are supported diagnostic reports from deliberately invalid examples and are not successful application behavior.",
+      "scope_ceiling": "No acceptance of later revisions, other dependency closures, a consuming MES implementation, native Windows/Visual Studio, formal proof, database truth, or physical inventory.",
+      "status": "PASSED_PINNED_SCOPE"
+    },
+    {
+      "id": "POSTGRESQL_LIVE",
+      "local_evidence": "Protocol fault fixtures and pure finite lifecycle only.",
+      "prior_reason": "No PostgreSQL server executable or psycopg3; explicit live harness returned NOT_RUN with exit 6.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "WINDOWS_NATIVE",
+      "local_evidence": "Foundry recompile, 18 headless projections, and fake native host binding only.",
+      "prior_reason": "The original Linux builder could not produce a native HWND witness.",
+      "reason": "Native Windows GUI acceptance remains distinct from the passed Windows Python regression.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ACTUAL_AI_MODEL",
+      "local_evidence": "Strict request/response and transport regression tests.",
+      "prior_reason": "No model endpoint invoked; proposal fixtures are builder authored.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PRODUCTION_CUSTODY",
+      "local_evidence": "Actual unchanged signature/manager/worker machinery executed.",
+      "prior_reason": "Public reproducible fixture identities and process-local anchor only.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_BOUND"
+    },
+    {
+      "id": "INDEPENDENT_REVIEW",
+      "local_evidence": "Exact frozen predecessor, reproductions, repairs, replay and independent review work order preserved.",
+      "prior_reason": "Same builder performed this review; connected read-only courthouse attempt returned account connection error.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "PENDING"
+    },
+    {
+      "id": "INHERITED_UCM_REVIEW",
+      "local_evidence": "Selected unchanged source/courts, not full-UCM requalification.",
+      "prior_reason": "Product regression and review do not close original c4 inherited review obligations.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "OPEN"
+    },
+    {
+      "id": "HUMAN_MAINTENANCE_ECONOMICS",
+      "local_evidence": "Old evidence refusal and successful changed-source requalification.",
+      "prior_reason": "Recipe change was builder scripted; machine time is not human productivity.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_MEASURED"
+    },
+    {
+      "id": "PRODUCTION_ADMISSION",
+      "local_evidence": "Engineering candidate only.",
+      "prior_reason": "No real Governor disposition, deployment, operational signer or production effect was granted.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_AUTHORIZED"
+    },
+    {
+      "id": "WINDOWS_CONSOLIDATED_REPLAY",
+      "local_evidence": "Windows 11 / Python 3.12.10 executed the complete local qualification and consolidated replay, including junction-backed alias regressions.",
+      "prior_observation": "User-reported earlier e3dd build blocked at RUN_MIW.bat inventory metadata comparison.",
+      "scope_ceiling": "This passes the Windows Python/local replay lane only; it is neither native HWND acceptance nor a Visual Studio Zucchini rebuild.",
+      "status": "PASSED"
+    },
+    {
+      "id": "WINDOWS_ZUCCHINI_VISUAL_STUDIO",
+      "local_evidence": "The pinned Zucchini build passed under WSL2 Ubuntu with Ninja/Release, not native Visual Studio.",
+      "reason": "No native Windows/Visual Studio rebuild of the pinned upstream closure has been recorded.",
+      "status": "NOT_RUN"
+    }
+  ],
+  "schema": "miw.portability_cleanup_external_gates.v1",
+  "standing": "INFORMATION_ONLY"
+}

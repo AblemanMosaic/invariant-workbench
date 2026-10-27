@@ -1,0 +1,10 @@
+{
+  "schema":"miw.rsc.canonicalization-vectors.v0.1",
+  "authority_effect":"NONE",
+  "rules":{"object_key_order":"UNICODE_CODE_POINT","string_normalization":"NFC_REQUIRED_AT_INPUT_BOUNDARY","semantic_numbers":"INTEGER_OR_DECIMAL_STRING_ONLY","json_encoding":"UTF_8_NO_BOM","line_ending":"LF"},
+  "vectors":[
+    {"value":{"b":2,"a":1},"canonical_utf8":"{\"a\":1,\"b\":2}"},
+    {"value":{"decimal":"1.250"},"canonical_utf8":"{\"decimal\":\"1.250\"}"},
+    {"value":[true,false,null],"canonical_utf8":"[true,false,null]"}
+  ]
+}

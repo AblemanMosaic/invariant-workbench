@@ -1,0 +1,155 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Mosaic Invariant Workbench | Turn 4 scalar evidence</title>
+<style>body{background:#11161d;color:#edf1f6;font:16px/1.6 system-ui,sans-serif;margin:0}main{max-width:1120px;margin:auto;padding:40px 30px}h1{font-size:36px;line-height:1.15}h2{margin-top:36px}small,.muted{color:#b2becd}.boundary{border-left:4px solid #d7b97c;padding:12px 20px;background:#202631}.cards{display:flex;gap:16px;flex-wrap:wrap}.card{flex:1;min-width:180px;border:1px solid #384250;border-radius:8px;padding:18px}.big{font-size:30px;font-weight:700}table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px solid #39424d;text-align:left;padding:12px 8px}code,pre{font-family:monospace;overflow-wrap:anywhere}pre{white-space:pre-wrap;background:#1b222c;padding:16px;border-radius:8px}a{color:#a8d7ff}details{margin:20px 0}summary{cursor:pointer}.scroll{overflow:auto}</style></head><body><main>
+<p class="muted">MOSAIC / INVARIANT WORKBENCH / TURN 4 CANDIDATE</p>
+<h1>Rules. Code. Evidence.</h1>
+<p>A local demonstration of pre-execution source verification, requirement-linked examples, and bounded Zucchini interoperability.</p>
+<div class="boundary"><strong>Information only. No release or production authority.</strong><br>
+The proof concerns a closed, loop-free Python subset. The new source translator is trusted, not formally proved. C++, database concurrency, and physical stock are outside the claim.</div>
+<h2>Checked source, before execution</h2><div class="scroll"><table><thead><tr><th>Operation</th><th>Result</th><th>Path clauses</th><th>Native VCs</th><th>Example tests</th></tr></thead><tbody><tr><td>assembly</td><td>CHECKED_SOURCE_PROOF</td><td>4</td><td>58</td><td>5 / 5</td></tr><tr><td>allocation</td><td>CHECKED_SOURCE_PROOF</td><td>3</td><td>28</td><td>2 / 2</td></tr></tbody></table></div>
+<p class="muted">Proofs quantify over valid mathematical integer inputs under the stated trusted semantics. The example counts are separate observations, not the proof.</p>
+<h2>Deliberately defective implementations</h2><div class="scroll"><table><thead><tr><th>Mutation</th><th>Proof result</th><th>Executed counterexample</th><th>Named requirement</th></tr></thead><tbody><tr><td>NO_A_CONSUMPTION</td><td>UNKNOWN_PROOF</td><td>REPRODUCED_REQUIREMENT_FAILURE</td><td>REQ_A_ACCOUNTING</td></tr><tr><td>WRONG_B_CONSUMPTION</td><td>UNKNOWN_PROOF</td><td>REPRODUCED_REQUIREMENT_FAILURE</td><td>REQ_B_ACCOUNTING</td></tr><tr><td>OUTPUT_NOT_RECORDED</td><td>UNKNOWN_PROOF</td><td>REPRODUCED_REQUIREMENT_FAILURE</td><td>REQ_FINISHED_ACCOUNTING</td></tr><tr><td>ZERO_ACCEPTED</td><td>UNKNOWN_PROOF</td><td>REPRODUCED_REQUIREMENT_FAILURE</td><td>REQ_ACCEPTANCE</td></tr><tr><td>LAST_KIT_REFUSED</td><td>UNKNOWN_PROOF</td><td>REPRODUCED_REQUIREMENT_FAILURE</td><td>REQ_ACCEPTANCE</td></tr><tr><td>REFUSAL_MUTATES</td><td>UNKNOWN_PROOF</td><td>REPRODUCED_REQUIREMENT_FAILURE</td><td>REQ_FINISHED_ACCOUNTING</td></tr><tr><td>ALWAYS_REFUSE</td><td>UNKNOWN_PROOF</td><td>REPRODUCED_REQUIREMENT_FAILURE</td><td>REQ_ACCEPTANCE</td></tr></tbody></table></div>
+<p>UNKNOWN_PROOF is not itself a counterexample. The third column records a separate, requirement-specific executed failure.</p>
+<h2>Zucchini adapter</h2><p>The included report and JUnit inputs are <strong>synthetic contract fixtures</strong>, not output from an upstream C++ build. Discovery coverage, execution status, proof, and failure attribution remain separate. A caller binding identifies the chosen files; it does not authenticate their origin.</p>
+<h2>Protected checking basis</h2><p>The local edit-scope demonstration permits a change to the operation while refusing changes to the specification, oracle, driver, runner, and checker. It is not an OS sandbox or a signed UCM work-manager grant.</p>
+<h2>Dependency map</h2><p>The map is deliberately partial. Known impact is shown, but all declared nodes require requalification. No dependency completeness claim is inferred.</p>
+<details><summary>Exact demonstration summary</summary><pre>{
+  &quot;authority_effect&quot;: &quot;NONE&quot;,
+  &quot;database&quot;: &quot;SEPARATE_REFERENCE_ADAPTER_LIVE_NOT_RUN&quot;,
+  &quot;examples&quot;: [
+    {
+      &quot;name&quot;: &quot;assembly&quot;,
+      &quot;native_vc_count&quot;: 58,
+      &quot;obligation_count&quot;: 38,
+      &quot;path_count&quot;: 4,
+      &quot;proof_outcome&quot;: &quot;CHECKED_SOURCE_PROOF&quot;,
+      &quot;proof_root&quot;: &quot;543c505ef26f6950d9eace6620da5b2e41716ce938390537afa75318a9a98c04&quot;,
+      &quot;residual_count&quot;: 0,
+      &quot;scenario_count&quot;: 5,
+      &quot;scenario_passes&quot;: 5,
+      &quot;subject_root&quot;: &quot;96b568f7d4c1cada9c8f791866bdd9a2f2fc110b233249b7227a3a5bca41ece0&quot;
+    },
+    {
+      &quot;name&quot;: &quot;allocation&quot;,
+      &quot;native_vc_count&quot;: 28,
+      &quot;obligation_count&quot;: 19,
+      &quot;path_count&quot;: 3,
+      &quot;proof_outcome&quot;: &quot;CHECKED_SOURCE_PROOF&quot;,
+      &quot;proof_root&quot;: &quot;f6244614759f06f4127aa48cd568d95946e167050734745aaa26f1ddcd3c09f0&quot;,
+      &quot;residual_count&quot;: 0,
+      &quot;scenario_count&quot;: 2,
+      &quot;scenario_passes&quot;: 2,
+      &quot;subject_root&quot;: &quot;aceacbe8bbf264af9c0edd723821e9a16349350bac437315644450105fd7e500&quot;
+    }
+  ],
+  &quot;graph_completeness&quot;: &quot;PARTIAL_FULL_REQUALIFICATION_REQUIRED&quot;,
+  &quot;independent_review&quot;: &quot;NOT_PERFORMED&quot;,
+  &quot;mutations&quot;: [
+    {
+      &quot;counterexample_outcome&quot;: &quot;REPRODUCED_REQUIREMENT_FAILURE&quot;,
+      &quot;failed_assertions&quot;: 2,
+      &quot;id&quot;: &quot;NO_A_CONSUMPTION&quot;,
+      &quot;proof_outcome&quot;: &quot;UNKNOWN_PROOF&quot;,
+      &quot;residual_count&quot;: 2,
+      &quot;target&quot;: &quot;REQ_A_ACCOUNTING&quot;
+    },
+    {
+      &quot;counterexample_outcome&quot;: &quot;REPRODUCED_REQUIREMENT_FAILURE&quot;,
+      &quot;failed_assertions&quot;: 2,
+      &quot;id&quot;: &quot;WRONG_B_CONSUMPTION&quot;,
+      &quot;proof_outcome&quot;: &quot;UNKNOWN_PROOF&quot;,
+      &quot;residual_count&quot;: 3,
+      &quot;target&quot;: &quot;REQ_B_ACCOUNTING&quot;
+    },
+    {
+      &quot;counterexample_outcome&quot;: &quot;REPRODUCED_REQUIREMENT_FAILURE&quot;,
+      &quot;failed_assertions&quot;: 2,
+      &quot;id&quot;: &quot;OUTPUT_NOT_RECORDED&quot;,
+      &quot;proof_outcome&quot;: &quot;UNKNOWN_PROOF&quot;,
+      &quot;residual_count&quot;: 3,
+      &quot;target&quot;: &quot;REQ_FINISHED_ACCOUNTING&quot;
+    },
+    {
+      &quot;counterexample_outcome&quot;: &quot;REPRODUCED_REQUIREMENT_FAILURE&quot;,
+      &quot;failed_assertions&quot;: 1,
+      &quot;id&quot;: &quot;ZERO_ACCEPTED&quot;,
+      &quot;proof_outcome&quot;: &quot;UNKNOWN_PROOF&quot;,
+      &quot;residual_count&quot;: 1,
+      &quot;target&quot;: &quot;REQ_ACCEPTANCE&quot;
+    },
+    {
+      &quot;counterexample_outcome&quot;: &quot;REPRODUCED_REQUIREMENT_FAILURE&quot;,
+      &quot;failed_assertions&quot;: 1,
+      &quot;id&quot;: &quot;LAST_KIT_REFUSED&quot;,
+      &quot;proof_outcome&quot;: &quot;UNKNOWN_PROOF&quot;,
+      &quot;residual_count&quot;: 1,
+      &quot;target&quot;: &quot;REQ_ACCEPTANCE&quot;
+    },
+    {
+      &quot;counterexample_outcome&quot;: &quot;REPRODUCED_REQUIREMENT_FAILURE&quot;,
+      &quot;failed_assertions&quot;: 3,
+      &quot;id&quot;: &quot;REFUSAL_MUTATES&quot;,
+      &quot;proof_outcome&quot;: &quot;UNKNOWN_PROOF&quot;,
+      &quot;residual_count&quot;: 9,
+      &quot;target&quot;: &quot;REQ_FINISHED_ACCOUNTING&quot;
+    },
+    {
+      &quot;counterexample_outcome&quot;: &quot;REPRODUCED_REQUIREMENT_FAILURE&quot;,
+      &quot;failed_assertions&quot;: 2,
+      &quot;id&quot;: &quot;ALWAYS_REFUSE&quot;,
+      &quot;proof_outcome&quot;: &quot;UNKNOWN_PROOF&quot;,
+      &quot;residual_count&quot;: 1,
+      &quot;target&quot;: &quot;REQ_ACCEPTANCE&quot;
+    }
+  ],
+  &quot;phases&quot;: [
+    {
+      &quot;example&quot;: &quot;assembly&quot;,
+      &quot;phase&quot;: &quot;STATIC_PROOF_BUILT&quot;,
+      &quot;proof_root&quot;: &quot;543c505ef26f6950d9eace6620da5b2e41716ce938390537afa75318a9a98c04&quot;,
+      &quot;source_execution&quot;: &quot;NONE&quot;
+    },
+    {
+      &quot;check_root&quot;: &quot;6ade91e5988f2f09285a14f08b7e841e6c12b6b3332fbc95fc7505456328fb4c&quot;,
+      &quot;example&quot;: &quot;assembly&quot;,
+      &quot;phase&quot;: &quot;STATIC_PROOF_RECHECKED&quot;,
+      &quot;source_execution&quot;: &quot;NONE&quot;
+    },
+    {
+      &quot;example&quot;: &quot;assembly&quot;,
+      &quot;execution_root&quot;: &quot;fc554a15f389e2bd6816a9b306f98dbf6354c2ccef0410758be2e1396097786e&quot;,
+      &quot;phase&quot;: &quot;EXAMPLES_EXECUTED&quot;
+    },
+    {
+      &quot;example&quot;: &quot;allocation&quot;,
+      &quot;phase&quot;: &quot;STATIC_PROOF_BUILT&quot;,
+      &quot;proof_root&quot;: &quot;f6244614759f06f4127aa48cd568d95946e167050734745aaa26f1ddcd3c09f0&quot;,
+      &quot;source_execution&quot;: &quot;NONE&quot;
+    },
+    {
+      &quot;check_root&quot;: &quot;9712eb22e883ec5c77a28f65d2f8904becc349d9d037af3cbd78f83ba70e6e6d&quot;,
+      &quot;example&quot;: &quot;allocation&quot;,
+      &quot;phase&quot;: &quot;STATIC_PROOF_RECHECKED&quot;,
+      &quot;source_execution&quot;: &quot;NONE&quot;
+    },
+    {
+      &quot;example&quot;: &quot;allocation&quot;,
+      &quot;execution_root&quot;: &quot;96fe15b23284f0ac4c65395761749d8947fd245d34107ecbf38fed85e307d2fe&quot;,
+      &quot;phase&quot;: &quot;EXAMPLES_EXECUTED&quot;
+    }
+  ],
+  &quot;physical_inventory&quot;: &quot;NOT_VERIFIED&quot;,
+  &quot;runtime_inputs&quot;: &quot;No production data; synthetic examples only&quot;,
+  &quot;schema&quot;: &quot;miw.turn4_scalar_demo.v1&quot;,
+  &quot;scope_check_protected_roles&quot;: 5,
+  &quot;standing&quot;: &quot;INFORMATION_ONLY&quot;,
+  &quot;summary_root&quot;: &quot;23cc6b51e042fe41a3c18c9820b77a950611896664d5e2fee370ea4ba4fedef6&quot;,
+  &quot;turn&quot;: 4,
+  &quot;zucchini_live_cpp&quot;: &quot;NOT_RUN_BY_DOSSIER_GENERATOR&quot;,
+  &quot;zucchini_validation&quot;: &quot;THIS_DOSSIER_SYNTHETIC_FIXTURES_ONLY&quot;
+}</pre></details>
+<p><a href="SUMMARY.json">Machine-readable summary</a> · <a href="DEMO-MANIFEST.json">Dossier file inventory</a></p>
+<p class="muted">No JavaScript, external assets, network services, telemetry, or hosted model is required.</p>
+</main></body></html>

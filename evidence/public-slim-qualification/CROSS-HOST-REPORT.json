@@ -1,0 +1,105 @@
+{
+  "schema": "miw.public-slim-qualification-report.v1",
+  "standing": "INFORMATION_ONLY",
+  "authority_effect": "NONE",
+  "parent_full_successor": {
+    "filename": "Invariant_Workbench_v0.1_LINUX_LANE_SELF_CONTRACT_SUCCESSOR.zip",
+    "sha256": "0e7426bf1876bffc1741132ff9cd31d024a624a1e0ccf1461966c65f7428647b",
+    "bytes": 18913250,
+    "manifest_root": "41be40913ec5ac0605a42444ba54084aa5074ad75c7a9f4c273538d8ad535e89"
+  },
+  "package_scope": [
+    "Application, tests, vendored runtime dependencies, assets, fixtures, schemas, self-contract, verifier, and deterministic sealer retained.",
+    "Canonical runnable proof dossier and integration example retained.",
+    "Current Windows and Linux qualification records retained without duplicate generated dossier directories.",
+    "Pinned Zucchini raw test, report, build, snapshot, and linkage records retained; two repetitive dependency-envelope inventories omitted with an explicit inherited-hash audit.",
+    "Embedded predecessor ZIPs and repeated historical qualification generations omitted."
+  ],
+  "publication": {
+    "canonical_archive": "Invariant_Workbench_v0.1.zip",
+    "license": "Apache-2.0",
+    "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "host_path_scan": "PASSED_NO_MATCHES",
+    "personal_name_scan": "PASSED_NO_MATCHES",
+    "credential_marker_scan": "PASSED_NO_MATCHES",
+    "embedded_archive_scan": "PASSED_NO_EMBEDDED_ARCHIVES"
+  },
+  "windows": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "qualification_root": "cae4a62840b86f7ffd428960bcbea5103a4e6a5886f1d4e88204ba817272af67",
+    "tests": 432,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "ctr": "9_OF_9_PASSED",
+    "ctr_root": "cfefb14c6f8e430e5552bf5e6d799e73c13088e28c9041e38a4710b0ad6ce3b0"
+  },
+  "linux": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "qualification_root": "cae4a62840b86f7ffd428960bcbea5103a4e6a5886f1d4e88204ba817272af67",
+    "tests": 432,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "ctr": "9_OF_9_PASSED",
+    "ctr_root": "5cdcf54609f62614a568e60da256a720954bec27377913452cdfcfa605a29008"
+  },
+  "cross_host": {
+    "source_root": "c5b9832762850fe4f5f2025069538b0222e16948dab4470a8fdbb4b9e370a615",
+    "source_roots_equal": true,
+    "qualification_roots_equal": true,
+    "per_test_records_equal": true,
+    "dossier_replay_root": "2534ed17733615945c86047571d145cdf3cc495095dfdd951d2634304c0b0e9a",
+    "dossier_replay_roots_equal": true,
+    "native_verification_conditions": 86,
+    "reproduced_mutations": 7,
+    "ctr_roots_equal": false,
+    "ctr_root_difference": "CTR-02 binds a host-specific compiled-operation subject; both host reports passed the same 9 declared courts."
+  },
+  "full_local_replay": {
+    "status": "PASSED_LOCAL_REPLAY",
+    "record_root": "79bc77d180e65683352174124dceeaef23922ea102aff6d94c4a6df168e2de55",
+    "source_root": "c5b9832762850fe4f5f2025069538b0222e16948dab4470a8fdbb4b9e370a615",
+    "source_unchanged": true,
+    "tasks": ["qualification", "custody", "integration", "foundry", "headless"]
+  },
+  "self_contract": {
+    "self_contract_root": "86d25f8385758209c4a05777dc1a54e58fbea459c910d7e4dab9e4a5d552eddc",
+    "self_contract_check_root": "d22e1d565a90904cb780f33f8dbee97cc7846c01e385e9617276227ebcf65d08",
+    "explanation_root": "3739e6dac5b3e5995c7bc5c6097d490c748b7b501c5800ad93a9c6dab7ba2004",
+    "guarantees": 8,
+    "nonclaims": 10,
+    "trusted_assumptions": 7,
+    "code_paths_checked": 19,
+    "tests_resolved": 22,
+    "courts_covered": 9
+  },
+  "hash_referenced_omissions": [
+    {
+      "path": "evidence/zucchini-live-acceptance/ENVELOPE-MANIFEST.json",
+      "parent_archive_bytes": 6898115,
+      "parent_archive_sha256": "11246d638368ca99389478c9d27b7f4110246429fba6937234d56365375c064c",
+      "inherited_receipt_bytes": 6898094,
+      "inherited_receipt_sha256": "796f72bd327c21f8102061e125d519a50acedb9a430c1b518aef3416285d7029",
+      "declaration_status": "STALE_MISMATCH_DISCLOSED"
+    },
+    {
+      "path": "evidence/zucchini-live-acceptance/tpp-prep/ENVELOPE-MANIFEST.json",
+      "parent_archive_bytes": 5068908,
+      "parent_archive_sha256": "7026bb0649cb3db901c9ac4199e599cc749000a2549b6139cb9c40cc076582d2",
+      "inherited_receipt_bytes": 5068908,
+      "inherited_receipt_sha256": "7026bb0649cb3db901c9ac4199e599cc749000a2549b6139cb9c40cc076582d2",
+      "declaration_status": "MATCHED"
+    }
+  ],
+  "remaining_boundaries": [
+    "The public-slim subset does not reconstruct omitted historical archives or dependency-envelope member rows.",
+    "Native HWND usability and accessibility acceptance is not established.",
+    "Windows Visual Studio Zucchini replay is not established.",
+    "A consuming MES checkout, its semantic mappings, and its real database writer boundary are not yet supplied or accepted.",
+    "Live PostgreSQL acceptance, physical-inventory correspondence, production authority, and independent review remain open."
+  ],
+  "record_root": "07f1227a32fb72493740c94f37d0c63136eab01588ba437b50a54c15c9da9414"
+}

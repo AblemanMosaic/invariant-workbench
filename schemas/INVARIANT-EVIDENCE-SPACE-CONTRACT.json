@@ -1,0 +1,39 @@
+{
+  "schema": "miw.invariant-evidence-space-contract.v0.1",
+  "contract_id": "MIW_INVARIANT_EVIDENCE_SPACE",
+  "contract_version": "0.1.0",
+  "subject": {
+    "subject_id": "MIW_EXACT_EVIDENCE_SUBJECT",
+    "authority_owner": "CALLER_AND_EXACT_ARTIFACTS",
+    "preserved_identity": ["CONTRACT_ROOT","SOURCE_ROOT","EVIDENCE_CLASS","EVIDENCE_ROOT"],
+    "forbidden_overrides": ["EVIDENCE_PROMOTION","AUTHORITY_EFFECT","SPECIFICATION_APPROVAL"]
+  },
+  "possibility": {
+    "intended_variation": ["selected requirement","inspection lane","revision","projection target"],
+    "excluded_claims": ["software correctness","specification correctness","physical inventory truth","production authority"]
+  },
+  "operations": ["ENUMERATE","VALIDATE","NORMALIZE","SELECT","LOWER","REALIZE","COMPARE","EXPLAIN","RECEIPT"],
+  "axes": [
+    {"id":"REQUIREMENT_ID","label":"Requirement","value_type":"REFERENCE","domain":{"pattern":"REQ_[A-Z0-9_]{1,60}"},"default":"REQ_ACCEPTANCE","ownership":"USER","mutability":"SESSION","continuity":"DISCRETE","state_effect":"ANALYSIS_SELECTION","effect_owner":"WORKBENCH","apply_mode":"TRANSACTION_BOUNDARY","persistence_effect":"RECEIPT_ONLY","replay_effect":"ANALYSIS_ONLY","authority_effect":"NONE","lockable":true},
+    {"id":"LANE","label":"Evidence lane","value_type":"ENUM","domain":{"values":["INSPECT","PROOF_RECHECK","BDD_RERUN","ZUCCHINI_REVIEW","CONFORMANCE_WITNESS"]},"default":"INSPECT","ownership":"USER","mutability":"SESSION","continuity":"DISCRETE","state_effect":"ANALYSIS_SELECTION","effect_owner":"WORKBENCH","apply_mode":"TRANSACTION_BOUNDARY","persistence_effect":"RECEIPT_ONLY","replay_effect":"ANALYSIS_ONLY","authority_effect":"NONE","lockable":true},
+    {"id":"REVISION_ROOT","label":"Revision root","value_type":"REFERENCE","domain":{"pattern":"[0-9a-f]{64}"},"default":"0000000000000000000000000000000000000000000000000000000000000000","ownership":"CALLER","mutability":"SESSION","continuity":"DISCRETE","state_effect":"ANALYSIS_SELECTION","effect_owner":"WORKBENCH","apply_mode":"TRANSACTION_BOUNDARY","persistence_effect":"RECEIPT_ONLY","replay_effect":"ANALYSIS_ONLY","authority_effect":"NONE","lockable":true},
+    {"id":"EVIDENCE_PROMOTION","label":"Evidence promotion","value_type":"BOOLEAN","domain":{},"default":false,"ownership":"CONSTITUTION","mutability":"IMMUTABLE","continuity":"DISCRETE","state_effect":"ANALYSIS_GUARD","effect_owner":"WORKBENCH","apply_mode":"TRANSACTION_BOUNDARY","persistence_effect":"CONTRACT","replay_effect":"ANALYSIS_ONLY","authority_effect":"NONE","lockable":true}
+  ],
+  "constraints": [
+    {"id":"NO_EVIDENCE_PROMOTION","kind":"INVARIANT","severity":"HARD","expression":"EVIDENCE_PROMOTION == False","expression_language":"miw.rsc.expr.v0.1","explanation":"Evidence classes may not be silently promoted.","refusal_code":"WORKBENCH_EVIDENCE_PROMOTION_REFUSED"}
+  ],
+  "preferred_regions": [
+    {"id":"READ_ONLY_ORIENTATION","purpose":"Open an exact subject without effects.","predicate":"LANE == 'INSPECT' and EVIDENCE_PROMOTION == False","predicate_language":"miw.rsc.expr.v0.1","standing":"AUTHORED_LOCAL","profile_defaults":{"LANE":"INSPECT"}}
+  ],
+  "selection": {"policies":["EXACT_DEFAULTS","EXACT_REQUEST"],"default_policy":"EXACT_DEFAULTS","fallback_policy":"REFUSE_ON_UNKNOWN_OR_LOCKED_AXIS","locks":["EVIDENCE_PROMOTION"]},
+  "lowering": {
+    "allowed_results":["EXACT","BOUNDED","FALLBACK","LOSSY","REFUSED"],
+    "targets":[
+      {"id":"OBLIGATION_BOARD","required_realizer_capabilities":["OBLIGATION_LEDGER","MOSAIC_NATIVE_UI"],"axis_mapping":[{"axis_id":"REQUIREMENT_ID","target_setting":"selected_requirement","transform":"IDENTITY"}],"refusal_conditions":["UNKNOWN_REQUIREMENT"],"output_schema":"miw.obligation-board.v1","required_evidence_fields":["workspace_root","evidence_classes"],"preserved":["REQUIREMENT_ID","EVIDENCE_CLASS","EVIDENCE_ROOT"],"known_losses":[]},
+      {"id":"PROOF_RECHECK_PLAN","required_realizer_capabilities":["NATIVE_SCALAR_PROOF","RECEIPT_EXPORT"],"axis_mapping":[{"axis_id":"REQUIREMENT_ID","target_setting":"selected_requirement","transform":"SUBJECT_SCOPE"}],"refusal_conditions":["PROOF_EVIDENCE_ABSENT"],"output_schema":"miw.obligation-lowering.v1","required_evidence_fields":["proof_root","claim_boundary"],"preserved":["PROOF_SUBJECT_ROOT"],"known_losses":["NO_SEPARATELY_AUTHORED_REQUIREMENT_TO_VC_MAP"]},
+      {"id":"ZUCCHINI_REVIEW_PLAN","required_realizer_capabilities":["ZUCCHINI_IMPORT","JUNIT_LINK","RECEIPT_EXPORT"],"axis_mapping":[{"axis_id":"REQUIREMENT_ID","target_setting":"binding_candidate","transform":"EXPLICIT_BINDING_ONLY"}],"refusal_conditions":["ZUCCHINI_BINDING_ABSENT"],"output_schema":"miw.obligation-lowering.v1","required_evidence_fields":["import_root","link_root","binding_standing"],"preserved":["ZUCCHINI_TAG","EXECUTION_STATUS","BINDING_STANDING"],"known_losses":["NO_FORMAL_EQUIVALENCE"]}
+    ]
+  },
+  "evidence": {"required_roots":["CONTRACT","WORKSPACE","SELECTION","LOWERING"],"required_fields":["standing","authority_effect","claim_boundary"],"non_claims":["PRODUCTION_ADMISSION","SPECIFICATION_APPROVAL","GENERAL_CPP_PROOF"]},
+  "authority": {"standing":"LOCAL_ENGINEERING_CANDIDATE","authority_effect":"NONE","self_admission":false,"release_gate":false,"track_a_dependency":"NONE"}
+}

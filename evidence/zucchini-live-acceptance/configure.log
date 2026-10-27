@@ -1,0 +1,54 @@
+CMake Warning at /envelope/deps/cpm_cmake/cmake/CPM.cmake:80 (message):
+  CPM: Your project is using an unstable development version of CPM.cmake.
+  Please update to a recent release if possible.  See
+  https://github.com/cpm-cmake/CPM.cmake for details.
+Call Stack (most recent call first):
+  /envelope/miw/tools/zucchini_cpm_bootstrap.cmake:8 (include)
+  CMakeLists.txt:2 (project)
+
+
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at /envelope/deps/libfyaml/CMakeLists.txt:225 (message):
+  failed to find libyaml; compatibility disabled
+
+
+CMake Warning at /envelope/deps/cpm_cmake/cmake/CPM.cmake:784 (message):
+  CPM: 'cucumber_messages' version overridden by CMake variable
+  CPM_cucumber_messages_SOURCE='/envelope/deps/cucumber_messages'
+Call Stack (most recent call first):
+  /envelope/deps/cucumber_gherkin/cpp/cmake/dependencies.cpm.cmake:37 (CPMAddPackage)
+  /envelope/deps/cucumber_gherkin/cpp/CMakeLists.txt:54 (include)
+
+
+CMake Deprecation Warning at /envelope/deps/googletest/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+CMake Deprecation Warning at /envelope/deps/googletest/googletest/CMakeLists.txt:49 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Configuring done (2.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /work/acceptance/build

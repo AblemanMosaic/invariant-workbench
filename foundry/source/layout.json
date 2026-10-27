@@ -1,0 +1,252 @@
+{
+  "sun": [
+    22,
+    24,
+    56,
+    56
+  ],
+  "brand": [
+    90,
+    28,
+    128,
+    27
+  ],
+  "subtitle": [
+    22,
+    89,
+    205,
+    26
+  ],
+  "nav_overview": [
+    18,
+    150,
+    210,
+    38
+  ],
+  "nav_rules": [
+    18,
+    254,
+    210,
+    38
+  ],
+  "nav_proof": [
+    18,
+    306,
+    210,
+    38
+  ],
+  "nav_orders": [
+    18,
+    358,
+    210,
+    38
+  ],
+  "nav_proposals": [
+    18,
+    410,
+    210,
+    38
+  ],
+  "nav_integration": [
+    18,
+    462,
+    210,
+    38
+  ],
+  "nav_control": [
+    18,
+    514,
+    210,
+    38
+  ],
+  "claim": [
+    24,
+    566,
+    190,
+    45
+  ],
+  "build": [
+    24,
+    704,
+    202,
+    28
+  ],
+  "status": [
+    250,
+    746,
+    920,
+    28
+  ],
+  "overview_title": [
+    250,
+    24,
+    920,
+    44
+  ],
+  "overview_scope": [
+    250,
+    82,
+    920,
+    28
+  ],
+  "overview_table": [
+    250,
+    130,
+    920,
+    220
+  ],
+  "overview_detail": [
+    250,
+    370,
+    920,
+    340
+  ],
+  "nav_workbench": [
+    18,
+    202,
+    210,
+    38
+  ],
+  "workbench_title": [250,24,920,44],
+  "workbench_scope": [250,82,920,28],
+  "workbench_table": [250,125,920,165],
+  "workbench_requirement": [250,305,220,34],
+  "workbench_lane": [480,305,220,34],
+  "workbench_validate": [710,305,120,34],
+  "workbench_explain": [840,305,130,34],
+  "workbench_zucchini_tag": [250,354,220,34],
+  "workbench_relation": [480,354,220,34],
+  "workbench_lower": [710,354,120,34],
+  "workbench_run": [840,354,130,34],
+  "workbench_rationale": [250,403,450,34],
+  "workbench_bind": [710,403,260,34],
+  "workbench_detail": [250,456,920,254],
+  "control_title": [250,24,920,44],
+  "control_scope": [250,82,920,28],
+  "control_table": [250,125,920,235],
+  "control_refresh": [250,377,170,34],
+  "control_compile": [430,377,170,34],
+  "control_diagnose": [610,377,170,34],
+  "control_headless": [790,377,180,34],
+  "control_detail": [250,430,920,280],
+  "rules_title": [
+    250,
+    24,
+    920,
+    44
+  ],
+  "rules_scope": [
+    250,
+    82,
+    920,
+    28
+  ],
+  "rules_table": [
+    250,
+    130,
+    920,
+    220
+  ],
+  "rules_detail": [
+    250,
+    370,
+    920,
+    340
+  ],
+  "proof_title": [
+    250,
+    24,
+    920,
+    44
+  ],
+  "proof_scope": [
+    250,
+    82,
+    920,
+    28
+  ],
+  "proof_table": [
+    250,
+    130,
+    920,
+    220
+  ],
+  "proof_detail": [
+    250,
+    370,
+    920,
+    340
+  ],
+  "orders_title": [
+    250,
+    24,
+    920,
+    44
+  ],
+  "orders_scope": [
+    250,
+    82,
+    920,
+    28
+  ],
+  "orders_table": [
+    250,
+    130,
+    920,
+    220
+  ],
+  "orders_detail": [
+    250,
+    370,
+    920,
+    340
+  ],
+  "proposals_title": [
+    250,
+    24,
+    920,
+    44
+  ],
+  "proposals_scope": [
+    250,
+    82,
+    920,
+    28
+  ],
+  "proposals_table": [
+    250,
+    130,
+    920,
+    220
+  ],
+  "proposals_detail": [
+    250,
+    370,
+    920,
+    340
+  ],
+  "integration_title": [
+    250,
+    24,
+    920,
+    44
+  ],
+  "integration_scope": [
+    250,
+    82,
+    920,
+    28
+  ],
+  "integration_table": [
+    250,
+    130,
+    920,
+    220
+  ],
+  "integration_detail": [
+    250,
+    370,
+    920,
+    340
+  ]
+}

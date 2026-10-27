@@ -1,0 +1,26 @@
+{
+  "schema":"miw.rsc-review-local-disposition.v1",
+  "review_id":"RSC-V0.1-REVIEW-2026-10-27",
+  "standing":"BUILDER_IMPLEMENTATION_DISPOSITION_NOT_GOVERNOR_RULING",
+  "authority_effect":"NONE",
+  "subject":"MIW local invariant-evidence profile; original Mosaic world-engine RSC files remain unchanged",
+  "findings":[
+    {"id":"F01","disposition":"ADOPTED_LOCAL","implementation":"Draft 2020-12 validation test over shipped contract and registry examples"},
+    {"id":"F02","disposition":"ADOPTED_LOCAL","implementation":"operations and realizer_capabilities are separate vocabularies"},
+    {"id":"F03","disposition":"ADOPTED_LOCAL","implementation":"registry schema and closed capability dictionary"},
+    {"id":"F04","disposition":"ADOPTED_LOCAL","implementation":"absent declaration lowers as RSC_CAPABILITY_UNDECLARED"},
+    {"id":"F05","disposition":"ADOPTED_LOCAL","implementation":"explicit status algebra, fallback losses, and experimental opt-in"},
+    {"id":"F06","disposition":"ADOPTED_LOCAL","implementation":"DECLARED/MEASURED standing; measured host, adapter, and evidence identity"},
+    {"id":"F07","disposition":"ADOPTED_LOCAL","implementation":"closed miw.rsc.expr.v0.1 language"},
+    {"id":"F08","disposition":"ADOPTED_FOR_MIW_PROFILE","implementation":"locks and all MIW-profile MUST fields are structural or named semantic checks; generic optimizer/adaptation remains outside this profile"},
+    {"id":"F09","disposition":"ADOPTED_LOCAL","implementation":"typed enum, Boolean, integer, decimal-string, and reference domains; typed axis mappings"},
+    {"id":"F10","disposition":"ADOPTED_LOCAL","implementation":"schema plus semantic RSC_APPLY_MODE_REFUSED check"},
+    {"id":"F11","disposition":"ADOPTED_LOCAL_REFUSE","implementation":"adaptive frame mutation affecting simulation determinism refuses"},
+    {"id":"F12","disposition":"ADOPTED_LOCAL","implementation":"Unicode NFC guard, floats refused, integer/decimal-string semantic numbers, canonical vectors"},
+    {"id":"F13","disposition":"ADOPTED_LOCAL","implementation":"uniform_across_realizers or explicit realizer_overrides required"},
+    {"id":"F14","disposition":"ADOPTED_LOCAL","implementation":"default policy membership and explicit fallback enforced"},
+    {"id":"F15","disposition":"ADOPTED_LOCAL","implementation":"revision predecessor and trigger roots enforced when revision is present"}
+  ],
+  "unresolved_governance":["No Governor disposition was issued.","No original Mosaic RSC file was changed.","No capability was admitted or released."],
+  "claim":"The suggestion set is implemented in the bounded MIW profile only."
+}

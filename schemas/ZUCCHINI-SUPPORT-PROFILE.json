@@ -1,0 +1,31 @@
+{
+  "accepted_schema_versions": [
+    "2.2.0"
+  ],
+  "additional_semantic_checks": [
+    "unique identities",
+    "requirement/event cross references",
+    "scenario identity equality",
+    "coverage step resolution"
+  ],
+  "implementation": "Independent strict profile; not a generic JSON Schema validator",
+  "junit_association": "explicit caller binding, not authenticated",
+  "live_cpp_validation": "PASSED_PINNED_UPSTREAM_LINUX_NINJA_RELEASE",
+  "live_validation_evidence": "evidence/zucchini-live-acceptance/RECEIPT.json",
+  "live_validation_report_counts": {
+    "diagnostic_discovery_failure": 16,
+    "successful_discovery": 19,
+    "supported_structures": 35
+  },
+  "live_validation_scope": "Exact upstream source export, full CTest suite, generated 2.2.0 reports, and named Shop report linkage; not arbitrary revisions or proof",
+  "reference_access_date": "2026-10-26",
+  "remote_schema_fetch": "never",
+  "report_execution": "never",
+  "schema": "miw.zucchini_support_profile.v1",
+  "source_pin_status": "EXACT_GIT_COMMIT_TREE_AND_EXPORTED_SOURCE_ROOT_CAPTURED",
+  "unknown_fields": "preserved, uninterpreted",
+  "upstream_commit": "e8595c9ae94e45c1e28a3effeb7555725c3ac741",
+  "upstream_git_tree": "4b835316082df150d7683fa983e8c6d750e5d39c",
+  "upstream_source_root": "e948fc1830887feeaff4f591d6064efdfea9ee93b9b7778c4c552e17ba224b1b",
+  "upstream_schema_url": "https://raw.githubusercontent.com/AnarchoSystems/Zucchini/main/schemas/rules-report.v2.2.0.schema.json"
+}

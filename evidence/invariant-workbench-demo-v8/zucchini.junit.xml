@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<testsuite name="Synthetic fixture" tests="3" failures="1" skipped="1">
+  <testcase name="Inventory.0" classname="Inventory"><failure message="Unattributed scenario failure"/></testcase>
+  <testcase name="Inventory.1" classname="Inventory"/>
+  <testcase name="Inventory.2" classname="Inventory"><skipped/></testcase>
+</testsuite>

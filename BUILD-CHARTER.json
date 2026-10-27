@@ -1,0 +1,90 @@
+{
+  "allowed_effects": [
+    "Create separate local candidate and disposable fixture trees",
+    "Run inherited and builder tests against pinned local code",
+    "Compile builder-authored C++ probe locally",
+    "Use actual retained Mosaic UI Foundry HEADLESS runtime",
+    "Export local evidence, deterministic archives and review material"
+  ],
+  "approval_note": "This declaration records requested construction scope. It does not cryptographically seat the user or authorize runtime business effects.",
+  "authority_effect": "NONE",
+  "forbidden_effects": [
+    "Production deployment or database writes",
+    "Changing the original UCM handoff",
+    "Inventing signer identity or authenticated custody",
+    "Promoting tests/imported coverage to proof",
+    "Claiming independent review by the builder"
+  ],
+  "g0_open": false,
+  "implemented_ucm_bindings": [
+    "deductive_proofs compilation/search/certificate checking",
+    "checkers.evaluate_evidence",
+    "obligations inventory and conservation",
+    "canonical content identities",
+    "Unchanged WorkbenchManager and BoundedWorker fixture campaign",
+    "ProtectedStateStore and fixture Ed25519 custody",
+    "Exact candidate-receipt-bound trusted tests",
+    "Unchanged inherited manager/migration test replay"
+  ],
+  "input_pins": {
+    "accepted_zucchini_live_archive_sha256": "91935d6011f0bcec99fe74f0ee43c7e7d85e57317307e7d1d0de9cd6f924237b",
+    "delivered_turn4_sha256": "e3ddaa4bbace5761c2a02686f2eb0c5c683dd1338b2be5d29aeed21bd466c46b",
+    "full_ucm_source_root": "a72df68ad073cc3ea8605cb5458bc3c07e420d2993fbd375b04aa151eb1bd86a",
+    "handoff_sha256": "6bb3d7eb05cfb830d9dbe4253be5326ce67f7b306c6646b94107a321e355cd69",
+    "mosaic_ui_archive_sha256": "5bca2ad0f2ed675a056a3a83b3f06af7b2f0049a910cb2c2054c365110c6407d",
+    "sun_source_archive_sha256": "cc3514df610312b3027ec45550ed59c76adf688aadcce68152adab29c9f23dd5",
+    "transport_sha256": "26588c9f219ac270f4566c53bae51ba202c8f0e84041968397468014b991b17b",
+    "turn2_archive_sha256": "dd2362feda445d94af1d61da86ff7746fbb3436b8a8a946ad7f6ba41627295a7",
+    "turn3_archive_sha256": "bedce795797dbb2f170aa293c60fea19f371bc34f41440e1f6ea8eba860b9ef7"
+  },
+  "not_executed_external_effects": [
+    "No native Windows/Visual Studio Zucchini rebuild was performed; the exact accepted Linux WSL2/Ninja/Release lane is retained and revalidated",
+    "No PostgreSQL server was started or contacted",
+    "No AI model API was called",
+    "No Windows native GUI acceptance was executed"
+  ],
+  "portability_cleanup_scope": [
+    "Correct the current Zucchini gate register to the exact accepted commit and 19-success/16-diagnostic scope",
+    "Separate Windows local Python replay from native GUI and Visual Studio Zucchini acceptance",
+    "Make proof-dossier fixture bytes and manifest ordering platform-independent",
+    "Requalify on Windows and Linux and require all 51 regenerated dossier files to be byte-identical",
+    "Preserve the accepted predecessor as a separate exact artifact because its size exceeds the package member safety limit"
+  ],
+  "predecessor": "Mosaic_Invariant_Workbench_Turn4_ZUCCHINI_LIVE_ACCEPTED.zip (SHA-256 91935d6011f0bcec99fe74f0ee43c7e7d85e57317307e7d1d0de9cd6f924237b)",
+  "preserved_semantics": [
+    "Approved assembly and allocation contracts and implementations unchanged",
+    "UCM vendor files unchanged",
+    "Mosaic vendor files and original sun unchanged",
+    "No UCM release version changed",
+    "Original Turn 3 archive retained byte-for-byte"
+  ],
+  "project": "Mosaic Invariant Workbench",
+  "real_a5": false,
+  "reconstruction_scope": [
+    "Replay helper output-domain checks before filesystem changes",
+    "Narrow Windows path-stat versus fstat execute-bit compatibility",
+    "Additive tests, fresh evidence and exact-archive verification",
+    "Preserve actually delivered predecessor and explicit withdrawn-identity record"
+  ],
+  "repair_scope": [
+    "JUnit outcome normalization",
+    "Transactional connector admission and uncertain-commit handling",
+    "Closed receipt and proposal validation",
+    "Exclusive output writes and explicit internal replacement",
+    "Recorded execution consistency and exact attribution",
+    "Dossier imports/graph/renderer rederivation",
+    "Nonvacuous external-run acceptance",
+    "Additive regressions and active UI labels/documentation"
+  ],
+  "review_identity": "SAME_ASSISTANT_BUILDER_CHALLENGE_NOT_INDEPENDENT",
+  "schema": "miw.turn4_portability_cleanup_build_charter.v1",
+  "standing": "INFORMATION_ONLY",
+  "status": "DECLARED_LOCAL_CONSTRUCTION_SCOPE_NOT_SIGNED_GRANT",
+  "turn": 4,
+  "unbound_ucm_interfaces": [
+    "Production Governor signer and external anchor custody",
+    "Operating-system sandbox for untrusted code",
+    "Independent UCM Tier 1 review"
+  ],
+  "user_direction": "Create a separately identified cleanup successor that preserves the accepted Zucchini-live artifact, corrects scoped gate and Windows execution labels, and proves dossier regeneration is byte-identical across Windows and Linux."
+}

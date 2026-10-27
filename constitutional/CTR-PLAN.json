@@ -1,0 +1,17 @@
+{
+  "schema": "miw.ctr-plan.v1",
+  "standing": "LOCAL_ENGINEERING_CANDIDATE",
+  "authority_effect": "NONE",
+  "courts": [
+    {"court_id":"CTR-01-REGISTRY-CLOSURE","invariant":"Every exposed CLI and Mosaic operation is classified in the closed registry."},
+    {"court_id":"CTR-02-COMMITMENT-SEPARATION","invariant":"Subject admissibility meaning jurisdiction and receipt commitments remain independent."},
+    {"court_id":"CTR-03-OBSERVABILITY-LEVELS","invariant":"Sentinel Receipt and Diagnostic remain three distinct observability levels."},
+    {"court_id":"CTR-04-RSC-BUNDLE","invariant":"The realization-space contract registry and capability dictionary validate together."},
+    {"court_id":"CTR-05-OBLIGATION-LEDGER","invariant":"An exact dossier produces a rooted ledger without evidence-class promotion."},
+    {"court_id":"CTR-06-HEADLESS-APPLICATION","invariant":"The actual semantic application completes validate explain lower run and proposed-binding flows."},
+    {"court_id":"CTR-07-EXTERNAL-EFFECT-ADMISSION","invariant":"Model process database and compiler effects require explicit opt-in or an external gate."},
+    {"court_id":"CTR-08-ZUCCHINI-NONPROMOTION","invariant":"A Zucchini correspondence remains proposed and never becomes proof by binding."},
+    {"court_id":"CTR-09-SELF-EXPLICATION","invariant":"Every declared guarantee, nonclaim, trusted assumption, enforcing path, and court binding resolves through the sealed self-contract."}
+  ],
+  "claim_ceiling": "Builder-authored local constitutional courts; not independent review or canonical UGK certification."
+}

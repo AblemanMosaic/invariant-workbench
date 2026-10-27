@@ -1,0 +1,68 @@
+{
+  "schema": "ucl.proof.native_deductive_subsystem.v1",
+  "theory_root": "80955805319398f364a5c1a9bf88b5f28fd1030c9bd89ef27da339e047a9fb76",
+  "version": "1.0.0-experimental",
+  "language": {
+    "sorts": ["INT"],
+    "terms": ["VAR", "INT", "ADD", "SUB", "MUL_CONST"],
+    "formulas": ["TRUE", "AND", "LE", "LT", "GE", "GT", "EQ"],
+    "statements": ["ASSIGN", "ASSERT", "LOOP"],
+    "loop_requirements": ["INVARIANT_INIT", "INVARIANT_PRESERVATION", "DECREASES_NONNEGATIVE", "DECREASES_STRICT", "EXIT_POSTCONDITION"]
+  },
+  "verification": {
+    "compiler": "DETERMINISTIC_SYMBOLIC_SUBSTITUTION_TO_LINEAR_INTEGER_VCS",
+    "certificate_rule": "FOURIER_MOTZKIN_INTEGER_SOUND_V1",
+    "kernel": "LINEAR_INTEGER_FOURIER_MOTZKIN_CERTIFICATE_CHECKER_V1",
+    "search_complete": false,
+    "kernel_rechecks_every_derived_row": true,
+    "outcomes": ["PROVED", "ASSUMPTION_BOUND", "UNKNOWN"],
+    "unconditional_discharge_outcome": "PROVED"
+  },
+  "limits": {
+    "maximum_variables": 64,
+    "maximum_statements": 256,
+    "maximum_syntax_nodes": 2048,
+    "maximum_formula_depth": 64,
+    "maximum_verification_conditions": 1024,
+    "maximum_certificate_rows": 20000,
+    "integer_domain": "SIGNED_64_BIT_SOURCE_COEFFICIENTS_AND_CONSTANTS"
+  },
+  "bindings": [
+    "subject_root",
+    "contract_root",
+    "obligation_id",
+    "compiled_root",
+    "verification_condition_roots",
+    "proof_bundle_root",
+    "assumption_roots"
+  ],
+  "solver_boundary": {
+    "role": "UNTRUSTED_SEARCH_ONLY",
+    "accepted_output": "EXPLICIT_KERNEL_CHECKABLE_CERTIFICATE",
+    "solver_claim_is_proof": false,
+    "kernel_recheck_required": true
+  },
+  "obligation_integration": {
+    "evidence_kind": "NATIVE_DEDUCTIVE_PROOF",
+    "checker_id": "EXACT_NATIVE_DEDUCTIVE_PROOF_V1",
+    "subject_bound": true,
+    "assumption_bound_proofs_discharge": false,
+    "unknown_results_discharge": false
+  },
+  "agent_surfaces": [
+    "COMPILE_PROOF_CONTRACT",
+    "PROVE_DEDUCTIVE_CONTRACT",
+    "VERIFY_DEDUCTIVE_PROOF"
+  ],
+  "nonclaims": [
+    "NO_GENERAL_RUST_VERIFICATION",
+    "NO_NONLINEAR_ARITHMETIC",
+    "NO_HEAP_MEMORY_OR_CONCURRENCY_MODEL",
+    "NO_SOLVER_TRUST",
+    "NO_PRODUCTION_AUTHORITY"
+  ],
+  "standing": "EXPERIMENTAL",
+  "authority_effect": "NONE",
+  "real_a5": false,
+  "g0": "CLOSED"
+}

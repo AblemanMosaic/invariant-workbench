@@ -1,0 +1,543 @@
+Internal ctest changing into directory: /work/acceptance/build
+Test project /work/acceptance/build
+        Start 248: Bad.BuildRepository
+        Start   1: control-flow-brace-check
+  1/267 Test   #1: control-flow-brace-check .........................................................................................................................................................................................................................   Passed    0.00 sec
+        Start   2: Diagnostics.RendersCompilerStyleLocation
+  2/267 Test   #2: Diagnostics.RendersCompilerStyleLocation .........................................................................................................................................................................................................   Passed    0.00 sec
+        Start   3: Diagnostics.TracksSeverityAndPrintsNonErrors
+  3/267 Test   #3: Diagnostics.TracksSeverityAndPrintsNonErrors .....................................................................................................................................................................................................   Passed    0.00 sec
+        Start   4: Manifest.FindsDeclaredTypesByName
+  4/267 Test   #4: Manifest.FindsDeclaredTypesByName ................................................................................................................................................................................................................   Passed    0.00 sec
+        Start   5: Manifest.KeepsStepTagsOutOfRuntimeDefinitionJson
+  5/267 Test   #5: Manifest.KeepsStepTagsOutOfRuntimeDefinitionJson .................................................................................................................................................................................................   Passed    0.00 sec
+        Start   6: Manifests/ManifestParsing.YieldsExpectedManifest/Minimal  # GetParam() = Minimal
+  6/267 Test   #6: Manifests/ManifestParsing.YieldsExpectedManifest/Minimal  # GetParam() = Minimal .................................................................................................................................................................   Passed    0.00 sec
+        Start   7: Manifests/ManifestParsing.YieldsExpectedManifest/NestedGroupsInheritAndDeduplicateTags  # GetParam() = NestedGroupsInheritAndDeduplicateTags
+  7/267 Test   #7: Manifests/ManifestParsing.YieldsExpectedManifest/NestedGroupsInheritAndDeduplicateTags  # GetParam() = NestedGroupsInheritAndDeduplicateTags .....................................................................................................   Passed    0.00 sec
+        Start   8: Manifests/ManifestParsing.YieldsExpectedManifest/TypedArguments  # GetParam() = TypedArguments
+  8/267 Test   #8: Manifests/ManifestParsing.YieldsExpectedManifest/TypedArguments  # GetParam() = TypedArguments ...................................................................................................................................................   Passed    0.00 sec
+        Start   9: Manifests/ManifestParsing.YieldsExpectedManifest/DataTableDefaults  # GetParam() = DataTableDefaults
+  9/267 Test   #9: Manifests/ManifestParsing.YieldsExpectedManifest/DataTableDefaults  # GetParam() = DataTableDefaults .............................................................................................................................................   Passed    0.00 sec
+        Start  10: Manifests/ManifestParsing.YieldsExpectedManifest/DataTableDirectionsAndTypes  # GetParam() = DataTableDirectionsAndTypes
+ 10/267 Test  #10: Manifests/ManifestParsing.YieldsExpectedManifest/DataTableDirectionsAndTypes  # GetParam() = DataTableDirectionsAndTypes .........................................................................................................................   Passed    0.00 sec
+        Start  11: Manifests/ManifestParsing.YieldsExpectedManifest/DocStringVariants  # GetParam() = DocStringVariants
+ 11/267 Test  #11: Manifests/ManifestParsing.YieldsExpectedManifest/DocStringVariants  # GetParam() = DocStringVariants .............................................................................................................................................   Passed    0.00 sec
+        Start  12: Manifests/ManifestParsing.YieldsExpectedManifest/EnumTypes  # GetParam() = EnumTypes
+ 12/267 Test  #12: Manifests/ManifestParsing.YieldsExpectedManifest/EnumTypes  # GetParam() = EnumTypes .............................................................................................................................................................   Passed    0.00 sec
+        Start  13: Manifests/ManifestParsing.YieldsExpectedManifest/EnumPrefixDefaultsToEmpty  # GetParam() = EnumPrefixDefaultsToEmpty
+ 13/267 Test  #13: Manifests/ManifestParsing.YieldsExpectedManifest/EnumPrefixDefaultsToEmpty  # GetParam() = EnumPrefixDefaultsToEmpty .............................................................................................................................   Passed    0.00 sec
+        Start  14: Manifests/ManifestParsing.YieldsExpectedManifest/SingleHeaderAsPlainString  # GetParam() = SingleHeaderAsPlainString
+ 14/267 Test  #14: Manifests/ManifestParsing.YieldsExpectedManifest/SingleHeaderAsPlainString  # GetParam() = SingleHeaderAsPlainString .............................................................................................................................   Passed    0.00 sec
+        Start  15: Manifests/ManifestParsing.YieldsExpectedManifest/ImportedStructWithParserDescription  # GetParam() = ImportedStructWithParserDescription
+ 15/267 Test  #15: Manifests/ManifestParsing.YieldsExpectedManifest/ImportedStructWithParserDescription  # GetParam() = ImportedStructWithParserDescription .........................................................................................................   Passed    0.00 sec
+        Start  16: Manifests/ManifestParsing.YieldsExpectedManifest/StructTypes  # GetParam() = StructTypes
+ 16/267 Test  #16: Manifests/ManifestParsing.YieldsExpectedManifest/StructTypes  # GetParam() = StructTypes .........................................................................................................................................................   Passed    0.00 sec
+        Start  17: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/MissingMethodName  # GetParam() = MissingMethodName
+ 17/267 Test  #17: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/MissingMethodName  # GetParam() = MissingMethodName .................................................................................................................................   Passed    0.00 sec
+        Start  18: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/MissingSteps  # GetParam() = MissingSteps
+ 18/267 Test  #18: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/MissingSteps  # GetParam() = MissingSteps ...........................................................................................................................................   Passed    0.00 sec
+        Start  19: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/StepsOfWrongNodeType  # GetParam() = StepsOfWrongNodeType
+ 19/267 Test  #19: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/StepsOfWrongNodeType  # GetParam() = StepsOfWrongNodeType ...........................................................................................................................   Passed    0.00 sec
+        Start  20: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/UnknownKey  # GetParam() = UnknownKey
+ 20/267 Test  #20: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/UnknownKey  # GetParam() = UnknownKey ...............................................................................................................................................   Passed    0.01 sec
+        Start  21: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/UnanchoredStepRegex  # GetParam() = UnanchoredStepRegex
+ 21/267 Test  #21: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/UnanchoredStepRegex  # GetParam() = UnanchoredStepRegex .............................................................................................................................   Passed    0.00 sec
+        Start  22: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/InvalidMethodName  # GetParam() = InvalidMethodName
+ 22/267 Test  #22: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/InvalidMethodName  # GetParam() = InvalidMethodName .................................................................................................................................   Passed    0.00 sec
+        Start  23: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/CppKeywordIdentifier  # GetParam() = CppKeywordIdentifier
+ 23/267 Test  #23: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/CppKeywordIdentifier  # GetParam() = CppKeywordIdentifier ...........................................................................................................................   Passed    0.00 sec
+        Start  24: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/InvalidTagIdentifier  # GetParam() = InvalidTagIdentifier
+ 24/267 Test  #24: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/InvalidTagIdentifier  # GetParam() = InvalidTagIdentifier ...........................................................................................................................   Passed    0.00 sec
+        Start  25: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/TagIsCppKeyword  # GetParam() = TagIsCppKeyword
+ 25/267 Test  #25: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/TagIsCppKeyword  # GetParam() = TagIsCppKeyword .....................................................................................................................................   Passed    0.00 sec
+        Start  26: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/ImportedStructRequiresFieldDescription  # GetParam() = ImportedStructRequiresFieldDescription
+ 26/267 Test  #26: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/ImportedStructRequiresFieldDescription  # GetParam() = ImportedStructRequiresFieldDescription .......................................................................................   Passed    0.00 sec
+        Start  27: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/MalformedYaml  # GetParam() = MalformedYaml
+ 27/267 Test  #27: Manifests/ManifestParsingFailures.ReportsExpectedDiagnostics/MalformedYaml  # GetParam() = MalformedYaml .........................................................................................................................................   Passed    0.00 sec
+        Start  28: RuleReportTest.CreatesDiscoveryDashboardWithoutExecutionResults
+ 28/267 Test  #28: RuleReportTest.CreatesDiscoveryDashboardWithoutExecutionResults ..................................................................................................................................................................................   Passed    0.00 sec
+        Start  29: RuleReportTest.UnchangedRediscoveryPreservesGenerationAndChangedInputsMakeResultsStale
+ 29/267 Test  #29: RuleReportTest.UnchangedRediscoveryPreservesGenerationAndChangedInputsMakeResultsStale ...........................................................................................................................................................   Passed    0.00 sec
+        Start  30: RuleReportTest.ExportsEscapedJUnitAndTracksUnfinishedAttempts
+ 30/267 Test  #30: RuleReportTest.ExportsEscapedJUnitAndTracksUnfinishedAttempts ....................................................................................................................................................................................   Passed    0.00 sec
+        Start  31: RuleReportTest.ParallelResultsDoNotOverwriteOtherScenarios
+ 31/267 Test  #31: RuleReportTest.ParallelResultsDoNotOverwriteOtherScenarios .......................................................................................................................................................................................   Passed    0.01 sec
+        Start  32: RuleReportTest.ExecutablesMayReuseFixtureNamesInSeparateDirectories
+ 32/267 Test  #32: RuleReportTest.ExecutablesMayReuseFixtureNamesInSeparateDirectories ..............................................................................................................................................................................   Passed    0.00 sec
+        Start  33: RuleReportTest.AReportDirectoryCannotSilentlyReplaceAnotherFixture
+ 33/267 Test  #33: RuleReportTest.AReportDirectoryCannotSilentlyReplaceAnotherFixture ...............................................................................................................................................................................   Passed    0.00 sec
+        Start  34: RuleReportTest.LocationsAreRelativeToFeaturesAndSnapshotsTravelWithReports
+ 34/267 Test  #34: RuleReportTest.LocationsAreRelativeToFeaturesAndSnapshotsTravelWithReports .......................................................................................................................................................................   Passed    0.01 sec
+        Start  35: RuleReportTest.WithoutDashboardWritesDataAndRemovesOwnReportFiles
+ 35/267 Test  #35: RuleReportTest.WithoutDashboardWritesDataAndRemovesOwnReportFiles ................................................................................................................................................................................   Passed    0.01 sec
+        Start  36: RuleReportTest.DashboardLoadsCopiedStylesheetAfterItsOwnStyles
+ 36/267 Test  #36: RuleReportTest.DashboardLoadsCopiedStylesheetAfterItsOwnStyles ...................................................................................................................................................................................   Passed    0.01 sec
+        Start  37: RuleReportTest.EmittedVersionAndSchemaReferenceComeFromVersionedSchema
+ 37/267 Test  #37: RuleReportTest.EmittedVersionAndSchemaReferenceComeFromVersionedSchema ...........................................................................................................................................................................   Passed    0.00 sec
+        Start  38: RuleReportTest.VersionedSchemaValidatesStoredReportsAndRejectsBrokenContracts
+ 38/267 Test  #38: RuleReportTest.VersionedSchemaValidatesStoredReportsAndRejectsBrokenContracts ....................................................................................................................................................................   Passed    0.02 sec
+        Start  39: Rules.TypedEventsAndDiagnosticsHaveSourceAndSeverity
+ 39/267 Test  #39: Rules.TypedEventsAndDiagnosticsHaveSourceAndSeverity .............................................................................................................................................................................................   Passed    0.00 sec
+        Start  40: Rules.DSLViolationsAreTaggedAndReportingIsOptional
+ 40/267 Test  #40: Rules.DSLViolationsAreTaggedAndReportingIsOptional ...............................................................................................................................................................................................   Passed    0.00 sec
+        Start  41: Rules.UndeclaredRequirementsAreRejected
+ 41/267 Test  #41: Rules.UndeclaredRequirementsAreRejected ..........................................................................................................................................................................................................   Passed    0.01 sec
+        Start  42: Rules.DiscoveryArgumentPreservesPathsWithSpacesAndBackslashes
+ 42/267 Test  #42: Rules.DiscoveryArgumentPreservesPathsWithSpacesAndBackslashes ....................................................................................................................................................................................   Passed    0.00 sec
+        Start  43: Rules.DiscoveryArgumentsChooseReportDataAndDashboardStylesheet
+ 43/267 Test  #43: Rules.DiscoveryArgumentsChooseReportDataAndDashboardStylesheet ...................................................................................................................................................................................   Passed    0.00 sec
+        Start  44: Rules.RegistryCreatesFreshRulesAndHooksReportAtScenarioLocations
+ 44/267 Test  #44: Rules.RegistryCreatesFreshRulesAndHooksReportAtScenarioLocations .................................................................................................................................................................................   Passed    0.00 sec
+        Start  45: Rules.UncoveredRequirementsRemainDerivableWithoutEmittingFailures
+ 45/267 Test  #45: Rules.UncoveredRequirementsRemainDerivableWithoutEmittingFailures ................................................................................................................................................................................   Passed    0.00 sec
+        Start  46: Rules.RegistryRejectsDuplicateNamesAndKeepsExistingRegistrations
+ 46/267 Test #248: Bad.BuildRepository ..............................................................................................................................................................................................................................   Passed    0.22 sec
+        Start  47: Rules.DeclarationOrderIsIndependentOfEnumValuesAndReporterLookup
+ 47/267 Test  #46: Rules.RegistryRejectsDuplicateNamesAndKeepsExistingRegistrations .................................................................................................................................................................................   Passed    0.00 sec
+        Start  48: Rules.DuplicateEnumValuesAreRejectedInsteadOfSilentlyCollapsed
+ 48/267 Test  #47: Rules.DeclarationOrderIsIndependentOfEnumValuesAndReporterLookup .................................................................................................................................................................................   Passed    0.00 sec
+        Start  49: Rules.DSLDeclarationsRemainSilentUntilAnEndViolation
+ 49/267 Test  #48: Rules.DuplicateEnumValuesAreRejectedInsteadOfSilentlyCollapsed ...................................................................................................................................................................................   Passed    0.00 sec
+        Start  50: Rules.DSLRejectsDuplicateDeclaredEnumValues
+ 50/267 Test  #49: Rules.DSLDeclarationsRemainSilentUntilAnEndViolation .............................................................................................................................................................................................   Passed    0.01 sec
+        Start  51: DataTable.NormalizesRowsAndMaterializesCustomStrings
+ 51/267 Test  #50: Rules.DSLRejectsDuplicateDeclaredEnumValues ......................................................................................................................................................................................................   Passed    0.01 sec
+        Start  52: DataTable.ParsesRowsAndListsWithGeneratedParsers
+ 52/267 Test  #51: DataTable.NormalizesRowsAndMaterializesCustomStrings .............................................................................................................................................................................................   Passed    0.01 sec
+        Start  53: DataTable.RejectsStepsWithoutDataTables
+ 53/267 Test  #52: DataTable.ParsesRowsAndListsWithGeneratedParsers .................................................................................................................................................................................................   Passed    0.00 sec
+        Start  54: ManifestStore.RoundTripsZucchinisByTestName
+ 54/267 Test  #53: DataTable.RejectsStepsWithoutDataTables ..........................................................................................................................................................................................................   Passed    0.00 sec
+        Start  55: ManifestStore.ReportsMissingManifests
+ 55/267 Test  #54: ManifestStore.RoundTripsZucchinisByTestName ......................................................................................................................................................................................................   Passed    0.01 sec
+        Start  56: Discovery.ParsesDiscoveryArguments
+ 56/267 Test  #55: ManifestStore.ReportsMissingManifests ............................................................................................................................................................................................................   Passed    0.00 sec
+        Start  57: Discovery.ProducesRawPicklesWithoutBuildingPlans
+ 57/267 Test  #56: Discovery.ParsesDiscoveryArguments ...............................................................................................................................................................................................................   Passed    0.01 sec
+        Start  58: Discovery.WarnsForUnusedDefinitionsAcrossAllFeatures
+ 58/267 Test  #57: Discovery.ProducesRawPicklesWithoutBuildingPlans .................................................................................................................................................................................................   Passed    0.01 sec
+        Start  59: Discovery.WarnsForEveryDefinitionWhenNoScenariosExist
+ 59/267 Test  #58: Discovery.WarnsForUnusedDefinitionsAcrossAllFeatures .............................................................................................................................................................................................   Passed    0.01 sec
+ 60/267 Test  #59: Discovery.WarnsForEveryDefinitionWhenNoScenariosExist ............................................................................................................................................................................................   Passed    0.00 sec
+        Start  60: Discovery.DoesNotReportUnusedDefinitionsAfterParseFailure
+        Start  61: Discovery.MergesParameterizedUndefinedStepsAcrossFiles
+ 61/267 Test  #60: Discovery.DoesNotReportUnusedDefinitionsAfterParseFailure ........................................................................................................................................................................................   Passed    0.01 sec
+        Start  62: SourceLocationTest.TracksTheCurrentStep
+ 62/267 Test  #61: Discovery.MergesParameterizedUndefinedStepsAcrossFiles ...........................................................................................................................................................................................   Passed    0.01 sec
+        Start  63: FeatureParser.ResolvesFeatureRuleAndStepLocations
+ 63/267 Test  #62: SourceLocationTest.TracksTheCurrentStep ..........................................................................................................................................................................................................   Passed    0.00 sec
+        Start  64: FeatureParser.IncludesBackgroundSteps
+ 64/267 Test  #63: FeatureParser.ResolvesFeatureRuleAndStepLocations ................................................................................................................................................................................................   Passed    0.01 sec
+        Start  65: FeatureParser.ExpandsScenarioOutlinesAndKeepsNamesUnique
+ 65/267 Test  #64: FeatureParser.IncludesBackgroundSteps ............................................................................................................................................................................................................   Passed    0.01 sec
+        Start  66: FeatureParser.KeepsSanitizedTestNamesUnique
+ 66/267 Test  #66: FeatureParser.KeepsSanitizedTestNamesUnique ......................................................................................................................................................................................................   Passed    0.01 sec
+        Start  67: FeatureParser.PreservesWindowsStyleSourcePaths
+ 67/267 Test  #65: FeatureParser.ExpandsScenarioOutlinesAndKeepsNamesUnique .........................................................................................................................................................................................   Passed    0.01 sec
+        Start  68: FeatureParser.CollectsUndefinedSteps
+ 68/267 Test  #67: FeatureParser.PreservesWindowsStyleSourcePaths ...................................................................................................................................................................................................   Passed    0.01 sec
+        Start  69: FeatureParser.CollectsUndefinedStepTableColumns
+ 69/267 Test  #68: FeatureParser.CollectsUndefinedSteps .............................................................................................................................................................................................................   Passed    0.01 sec
+        Start  70: FeatureParser.CollectsUndefinedStepDocStrings
+ 70/267 Test  #69: FeatureParser.CollectsUndefinedStepTableColumns ..................................................................................................................................................................................................   Passed    0.01 sec
+        Start  71: FeatureParser.ReportsGherkinSyntaxErrorsWithPosition
+ 71/267 Test  #70: FeatureParser.CollectsUndefinedStepDocStrings ....................................................................................................................................................................................................   Passed    0.01 sec
+        Start  72: FeatureParser.ReportsTypedValueErrorsAtStepLocations
+ 72/267 Test  #71: FeatureParser.ReportsGherkinSyntaxErrorsWithPosition .............................................................................................................................................................................................   Passed    0.00 sec
+        Start  73: Snippets.SuggestsDefinitionsForUndefinedSteps
+ 73/267 Test  #72: FeatureParser.ReportsTypedValueErrorsAtStepLocations .............................................................................................................................................................................................   Passed    0.00 sec
+        Start  74: Snippets.SuggestsFloatArgumentForDecimalNumbers
+ 74/267 Test  #73: Snippets.SuggestsDefinitionsForUndefinedSteps ....................................................................................................................................................................................................   Passed    0.00 sec
+        Start  75: Snippets.DeduplicatesParameterizedStepsInFirstSeenOrder
+ 75/267 Test  #74: Snippets.SuggestsFloatArgumentForDecimalNumbers ..................................................................................................................................................................................................   Passed    0.00 sec
+        Start  76: Snippets.KeepsDifferentNumericCaptureTypes
+ 76/267 Test  #75: Snippets.DeduplicatesParameterizedStepsInFirstSeenOrder ..........................................................................................................................................................................................   Passed    0.00 sec
+        Start  77: Snippets.MergesTablesAcrossParameterizedExamples
+ 77/267 Test  #76: Snippets.KeepsDifferentNumericCaptureTypes .......................................................................................................................................................................................................   Passed    0.00 sec
+        Start  78: Snippets.PreservesOptionalColumnsFromMergedExamples
+ 78/267 Test  #77: Snippets.MergesTablesAcrossParameterizedExamples .................................................................................................................................................................................................   Passed    0.00 sec
+        Start  79: Snippets.DeclaresDocStringForUndefinedStep
+ 79/267 Test  #78: Snippets.PreservesOptionalColumnsFromMergedExamples ..............................................................................................................................................................................................   Passed    0.00 sec
+        Start  80: Snippets.KeepsDocStringFromAnyMergedExample
+ 80/267 Test  #79: Snippets.DeclaresDocStringForUndefinedStep .......................................................................................................................................................................................................   Passed    0.00 sec
+        Start  81: Snippets.EscapesRegexSpecialCharacters
+ 81/267 Test  #80: Snippets.KeepsDocStringFromAnyMergedExample ......................................................................................................................................................................................................   Passed    0.00 sec
+        Start  82: Snippets.QuotesStepRegexesForYaml
+ 82/267 Test  #81: Snippets.EscapesRegexSpecialCharacters ...........................................................................................................................................................................................................   Passed    0.00 sec
+        Start  83: Snippets.SuggestsTypedTableForUndefinedStep
+ 83/267 Test  #82: Snippets.QuotesStepRegexesForYaml ................................................................................................................................................................................................................   Passed    0.00 sec
+        Start  84: Snippets.AppliesVariablesCasingToSuggestedTableFields
+ 84/267 Test  #83: Snippets.SuggestsTypedTableForUndefinedStep ......................................................................................................................................................................................................   Passed    0.00 sec
+        Start  85: TableCell.ResolvesAliasesPositionsAndAbsentCells
+ 85/267 Test  #84: Snippets.AppliesVariablesCasingToSuggestedTableFields ............................................................................................................................................................................................   Passed    0.00 sec
+        Start  86: Justification.ReporterRecordsCellsStepsAndCopiedSteps
+ 86/267 Test  #85: TableCell.ResolvesAliasesPositionsAndAbsentCells .................................................................................................................................................................................................   Passed    0.00 sec
+        Start  87: Justification.AssertsOutcomeStepsAndCellsOutsideIgnoredColumns
+ 87/267 Test  #86: Justification.ReporterRecordsCellsStepsAndCopiedSteps ............................................................................................................................................................................................   Passed    0.00 sec
+        Start  88: Justification.FixtureTotalsFactsWithoutRejectingScenarios
+ 88/267 Test  #87: Justification.AssertsOutcomeStepsAndCellsOutsideIgnoredColumns ...................................................................................................................................................................................   Passed    0.00 sec
+        Start  89: Justification.SummaryReportsTotalsAndNeverEnforces
+ 89/267 Test  #88: Justification.FixtureTotalsFactsWithoutRejectingScenarios ........................................................................................................................................................................................   Passed    0.00 sec
+        Start  90: Justification.RequirementsDeclareStrictness
+ 90/267 Test  #89: Justification.SummaryReportsTotalsAndNeverEnforces ...............................................................................................................................................................................................   Passed    0.00 sec
+        Start  91: LinkingRegression.TrimsEnumListElementsBeforeValidation
+ 91/267 Test  #90: Justification.RequirementsDeclareStrictness ......................................................................................................................................................................................................   Passed    0.00 sec
+        Start  92: LinkingRegression.KeepsGherkinKeywordTypes
+ 92/267 Test  #91: LinkingRegression.TrimsEnumListElementsBeforeValidation ..........................................................................................................................................................................................   Passed    0.00 sec
+        Start  93: LinkingRegression.LocatesCellsOfColumnOrientedTables
+ 93/267 Test  #92: LinkingRegression.KeepsGherkinKeywordTypes .......................................................................................................................................................................................................   Passed    0.00 sec
+        Start  94: LinkingRegression.RejectsDuplicateHeadersOfDynamicTables
+ 94/267 Test  #93: LinkingRegression.LocatesCellsOfColumnOrientedTables .............................................................................................................................................................................................   Passed    0.00 sec
+        Start  95: LinkingRegression.RecordsIgnoredColumnsByHeaderOrPosition
+ 95/267 Test  #94: LinkingRegression.RejectsDuplicateHeadersOfDynamicTables .........................................................................................................................................................................................   Passed    0.00 sec
+        Start  96: Naming.NamesZucchinisDirectly
+ 96/267 Test  #95: LinkingRegression.RecordsIgnoredColumnsByHeaderOrPosition ........................................................................................................................................................................................   Passed    0.00 sec
+        Start  97: SourceLocation.PrintsCurrentStepForFailures
+ 97/267 Test  #96: Naming.NamesZucchinisDirectly ....................................................................................................................................................................................................................   Passed    0.00 sec
+        Start  98: PlanDiscovery.UnknownPlansRegisterWithoutLocation
+ 98/267 Test  #97: SourceLocation.PrintsCurrentStepForFailures ......................................................................................................................................................................................................   Passed    0.00 sec
+        Start  99: StepContext.ResolvesMethodAndConstructsStepView
+ 99/267 Test  #98: PlanDiscovery.UnknownPlansRegisterWithoutLocation ................................................................................................................................................................................................   Passed    0.00 sec
+        Start 100: StepContext.InheritsScenarioAndProvidesStepNavigation
+100/267 Test  #99: StepContext.ResolvesMethodAndConstructsStepView ..................................................................................................................................................................................................   Passed    0.00 sec
+        Start 101: ScenarioContext.GetsTypedArgsAndRejectsMethodMismatch
+101/267 Test #100: StepContext.InheritsScenarioAndProvidesStepNavigation ............................................................................................................................................................................................   Passed    0.00 sec
+        Start 102: ScenarioContext.ResolvesStepTags
+102/267 Test #101: ScenarioContext.GetsTypedArgsAndRejectsMethodMismatch ............................................................................................................................................................................................   Passed    0.00 sec
+        Start 103: TagSet.ChecksMembershipAndRejectsOutOfRangeValues
+103/267 Test #102: ScenarioContext.ResolvesStepTags .................................................................................................................................................................................................................   Passed    0.00 sec
+        Start 104: ZucchiniJsonCompatibility.LoadsManifestsWithoutScenarioLine
+104/267 Test #103: TagSet.ChecksMembershipAndRejectsOutOfRangeValues ................................................................................................................................................................................................   Passed    0.00 sec
+        Start 105: Pickles/Linking.YieldsExpectedZucchini/PlainStep  # GetParam() = PlainStep
+105/267 Test #104: ZucchiniJsonCompatibility.LoadsManifestsWithoutScenarioLine ......................................................................................................................................................................................   Passed    0.00 sec
+        Start 106: Pickles/Linking.YieldsExpectedZucchini/TypedCaptures  # GetParam() = TypedCaptures
+106/267 Test #105: Pickles/Linking.YieldsExpectedZucchini/PlainStep  # GetParam() = PlainStep .......................................................................................................................................................................   Passed    0.00 sec
+        Start 107: Pickles/Linking.YieldsExpectedZucchini/DocString  # GetParam() = DocString
+107/267 Test #106: Pickles/Linking.YieldsExpectedZucchini/TypedCaptures  # GetParam() = TypedCaptures ...............................................................................................................................................................   Passed    0.00 sec
+        Start 108: Pickles/Linking.YieldsExpectedZucchini/DataTableWithHeader  # GetParam() = DataTableWithHeader
+108/267 Test #107: Pickles/Linking.YieldsExpectedZucchini/DocString  # GetParam() = DocString .......................................................................................................................................................................   Passed    0.00 sec
+        Start 109: Pickles/Linking.YieldsExpectedZucchini/DataTableWithoutHeader  # GetParam() = DataTableWithoutHeader
+109/267 Test #108: Pickles/Linking.YieldsExpectedZucchini/DataTableWithHeader  # GetParam() = DataTableWithHeader ...................................................................................................................................................   Passed    0.00 sec
+        Start 110: Pickles/Linking.YieldsExpectedZucchini/ColumnOrientedDataTable  # GetParam() = ColumnOrientedDataTable
+110/267 Test #109: Pickles/Linking.YieldsExpectedZucchini/DataTableWithoutHeader  # GetParam() = DataTableWithoutHeader .............................................................................................................................................   Passed    0.00 sec
+        Start 111: Pickles/LinkingFailures.ReportsExpectedDiagnostics/UnmatchedStep  # GetParam() = UnmatchedStep
+111/267 Test #110: Pickles/Linking.YieldsExpectedZucchini/ColumnOrientedDataTable  # GetParam() = ColumnOrientedDataTable ...........................................................................................................................................   Passed    0.00 sec
+        Start 112: Pickles/LinkingFailures.ReportsExpectedDiagnostics/UnexpectedDocString  # GetParam() = UnexpectedDocString
+112/267 Test #111: Pickles/LinkingFailures.ReportsExpectedDiagnostics/UnmatchedStep  # GetParam() = UnmatchedStep ...................................................................................................................................................   Passed    0.00 sec
+        Start 113: Pickles/LinkingFailures.ReportsExpectedDiagnostics/MissingDataTable  # GetParam() = MissingDataTable
+113/267 Test #112: Pickles/LinkingFailures.ReportsExpectedDiagnostics/UnexpectedDocString  # GetParam() = UnexpectedDocString .......................................................................................................................................   Passed    0.00 sec
+        Start 114: Pickles/LinkingFailures.ReportsExpectedDiagnostics/MissingCaptureDeclaration  # GetParam() = MissingCaptureDeclaration
+114/267 Test #113: Pickles/LinkingFailures.ReportsExpectedDiagnostics/MissingDataTable  # GetParam() = MissingDataTable .............................................................................................................................................   Passed    0.00 sec
+        Start 115: Pickles/LinkingFailures.ReportsExpectedDiagnostics/AmbiguousRegexCaptures  # GetParam() = AmbiguousRegexCaptures
+115/267 Test #114: Pickles/LinkingFailures.ReportsExpectedDiagnostics/MissingCaptureDeclaration  # GetParam() = MissingCaptureDeclaration ...........................................................................................................................   Passed    0.00 sec
+        Start 116: Pickles/LinkingFailures.ReportsExpectedDiagnostics/DuplicateStepDefinitions  # GetParam() = DuplicateStepDefinitions
+116/267 Test #115: Pickles/LinkingFailures.ReportsExpectedDiagnostics/AmbiguousRegexCaptures  # GetParam() = AmbiguousRegexCaptures .................................................................................................................................   Passed    0.00 sec
+        Start 117: Pickles/LinkingFailures.ReportsExpectedDiagnostics/InvalidRegex  # GetParam() = InvalidRegex
+117/267 Test #117: Pickles/LinkingFailures.ReportsExpectedDiagnostics/InvalidRegex  # GetParam() = InvalidRegex .....................................................................................................................................................   Passed    0.00 sec
+        Start 118: Pickles/LinkingFailures.ReportsExpectedDiagnostics/InvalidIntegerCapture  # GetParam() = InvalidIntegerCapture
+118/267 Test #116: Pickles/LinkingFailures.ReportsExpectedDiagnostics/DuplicateStepDefinitions  # GetParam() = DuplicateStepDefinitions .............................................................................................................................   Passed    0.01 sec
+        Start 119: Pickles/LinkingFailures.ReportsExpectedDiagnostics/InvalidEnumTableValue  # GetParam() = InvalidEnumTableValue
+119/267 Test #118: Pickles/LinkingFailures.ReportsExpectedDiagnostics/InvalidIntegerCapture  # GetParam() = InvalidIntegerCapture ...................................................................................................................................   Passed    0.01 sec
+120/267 Test #119: Pickles/LinkingFailures.ReportsExpectedDiagnostics/InvalidEnumTableValue  # GetParam() = InvalidEnumTableValue ...................................................................................................................................   Passed    0.00 sec
+        Start 120: Pickles/LinkingFailures.ReportsExpectedDiagnostics/MisspelledRequiredTableHeader  # GetParam() = MisspelledRequiredTableHeader
+        Start 121: Pickles/LinkingFailures.ReportsExpectedDiagnostics/MalformedTypedJsonDocString  # GetParam() = MalformedTypedJsonDocString
+121/267 Test #120: Pickles/LinkingFailures.ReportsExpectedDiagnostics/MisspelledRequiredTableHeader  # GetParam() = MisspelledRequiredTableHeader ...................................................................................................................   Passed    0.00 sec
+        Start 122: Pickles/LinkingFailures.ReportsExpectedDiagnostics/MissingTypedDocStringProperty  # GetParam() = MissingTypedDocStringProperty
+122/267 Test #121: Pickles/LinkingFailures.ReportsExpectedDiagnostics/MalformedTypedJsonDocString  # GetParam() = MalformedTypedJsonDocString .......................................................................................................................   Passed    0.00 sec
+        Start 123: Pickles/LinkingFailures.ReportsExpectedDiagnostics/WrongTypedDocStringPropertyType  # GetParam() = WrongTypedDocStringPropertyType
+123/267 Test #122: Pickles/LinkingFailures.ReportsExpectedDiagnostics/MissingTypedDocStringProperty  # GetParam() = MissingTypedDocStringProperty ...................................................................................................................   Passed    0.00 sec
+        Start 124: Names/Naming.BuildsTestName/WithRule  # GetParam() = WithRule
+124/267 Test #123: Pickles/LinkingFailures.ReportsExpectedDiagnostics/WrongTypedDocStringPropertyType  # GetParam() = WrongTypedDocStringPropertyType ...............................................................................................................   Passed    0.00 sec
+        Start 125: Names/Naming.BuildsTestName/WithoutRule  # GetParam() = WithoutRule
+125/267 Test #124: Names/Naming.BuildsTestName/WithRule  # GetParam() = WithRule ....................................................................................................................................................................................   Passed    0.00 sec
+        Start 126: Names/Naming.BuildsTestName/TransliteratesUmlauts  # GetParam() = TransliteratesUmlauts
+126/267 Test #125: Names/Naming.BuildsTestName/WithoutRule  # GetParam() = WithoutRule ..............................................................................................................................................................................   Passed    0.00 sec
+        Start 127: Names/Naming.BuildsTestName/DropsPunctuationAndCollapsesSeparators  # GetParam() = DropsPunctuationAndCollapsesSeparators
+127/267 Test #126: Names/Naming.BuildsTestName/TransliteratesUmlauts  # GetParam() = TransliteratesUmlauts ..........................................................................................................................................................   Passed    0.00 sec
+        Start 128: Names/Naming.BuildsTestName/FallsBackForEmptySegments  # GetParam() = FallsBackForEmptySegments
+128/267 Test #127: Names/Naming.BuildsTestName/DropsPunctuationAndCollapsesSeparators  # GetParam() = DropsPunctuationAndCollapsesSeparators ........................................................................................................................   Passed    0.00 sec
+        Start 129: Names/Naming.BuildsDisplayName/WithRule  # GetParam() = WithRule
+129/267 Test #128: Names/Naming.BuildsTestName/FallsBackForEmptySegments  # GetParam() = FallsBackForEmptySegments ..................................................................................................................................................   Passed    0.00 sec
+        Start 130: Names/Naming.BuildsDisplayName/WithoutRule  # GetParam() = WithoutRule
+130/267 Test #129: Names/Naming.BuildsDisplayName/WithRule  # GetParam() = WithRule .................................................................................................................................................................................   Passed    0.00 sec
+        Start 131: Names/Naming.BuildsDisplayName/TransliteratesUmlauts  # GetParam() = TransliteratesUmlauts
+131/267 Test #130: Names/Naming.BuildsDisplayName/WithoutRule  # GetParam() = WithoutRule ...........................................................................................................................................................................   Passed    0.00 sec
+        Start 132: Names/Naming.BuildsDisplayName/DropsPunctuationAndCollapsesSeparators  # GetParam() = DropsPunctuationAndCollapsesSeparators
+132/267 Test #131: Names/Naming.BuildsDisplayName/TransliteratesUmlauts  # GetParam() = TransliteratesUmlauts .......................................................................................................................................................   Passed    0.00 sec
+        Start 133: Names/Naming.BuildsDisplayName/FallsBackForEmptySegments  # GetParam() = FallsBackForEmptySegments
+133/267 Test #132: Names/Naming.BuildsDisplayName/DropsPunctuationAndCollapsesSeparators  # GetParam() = DropsPunctuationAndCollapsesSeparators .....................................................................................................................   Passed    0.00 sec
+        Start 134: Zucchinis/ZucchiniJson.SerializesToExpectedJson/PlainStep  # GetParam() = PlainStep
+134/267 Test #133: Names/Naming.BuildsDisplayName/FallsBackForEmptySegments  # GetParam() = FallsBackForEmptySegments ...............................................................................................................................................   Passed    0.00 sec
+        Start 135: Zucchinis/ZucchiniJson.SerializesToExpectedJson/TypedCaptures  # GetParam() = TypedCaptures
+135/267 Test #134: Zucchinis/ZucchiniJson.SerializesToExpectedJson/PlainStep  # GetParam() = PlainStep ..............................................................................................................................................................   Passed    0.00 sec
+        Start 136: Zucchinis/ZucchiniJson.SerializesToExpectedJson/DocStringArgument  # GetParam() = DocStringArgument
+136/267 Test #135: Zucchinis/ZucchiniJson.SerializesToExpectedJson/TypedCaptures  # GetParam() = TypedCaptures ......................................................................................................................................................   Passed    0.00 sec
+        Start 137: Zucchinis/ZucchiniJson.SerializesToExpectedJson/DataTableArgument  # GetParam() = DataTableArgument
+137/267 Test #136: Zucchinis/ZucchiniJson.SerializesToExpectedJson/DocStringArgument  # GetParam() = DocStringArgument ..............................................................................................................................................   Passed    0.00 sec
+        Start 138: Zucchinis/ZucchiniJson.RoundTrips/PlainStep  # GetParam() = PlainStep
+138/267 Test #137: Zucchinis/ZucchiniJson.SerializesToExpectedJson/DataTableArgument  # GetParam() = DataTableArgument ..............................................................................................................................................   Passed    0.00 sec
+        Start 139: Zucchinis/ZucchiniJson.RoundTrips/TypedCaptures  # GetParam() = TypedCaptures
+139/267 Test #138: Zucchinis/ZucchiniJson.RoundTrips/PlainStep  # GetParam() = PlainStep ............................................................................................................................................................................   Passed    0.00 sec
+        Start 140: Zucchinis/ZucchiniJson.RoundTrips/DocStringArgument  # GetParam() = DocStringArgument
+140/267 Test #139: Zucchinis/ZucchiniJson.RoundTrips/TypedCaptures  # GetParam() = TypedCaptures ....................................................................................................................................................................   Passed    0.00 sec
+        Start 141: Zucchinis/ZucchiniJson.RoundTrips/DataTableArgument  # GetParam() = DataTableArgument
+141/267 Test #140: Zucchinis/ZucchiniJson.RoundTrips/DocStringArgument  # GetParam() = DocStringArgument ............................................................................................................................................................   Passed    0.00 sec
+        Start 142: RuleDashboard.StatusAndRendering
+142/267 Test #141: Zucchinis/ZucchiniJson.RoundTrips/DataTableArgument  # GetParam() = DataTableArgument ............................................................................................................................................................   Passed    0.00 sec
+        Start 143: Stylesheet.UsesDefaults
+143/267 Test #143: Stylesheet.UsesDefaults ..........................................................................................................................................................................................................................   Passed    0.01 sec
+        Start 144: Stylesheet.NamesFixtures
+144/267 Test #144: Stylesheet.NamesFixtures .........................................................................................................................................................................................................................   Passed    0.01 sec
+        Start 145: Stylesheet.ComposesArgsTypeNamesWithDedicatedSelector
+145/267 Test #145: Stylesheet.ComposesArgsTypeNamesWithDedicatedSelector ............................................................................................................................................................................................   Passed    0.01 sec
+        Start 146: Stylesheet.ParsesCommonIncludes
+146/267 Test #146: Stylesheet.ParsesCommonIncludes ..................................................................................................................................................................................................................   Passed    0.01 sec
+        Start 147: Stylesheet.ComposesIndependentVariableBlocks
+147/267 Test #147: Stylesheet.ComposesIndependentVariableBlocks .....................................................................................................................................................................................................   Passed    0.01 sec
+        Start 148: Stylesheet.RejectsMixedVariableConditionGroups
+148/267 Test #148: Stylesheet.RejectsMixedVariableConditionGroups ...................................................................................................................................................................................................   Passed    0.01 sec
+        Start 149: Stylesheet.RejectsUnknownMapTypeBlockReference
+149/267 Test #149: Stylesheet.RejectsUnknownMapTypeBlockReference ...................................................................................................................................................................................................   Passed    0.01 sec
+        Start 150: Stylesheet.ParsesCasingOptions
+150/267 Test #150: Stylesheet.ParsesCasingOptions ...................................................................................................................................................................................................................   Passed    0.01 sec
+        Start 151: Stylesheet.RejectsLegacyCasingSections
+151/267 Test #151: Stylesheet.RejectsLegacyCasingSections ...........................................................................................................................................................................................................   Passed    0.01 sec
+        Start 152: Stylesheet.RejectsLegacyCamelCaseSpelling
+152/267 Test #152: Stylesheet.RejectsLegacyCamelCaseSpelling ........................................................................................................................................................................................................   Passed    0.01 sec
+        Start 153: Lowering.AppliesEnumPrefixToImportedCases
+153/267 Test #153: Lowering.AppliesEnumPrefixToImportedCases ........................................................................................................................................................................................................   Passed    0.00 sec
+        Start 154: Lowering.GeneratesArgsTypesOnlyForArgumentSteps
+154/267 Test #154: Lowering.GeneratesArgsTypesOnlyForArgumentSteps ..................................................................................................................................................................................................   Passed    0.01 sec
+        Start 155: Lowering.PreservesUserNameCasingWhileApplyingNamingBlocks
+155/267 Test #155: Lowering.PreservesUserNameCasingWhileApplyingNamingBlocks ........................................................................................................................................................................................   Passed    0.01 sec
+        Start 156: Lowering.GeneratesTagDispatchMetadataUsingTypeNaming
+156/267 Test #156: Lowering.GeneratesTagDispatchMetadataUsingTypeNaming .............................................................................................................................................................................................   Passed    0.01 sec
+        Start 157: Lowering.RejectsTagStepsNameCollidingWithManifestType
+157/267 Test #157: Lowering.RejectsTagStepsNameCollidingWithManifestType ............................................................................................................................................................................................   Passed    0.00 sec
+        Start 158: Lowering.RejectsGeneratedTypeNamesThatCollideAfterNameIt
+158/267 Test #158: Lowering.RejectsGeneratedTypeNamesThatCollideAfterNameIt .........................................................................................................................................................................................   Passed    0.01 sec
+        Start 159: Lowering.RejectsDuplicateArgsFieldNamesAfterVariableNaming
+159/267 Test #159: Lowering.RejectsDuplicateArgsFieldNamesAfterVariableNaming .......................................................................................................................................................................................   Passed    0.01 sec
+        Start 160: Lowering.NamesHooksAndSingularMapMembers
+160/267 Test #160: Lowering.NamesHooksAndSingularMapMembers .........................................................................................................................................................................................................   Passed    0.01 sec
+        Start 161: GeneratedParsing.ExcludesAllKnownHeadersFromExtras
+161/267 Test #161: GeneratedParsing.ExcludesAllKnownHeadersFromExtras ...............................................................................................................................................................................................   Passed    0.00 sec
+        Start 162: GeneratedParsing.PreservesIgnoredColumnPositions
+162/267 Test #162: GeneratedParsing.PreservesIgnoredColumnPositions .................................................................................................................................................................................................   Passed    0.00 sec
+        Start 163: GeneratedParsing.RetainsJsonExtrasAndExcludesIgnoredFields
+163/267 Test #163: GeneratedParsing.RetainsJsonExtrasAndExcludesIgnoredFields .......................................................................................................................................................................................   Passed    0.00 sec
+        Start 164: GeneratedParsing.SerializesExtrasWithoutOverwritingKnownFields
+164/267 Test #164: GeneratedParsing.SerializesExtrasWithoutOverwritingKnownFields ...................................................................................................................................................................................   Passed    0.00 sec
+        Start 165: GeneratedParsing.UsesDefaultsForEmptyCells
+165/267 Test #165: GeneratedParsing.UsesDefaultsForEmptyCells .......................................................................................................................................................................................................   Passed    0.00 sec
+        Start 166: CMakeIntegration.PreTestDiscovery
+166/267 Test #142: RuleDashboard.StatusAndRendering .................................................................................................................................................................................................................   Passed    0.33 sec
+        Start 167: CMakeIntegration.RebuildsAfterFeatureChanges
+167/267 Test #166: CMakeIntegration.PreTestDiscovery ................................................................................................................................................................................................................   Passed    7.15 sec
+        Start 168: Calculator.Arithmetic__Addition__Adding_two_numbers  # GetParam() = Arithmetic__Addition__Adding_two_numbers
+168/267 Test #168: Calculator.Arithmetic__Addition__Adding_two_numbers  # GetParam() = Arithmetic__Addition__Adding_two_numbers .....................................................................................................................................   Passed    0.00 sec
+        Start 169: Calculator.Arithmetic__Addition__Adding_several_numbers  # GetParam() = Arithmetic__Addition__Adding_several_numbers
+169/267 Test #169: Calculator.Arithmetic__Addition__Adding_several_numbers  # GetParam() = Arithmetic__Addition__Adding_several_numbers .............................................................................................................................   Passed    0.00 sec
+        Start 170: Calculator.Arithmetic__Addition__Adding_different_operands  # GetParam() = Arithmetic__Addition__Adding_different_operands
+170/267 Test #170: Calculator.Arithmetic__Addition__Adding_different_operands  # GetParam() = Arithmetic__Addition__Adding_different_operands .......................................................................................................................   Passed    0.00 sec
+        Start 171: Calculator.Arithmetic__Addition__Adding_different_operands_2  # GetParam() = Arithmetic__Addition__Adding_different_operands_2
+171/267 Test #171: Calculator.Arithmetic__Addition__Adding_different_operands_2  # GetParam() = Arithmetic__Addition__Adding_different_operands_2 ...................................................................................................................   Passed    0.00 sec
+        Start 172: Calculator.Arithmetic__Addition__Adding_different_operands_3  # GetParam() = Arithmetic__Addition__Adding_different_operands_3
+172/267 Test #172: Calculator.Arithmetic__Addition__Adding_different_operands_3  # GetParam() = Arithmetic__Addition__Adding_different_operands_3 ...................................................................................................................   Passed    0.00 sec
+        Start 173: Calculator.Arithmetic__Addition__Adding_different_operands_4  # GetParam() = Arithmetic__Addition__Adding_different_operands_4
+173/267 Test #173: Calculator.Arithmetic__Addition__Adding_different_operands_4  # GetParam() = Arithmetic__Addition__Adding_different_operands_4 ...................................................................................................................   Passed    0.00 sec
+        Start 174: Calculator.Arithmetic__Subtraction__Subtracting_a_positive_number  # GetParam() = Arithmetic__Subtraction__Subtracting_a_positive_number
+174/267 Test #174: Calculator.Arithmetic__Subtraction__Subtracting_a_positive_number  # GetParam() = Arithmetic__Subtraction__Subtracting_a_positive_number .........................................................................................................   Passed    0.00 sec
+        Start 175: Calculator.Arithmetic__Subtraction__Subtraction_can_cross_zero  # GetParam() = Arithmetic__Subtraction__Subtraction_can_cross_zero
+175/267 Test #175: Calculator.Arithmetic__Subtraction__Subtraction_can_cross_zero  # GetParam() = Arithmetic__Subtraction__Subtraction_can_cross_zero ...............................................................................................................   Passed    0.00 sec
+        Start 176: Calculator.Arithmetic__Subtraction__Subtracting_different_operands  # GetParam() = Arithmetic__Subtraction__Subtracting_different_operands
+176/267 Test #176: Calculator.Arithmetic__Subtraction__Subtracting_different_operands  # GetParam() = Arithmetic__Subtraction__Subtracting_different_operands .......................................................................................................   Passed    0.00 sec
+        Start 177: Calculator.Arithmetic__Subtraction__Subtracting_different_operands_2  # GetParam() = Arithmetic__Subtraction__Subtracting_different_operands_2
+177/267 Test #177: Calculator.Arithmetic__Subtraction__Subtracting_different_operands_2  # GetParam() = Arithmetic__Subtraction__Subtracting_different_operands_2 ...................................................................................................   Passed    0.00 sec
+        Start 178: Calculator.Arithmetic__Subtraction__Subtracting_different_operands_3  # GetParam() = Arithmetic__Subtraction__Subtracting_different_operands_3
+178/267 Test #178: Calculator.Arithmetic__Subtraction__Subtracting_different_operands_3  # GetParam() = Arithmetic__Subtraction__Subtracting_different_operands_3 ...................................................................................................   Passed    0.00 sec
+        Start 179: TablesJson.ImportedStructRoundTrips
+179/267 Test #179: TablesJson.ImportedStructRoundTrips ..............................................................................................................................................................................................................   Passed    0.00 sec
+        Start 180: Tables.Data_tables__Named_columns__Row_data_uses_an_alternative_header  # GetParam() = Data_tables__Named_columns__Row_data_uses_an_alternative_header
+180/267 Test #180: Tables.Data_tables__Named_columns__Row_data_uses_an_alternative_header  # GetParam() = Data_tables__Named_columns__Row_data_uses_an_alternative_header ...........................................................................................   Passed    0.00 sec
+        Start 181: Tables.Data_tables__Named_columns__Canonical_headers_work_too  # GetParam() = Data_tables__Named_columns__Canonical_headers_work_too
+181/267 Test #181: Tables.Data_tables__Named_columns__Canonical_headers_work_too  # GetParam() = Data_tables__Named_columns__Canonical_headers_work_too .............................................................................................................   Passed    0.00 sec
+        Start 182: Tables.Data_tables__Named_columns__Optional_and_defaulted_fields_can_be_omitted  # GetParam() = Data_tables__Named_columns__Optional_and_defaulted_fields_can_be_omitted
+182/267 Test #182: Tables.Data_tables__Named_columns__Optional_and_defaulted_fields_can_be_omitted  # GetParam() = Data_tables__Named_columns__Optional_and_defaulted_fields_can_be_omitted .........................................................................   Passed    0.00 sec
+        Start 183: Tables.Data_tables__Enumerations_and_lists__Enum_list_values_are_decoded_from_a_semicolon_separated_cell  # GetParam() = Data_tables__Enumerations_and_lists__Enum_list_values_are_decoded_from_a_semicolon_separated_cell
+183/267 Test #183: Tables.Data_tables__Enumerations_and_lists__Enum_list_values_are_decoded_from_a_semicolon_separated_cell  # GetParam() = Data_tables__Enumerations_and_lists__Enum_list_values_are_decoded_from_a_semicolon_separated_cell .......................   Passed    0.00 sec
+        Start 184: Tables.Data_tables__Column_oriented_tables__Columns_are_transposed_into_typed_entries  # GetParam() = Data_tables__Column_oriented_tables__Columns_are_transposed_into_typed_entries
+184/267 Test #184: Tables.Data_tables__Column_oriented_tables__Columns_are_transposed_into_typed_entries  # GetParam() = Data_tables__Column_oriented_tables__Columns_are_transposed_into_typed_entries .............................................................   Passed    0.00 sec
+        Start 185: Tables.Data_tables__Positional_tables__Rows_without_headers_map_by_field_order  # GetParam() = Data_tables__Positional_tables__Rows_without_headers_map_by_field_order
+185/267 Test #185: Tables.Data_tables__Positional_tables__Rows_without_headers_map_by_field_order  # GetParam() = Data_tables__Positional_tables__Rows_without_headers_map_by_field_order ...........................................................................   Passed    0.00 sec
+        Start 186: Tables.Data_tables__Additional_properties__Unknown_columns_are_collected  # GetParam() = Data_tables__Additional_properties__Unknown_columns_are_collected
+186/267 Test #186: Tables.Data_tables__Additional_properties__Unknown_columns_are_collected  # GetParam() = Data_tables__Additional_properties__Unknown_columns_are_collected .......................................................................................   Passed    0.00 sec
+        Start 187: Tables.Data_tables__Empty_optional_strings__Empty_cells_are_absent  # GetParam() = Data_tables__Empty_optional_strings__Empty_cells_are_absent
+187/267 Test #187: Tables.Data_tables__Empty_optional_strings__Empty_cells_are_absent  # GetParam() = Data_tables__Empty_optional_strings__Empty_cells_are_absent ...................................................................................................   Passed    0.00 sec
+        Start 188: Tables.Data_tables__Empty_optional_strings__Missing_optional_headers_are_absent  # GetParam() = Data_tables__Empty_optional_strings__Missing_optional_headers_are_absent
+188/267 Test #188: Tables.Data_tables__Empty_optional_strings__Missing_optional_headers_are_absent  # GetParam() = Data_tables__Empty_optional_strings__Missing_optional_headers_are_absent .........................................................................   Passed    0.00 sec
+        Start 189: Tables.Data_tables__Empty_optional_strings__Nonempty_optional_strings_remain_present  # GetParam() = Data_tables__Empty_optional_strings__Nonempty_optional_strings_remain_present
+189/267 Test #189: Tables.Data_tables__Empty_optional_strings__Nonempty_optional_strings_remain_present  # GetParam() = Data_tables__Empty_optional_strings__Nonempty_optional_strings_remain_present ...............................................................   Passed    0.00 sec
+        Start 190: DocStrings.Doc_strings__Plain_text__A_plain_doc_string_arrives_verbatim  # GetParam() = Doc_strings__Plain_text__A_plain_doc_string_arrives_verbatim
+190/267 Test #190: DocStrings.Doc_strings__Plain_text__A_plain_doc_string_arrives_verbatim  # GetParam() = Doc_strings__Plain_text__A_plain_doc_string_arrives_verbatim .............................................................................................   Passed    0.00 sec
+        Start 191: DocStrings.Doc_strings__Plain_text__Multiline_text_is_preserved  # GetParam() = Doc_strings__Plain_text__Multiline_text_is_preserved
+191/267 Test #191: DocStrings.Doc_strings__Plain_text__Multiline_text_is_preserved  # GetParam() = Doc_strings__Plain_text__Multiline_text_is_preserved .............................................................................................................   Passed    0.00 sec
+        Start 192: DocStrings.Doc_strings__Structured_content__YAML_is_converted_into_a_typed_value  # GetParam() = Doc_strings__Structured_content__YAML_is_converted_into_a_typed_value
+192/267 Test #192: DocStrings.Doc_strings__Structured_content__YAML_is_converted_into_a_typed_value  # GetParam() = Doc_strings__Structured_content__YAML_is_converted_into_a_typed_value ...........................................................................   Passed    0.00 sec
+        Start 193: DocStrings.Doc_strings__Structured_content__JSON_is_converted_into_a_typed_value  # GetParam() = Doc_strings__Structured_content__JSON_is_converted_into_a_typed_value
+193/267 Test #193: DocStrings.Doc_strings__Structured_content__JSON_is_converted_into_a_typed_value  # GetParam() = Doc_strings__Structured_content__JSON_is_converted_into_a_typed_value ...........................................................................   Passed    0.00 sec
+        Start 194: DocStrings.Doc_strings__Structured_content__Missing_priority_uses_its_default  # GetParam() = Doc_strings__Structured_content__Missing_priority_uses_its_default
+194/267 Test #194: DocStrings.Doc_strings__Structured_content__Missing_priority_uses_its_default  # GetParam() = Doc_strings__Structured_content__Missing_priority_uses_its_default .................................................................................   Passed    0.00 sec
+        Start 195: DocStrings.Doc_strings__Structured_content__Quoted_YAML_scalars_retain_their_string_type  # GetParam() = Doc_strings__Structured_content__Quoted_YAML_scalars_retain_their_string_type
+195/267 Test #195: DocStrings.Doc_strings__Structured_content__Quoted_YAML_scalars_retain_their_string_type  # GetParam() = Doc_strings__Structured_content__Quoted_YAML_scalars_retain_their_string_type ...........................................................   Passed    0.00 sec
+        Start 196: DocStrings.Doc_strings__Structured_content__Explicit_YAML_scalar_tags_are_respected  # GetParam() = Doc_strings__Structured_content__Explicit_YAML_scalar_tags_are_respected
+196/267 Test #196: DocStrings.Doc_strings__Structured_content__Explicit_YAML_scalar_tags_are_respected  # GetParam() = Doc_strings__Structured_content__Explicit_YAML_scalar_tags_are_respected .....................................................................   Passed    0.00 sec
+        Start 197: DocStrings.Doc_strings__Structured_content__YAML_anchors_and_merge_keys_are_resolved  # GetParam() = Doc_strings__Structured_content__YAML_anchors_and_merge_keys_are_resolved
+197/267 Test #197: DocStrings.Doc_strings__Structured_content__YAML_anchors_and_merge_keys_are_resolved  # GetParam() = Doc_strings__Structured_content__YAML_anchors_and_merge_keys_are_resolved ...................................................................   Passed    0.00 sec
+        Start 198: DocStrings.Doc_strings__Structured_content__YAML_block_scalars_retain_their_contents  # GetParam() = Doc_strings__Structured_content__YAML_block_scalars_retain_their_contents
+198/267 Test #198: DocStrings.Doc_strings__Structured_content__YAML_block_scalars_retain_their_contents  # GetParam() = Doc_strings__Structured_content__YAML_block_scalars_retain_their_contents ...................................................................   Passed    0.00 sec
+        Start 199: Notes.Notes__Notes_are_independent_from_arithmetic__Taking_a_note  # GetParam() = Notes__Notes_are_independent_from_arithmetic__Taking_a_note
+199/267 Test #199: Notes.Notes__Notes_are_independent_from_arithmetic__Taking_a_note  # GetParam() = Notes__Notes_are_independent_from_arithmetic__Taking_a_note ....................................................................................................   Passed    0.00 sec
+        Start 200: Notes.Notes__Notes_are_independent_from_arithmetic__A_note_can_be_replaced  # GetParam() = Notes__Notes_are_independent_from_arithmetic__A_note_can_be_replaced
+200/267 Test #200: Notes.Notes__Notes_are_independent_from_arithmetic__A_note_can_be_replaced  # GetParam() = Notes__Notes_are_independent_from_arithmetic__A_note_can_be_replaced ..................................................................................   Passed    0.00 sec
+        Start 201: Notes.Notes__Notes_are_independent_from_arithmetic__Unicode_survives_generation_and_execution  # GetParam() = Notes__Notes_are_independent_from_arithmetic__Unicode_survives_generation_and_execution
+201/267 Test #201: Notes.Notes__Notes_are_independent_from_arithmetic__Unicode_survives_generation_and_execution  # GetParam() = Notes__Notes_are_independent_from_arithmetic__Unicode_survives_generation_and_execution ............................................   Passed    0.00 sec
+        Start 202: Notes.Notes__Scenario_hooks__Step_execution_is_wrapped_for_each_step  # GetParam() = Notes__Scenario_hooks__Step_execution_is_wrapped_for_each_step
+202/267 Test #202: Notes.Notes__Scenario_hooks__Step_execution_is_wrapped_for_each_step  # GetParam() = Notes__Scenario_hooks__Step_execution_is_wrapped_for_each_step ..............................................................................................   Passed    0.00 sec
+        Start 203: Notes.Notes__Scenario_outlines__Arithmetic_around_a_note  # GetParam() = Notes__Scenario_outlines__Arithmetic_around_a_note
+203/267 Test #203: Notes.Notes__Scenario_outlines__Arithmetic_around_a_note  # GetParam() = Notes__Scenario_outlines__Arithmetic_around_a_note ......................................................................................................................   Passed    0.00 sec
+        Start 204: Notes.Notes__Scenario_outlines__Arithmetic_around_a_note_2  # GetParam() = Notes__Scenario_outlines__Arithmetic_around_a_note_2
+204/267 Test #204: Notes.Notes__Scenario_outlines__Arithmetic_around_a_note_2  # GetParam() = Notes__Scenario_outlines__Arithmetic_around_a_note_2 ..................................................................................................................   Passed    0.00 sec
+        Start 205: Notes.Notes__Scenario_outlines__Arithmetic_around_a_note_3  # GetParam() = Notes__Scenario_outlines__Arithmetic_around_a_note_3
+205/267 Test #205: Notes.Notes__Scenario_outlines__Arithmetic_around_a_note_3  # GetParam() = Notes__Scenario_outlines__Arithmetic_around_a_note_3 ..................................................................................................................   Passed    0.00 sec
+        Start 206: Rules.DiscoveryReport
+206/267 Test #206: Rules.DiscoveryReport ............................................................................................................................................................................................................................   Passed    0.04 sec
+        Start 207: Shop.Prepaid_shop__Purchases_preserve_money_and_stock__Buying_two_items  # GetParam() = Prepaid_shop__Purchases_preserve_money_and_stock__Buying_two_items
+207/267 Test #207: Shop.Prepaid_shop__Purchases_preserve_money_and_stock__Buying_two_items  # GetParam() = Prepaid_shop__Purchases_preserve_money_and_stock__Buying_two_items .......................................................................................   Passed    0.00 sec
+        Start 208: Shop.Prepaid_shop__Purchases_preserve_money_and_stock__Insufficient_funds_change_nothing  # GetParam() = Prepaid_shop__Purchases_preserve_money_and_stock__Insufficient_funds_change_nothing
+208/267 Test #208: Shop.Prepaid_shop__Purchases_preserve_money_and_stock__Insufficient_funds_change_nothing  # GetParam() = Prepaid_shop__Purchases_preserve_money_and_stock__Insufficient_funds_change_nothing .....................................................   Passed    0.00 sec
+        Start 209: Shop.Prepaid_shop__Purchases_preserve_money_and_stock__Sold_out_purchases_change_nothing  # GetParam() = Prepaid_shop__Purchases_preserve_money_and_stock__Sold_out_purchases_change_nothing
+209/267 Test #209: Shop.Prepaid_shop__Purchases_preserve_money_and_stock__Sold_out_purchases_change_nothing  # GetParam() = Prepaid_shop__Purchases_preserve_money_and_stock__Sold_out_purchases_change_nothing .....................................................   Passed    0.00 sec
+        Start 210: Shop.Prepaid_shop__Refunds_restore_the_state_before_the_purchase__Refund_checked_for_stock_but_not_wallet_balance  # GetParam() = Prepaid_shop__Refunds_restore_the_state_before_the_purchase__Refund_checked_for_stock_but_not_wallet_balance
+210/267 Test #210: Shop.Prepaid_shop__Refunds_restore_the_state_before_the_purchase__Refund_checked_for_stock_but_not_wallet_balance  # GetParam() = Prepaid_shop__Refunds_restore_the_state_before_the_purchase__Refund_checked_for_stock_but_not_wallet_balance ...   Passed    0.00 sec
+        Start 211: Rules.BusinessInvariantDemo
+211/267 Test #211: Rules.BusinessInvariantDemo ......................................................................................................................................................................................................................   Passed    0.07 sec
+        Start 212: Basket.Basket__Basket_lines_show_what_was_added  # GetParam() = Basket__Basket_lines_show_what_was_added
+212/267 Test #212: Basket.Basket__Basket_lines_show_what_was_added  # GetParam() = Basket__Basket_lines_show_what_was_added .........................................................................................................................................   Passed    0.00 sec
+        Start 213: Basket.Basket__The_basket_total_sums_its_lines  # GetParam() = Basket__The_basket_total_sums_its_lines
+213/267 Test #213: Basket.Basket__The_basket_total_sums_its_lines  # GetParam() = Basket__The_basket_total_sums_its_lines ...........................................................................................................................................   Passed    0.00 sec
+        Start 214: Rules.AssertionJustification
+214/267 Test #214: Rules.AssertionJustification .....................................................................................................................................................................................................................   Passed    0.05 sec
+        Start 215: LegacyStringDemo.Legacy_string_class__Arguments_are_decoded_as_the_custom_string_class  # GetParam() = Legacy_string_class__Arguments_are_decoded_as_the_custom_string_class
+215/267 Test #215: LegacyStringDemo.Legacy_string_class__Arguments_are_decoded_as_the_custom_string_class  # GetParam() = Legacy_string_class__Arguments_are_decoded_as_the_custom_string_class .....................................................................   Passed    0.00 sec
+        Start 216: LegacyStringDemo.Legacy_string_class__Data_table_fields_are_decoded_as_the_custom_string_class  # GetParam() = Legacy_string_class__Data_table_fields_are_decoded_as_the_custom_string_class
+216/267 Test #216: LegacyStringDemo.Legacy_string_class__Data_table_fields_are_decoded_as_the_custom_string_class  # GetParam() = Legacy_string_class__Data_table_fields_are_decoded_as_the_custom_string_class .....................................................   Passed    0.00 sec
+        Start 217: LegacyStringDemo.Legacy_string_class__Empty_optional_custom_strings_are_absent  # GetParam() = Legacy_string_class__Empty_optional_custom_strings_are_absent
+217/267 Test #217: LegacyStringDemo.Legacy_string_class__Empty_optional_custom_strings_are_absent  # GetParam() = Legacy_string_class__Empty_optional_custom_strings_are_absent .....................................................................................   Passed    0.00 sec
+        Start 218: LegacyStringDemo.Legacy_string_class__Missing_optional_custom_strings_are_absent  # GetParam() = Legacy_string_class__Missing_optional_custom_strings_are_absent
+218/267 Test #218: LegacyStringDemo.Legacy_string_class__Missing_optional_custom_strings_are_absent  # GetParam() = Legacy_string_class__Missing_optional_custom_strings_are_absent .................................................................................   Passed    0.00 sec
+        Start 219: LegacyStringDemo.Legacy_string_class__Custom_string_list_elements_are_decoded_from_cells  # GetParam() = Legacy_string_class__Custom_string_list_elements_are_decoded_from_cells
+219/267 Test #219: LegacyStringDemo.Legacy_string_class__Custom_string_list_elements_are_decoded_from_cells  # GetParam() = Legacy_string_class__Custom_string_list_elements_are_decoded_from_cells .................................................................   Passed    0.00 sec
+        Start 220: LegacyStringDemo.Legacy_string_class__Custom_string_lists_round_trip_through_JSON  # GetParam() = Legacy_string_class__Custom_string_lists_round_trip_through_JSON
+220/267 Test #220: LegacyStringDemo.Legacy_string_class__Custom_string_lists_round_trip_through_JSON  # GetParam() = Legacy_string_class__Custom_string_lists_round_trip_through_JSON ...............................................................................   Passed    0.00 sec
+        Start 221: NamingConventionsDemo.Naming_conventions__Generated_names_follow_the_stylesheet  # GetParam() = Naming_conventions__Generated_names_follow_the_stylesheet
+221/267 Test #221: NamingConventionsDemo.Naming_conventions__Generated_names_follow_the_stylesheet  # GetParam() = Naming_conventions__Generated_names_follow_the_stylesheet ........................................................................................   Passed    0.00 sec
+        Start 222: UserTagsApi.CastsMembersAndRejectsNonmembers
+222/267 Test #222: UserTagsApi.CastsMembersAndRejectsNonmembers .....................................................................................................................................................................................................   Passed    0.00 sec
+        Start 223: UserTags.Tagged_user_references__A_referenced_user_was_introduced  # GetParam() = Tagged_user_references__A_referenced_user_was_introduced
+223/267 Test #223: UserTags.Tagged_user_references__A_referenced_user_was_introduced  # GetParam() = Tagged_user_references__A_referenced_user_was_introduced .......................................................................................................   Passed    0.00 sec
+        Start 224: TagNaming.Tagged_generation_with_snake_case_type_names__A_tagged_method_compiles_and_executes  # GetParam() = Tagged_generation_with_snake_case_type_names__A_tagged_method_compiles_and_executes
+224/267 Test #224: TagNaming.Tagged_generation_with_snake_case_type_names__A_tagged_method_compiles_and_executes  # GetParam() = Tagged_generation_with_snake_case_type_names__A_tagged_method_compiles_and_executes ................................................   Passed    0.00 sec
+        Start 225: ScalarLists.Scalar_list_elements__Builtin_scalars_and_enums_in_named_tables  # GetParam() = Scalar_list_elements__Builtin_scalars_and_enums_in_named_tables
+225/267 Test #225: ScalarLists.Scalar_list_elements__Builtin_scalars_and_enums_in_named_tables  # GetParam() = Scalar_list_elements__Builtin_scalars_and_enums_in_named_tables ......................................................................................   Passed    0.00 sec
+        Start 226: ScalarLists.Scalar_list_elements__Optional_list_columns_may_be_missing  # GetParam() = Scalar_list_elements__Optional_list_columns_may_be_missing
+226/267 Test #226: ScalarLists.Scalar_list_elements__Optional_list_columns_may_be_missing  # GetParam() = Scalar_list_elements__Optional_list_columns_may_be_missing ................................................................................................   Passed    0.00 sec
+        Start 227: ScalarLists.Scalar_list_elements__Builtin_scalars_in_column_tables  # GetParam() = Scalar_list_elements__Builtin_scalars_in_column_tables
+227/267 Test #227: ScalarLists.Scalar_list_elements__Builtin_scalars_in_column_tables  # GetParam() = Scalar_list_elements__Builtin_scalars_in_column_tables ........................................................................................................   Passed    0.00 sec
+        Start 228: ScalarLists.Scalar_list_elements__Builtin_scalars_in_positional_tables  # GetParam() = Scalar_list_elements__Builtin_scalars_in_positional_tables
+228/267 Test #228: ScalarLists.Scalar_list_elements__Builtin_scalars_in_positional_tables  # GetParam() = Scalar_list_elements__Builtin_scalars_in_positional_tables ................................................................................................   Passed    0.00 sec
+        Start 229: ScalarLists.Scalar_list_elements__Builtin_scalar_lists_from_JSON  # GetParam() = Scalar_list_elements__Builtin_scalar_lists_from_JSON
+229/267 Test #229: ScalarLists.Scalar_list_elements__Builtin_scalar_lists_from_JSON  # GetParam() = Scalar_list_elements__Builtin_scalar_lists_from_JSON ............................................................................................................   Passed    0.00 sec
+        Start 230: ScalarLists.Scalar_list_elements__Builtin_scalar_lists_from_YAML  # GetParam() = Scalar_list_elements__Builtin_scalar_lists_from_YAML
+230/267 Test #230: ScalarLists.Scalar_list_elements__Builtin_scalar_lists_from_YAML  # GetParam() = Scalar_list_elements__Builtin_scalar_lists_from_YAML ............................................................................................................   Passed    0.00 sec
+        Start 231: ScalarLists.Scalar_list_elements__Empty_optional_scalars_are_absent  # GetParam() = Scalar_list_elements__Empty_optional_scalars_are_absent
+231/267 Test #231: ScalarLists.Scalar_list_elements__Empty_optional_scalars_are_absent  # GetParam() = Scalar_list_elements__Empty_optional_scalars_are_absent ......................................................................................................   Passed    0.00 sec
+        Start 232: ScalarLists.Scalar_list_elements__Missing_optional_scalar_headers_are_absent  # GetParam() = Scalar_list_elements__Missing_optional_scalar_headers_are_absent
+232/267 Test #232: ScalarLists.Scalar_list_elements__Missing_optional_scalar_headers_are_absent  # GetParam() = Scalar_list_elements__Missing_optional_scalar_headers_are_absent ....................................................................................   Passed    0.00 sec
+        Start 233: ScalarLists.Scalar_list_elements__Zero_and_false_optional_scalars_remain_present  # GetParam() = Scalar_list_elements__Zero_and_false_optional_scalars_remain_present
+233/267 Test #233: ScalarLists.Scalar_list_elements__Zero_and_false_optional_scalars_remain_present  # GetParam() = Scalar_list_elements__Zero_and_false_optional_scalars_remain_present ............................................................................   Passed    0.00 sec
+        Start 234: ScalarLists.Scalar_list_elements__Optional_list_values_remain_present  # GetParam() = Scalar_list_elements__Optional_list_values_remain_present
+234/267 Test #234: ScalarLists.Scalar_list_elements__Optional_list_values_remain_present  # GetParam() = Scalar_list_elements__Optional_list_values_remain_present ..................................................................................................   Passed    0.00 sec
+        Start 235: ExecutionPlanStorage.StorageFailures
+235/267 Test #235: ExecutionPlanStorage.StorageFailures .............................................................................................................................................................................................................   Passed    0.00 sec
+        Start 236: ExecutionPlans.Plans__A_B  # GetParam() = Plans__A_B
+236/267 Test #236: ExecutionPlans.Plans__A_B  # GetParam() = Plans__A_B .............................................................................................................................................................................................   Passed    0.00 sec
+        Start 237: ExecutionPlans.Plans__A_B_2  # GetParam() = Plans__A_B_2
+237/267 Test #237: ExecutionPlans.Plans__A_B_2  # GetParam() = Plans__A_B_2 .........................................................................................................................................................................................   Passed    0.00 sec
+        Start 238: ExecutionPlans.Plans__A_B_2_2  # GetParam() = Plans__A_B_2_2
+238/267 Test #238: ExecutionPlans.Plans__A_B_2_2  # GetParam() = Plans__A_B_2_2 .....................................................................................................................................................................................   Passed    0.00 sec
+        Start 239: ExecutionPlans.collisions
+239/267 Test #239: ExecutionPlans.collisions ........................................................................................................................................................................................................................   Passed    0.01 sec
+        Start 240: ExecutionPlans.stale
+240/267 Test #240: ExecutionPlans.stale .............................................................................................................................................................................................................................   Passed    0.02 sec
+        Start 241: ExecutionPlans.filesystem
+241/267 Test #241: ExecutionPlans.filesystem ........................................................................................................................................................................................................................   Passed    0.02 sec
+        Start 242: ExecutionPlans.writes
+242/267 Test #242: ExecutionPlans.writes ............................................................................................................................................................................................................................   Passed    0.02 sec
+        Start 243: ExecutionPlans.listing
+243/267 Test #243: ExecutionPlans.listing ...........................................................................................................................................................................................................................   Passed    0.02 sec
+        Start 244: ExecutionPlans.dispatch
+244/267 Test #244: ExecutionPlans.dispatch ..........................................................................................................................................................................................................................   Passed    0.01 sec
+        Start 245: ExecutionPlans.locations
+245/267 Test #245: ExecutionPlans.locations .........................................................................................................................................................................................................................   Passed    0.02 sec
+        Start 246: ExecutionPlans.warnings
+246/267 Test #246: ExecutionPlans.warnings ..........................................................................................................................................................................................................................   Passed    0.02 sec
+        Start 247: ExecutionPlans.startup
+247/267 Test #247: ExecutionPlans.startup ...........................................................................................................................................................................................................................   Passed    0.02 sec
+        Start 249: Bad.MissingRequiredField
+248/267 Test #249: Bad.MissingRequiredField .........................................................................................................................................................................................................................   Passed    0.26 sec
+        Start 250: Bad.MalformedYaml
+249/267 Test #167: CMakeIntegration.RebuildsAfterFeatureChanges .....................................................................................................................................................................................................   Passed    8.02 sec
+        Start 251: Bad.UnanchoredStepRegex
+250/267 Test #250: Bad.MalformedYaml ................................................................................................................................................................................................................................   Passed    0.27 sec
+        Start 252: Bad.InvalidMethodName
+251/267 Test #251: Bad.UnanchoredStepRegex ..........................................................................................................................................................................................................................   Passed    0.28 sec
+        Start 253: Bad.CppKeywordIdentifier
+252/267 Test #252: Bad.InvalidMethodName ............................................................................................................................................................................................................................   Passed    0.28 sec
+        Start 254: Bad.RuleValidation
+253/267 Test #253: Bad.CppKeywordIdentifier .........................................................................................................................................................................................................................   Passed    0.28 sec
+        Start 255: Bad.UserTags
+254/267 Test #254: Bad.RuleValidation ...............................................................................................................................................................................................................................   Passed    8.11 sec
+        Start 256: Bad.InvalidEnumValue
+255/267 Test #255: Bad.UserTags .....................................................................................................................................................................................................................................   Passed    8.32 sec
+        Start 257: Bad.MissingRequiredTableField
+256/267 Test #256: Bad.InvalidEnumValue .............................................................................................................................................................................................................................   Passed    8.09 sec
+        Start 258: Bad.TableHeaderTypo
+257/267 Test #257: Bad.MissingRequiredTableField ....................................................................................................................................................................................................................   Passed    7.89 sec
+        Start 259: Bad.AmbiguousTableHeaders
+258/267 Test #258: Bad.TableHeaderTypo ..............................................................................................................................................................................................................................   Passed    7.51 sec
+        Start 260: Bad.MalformedTable
+259/267 Test #259: Bad.AmbiguousTableHeaders ........................................................................................................................................................................................................................   Passed    7.50 sec
+        Start 261: Bad.MalformedTypedDocString
+260/267 Test #260: Bad.MalformedTable ...............................................................................................................................................................................................................................   Passed    7.62 sec
+        Start 262: Bad.WrongTypedDocStringValue
+261/267 Test #261: Bad.MalformedTypedDocString ......................................................................................................................................................................................................................   Passed    7.37 sec
+        Start 263: Bad.InvalidRegexArgument
+262/267 Test #263: Bad.InvalidRegexArgument .........................................................................................................................................................................................................................   Passed    7.39 sec
+        Start 264: Bad.UndefinedStepSnippet
+263/267 Test #262: Bad.WrongTypedDocStringValue .....................................................................................................................................................................................................................   Passed    7.41 sec
+        Start 265: Bad.PrintStepSnippet
+264/267 Test #265: Bad.PrintStepSnippet .............................................................................................................................................................................................................................   Passed    7.07 sec
+        Start 266: Bad.InvalidScalarList
+265/267 Test #264: Bad.UndefinedStepSnippet .........................................................................................................................................................................................................................   Passed    7.10 sec
+        Start 267: Bad.ManifestUpdates
+266/267 Test #266: Bad.InvalidScalarList ............................................................................................................................................................................................................................   Passed    8.14 sec
+267/267 Test #267: Bad.ManifestUpdates ..............................................................................................................................................................................................................................   Passed   15.46 sec
+
+100% tests passed, 0 tests failed out of 267
+
+Label Time Summary:
+negative-example    = 116.58 sec*proc (20 tests)
+
+Total Test time (real) =  70.39 sec

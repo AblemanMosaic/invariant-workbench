@@ -1,0 +1,77 @@
+{
+  "all_required_external_gates_closed": false,
+  "authority_effect": "NONE",
+  "gates": [
+    {
+      "id": "UPSTREAM_ZUCCHINI",
+      "local_evidence": "Actual CMake/CTest fixtures only; not upstream.",
+      "prior_reason": "Complete immutable upstream source/dependency closure unavailable; runtime DNS/source download attempts failed.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "POSTGRESQL_LIVE",
+      "local_evidence": "Protocol fault fixtures and pure finite lifecycle only.",
+      "prior_reason": "No PostgreSQL server executable or psycopg3; explicit live harness returned NOT_RUN with exit 6.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "WINDOWS_NATIVE",
+      "local_evidence": "Actual Foundry recompile, 18 headless projections, fake native host binding.",
+      "prior_reason": "Linux host; native witness tool explicitly returned NOT_RUN with exit 6.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ACTUAL_AI_MODEL",
+      "local_evidence": "Strict request/response and transport regression tests.",
+      "prior_reason": "No model endpoint invoked; proposal fixtures are builder authored.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "PRODUCTION_CUSTODY",
+      "local_evidence": "Actual unchanged signature/manager/worker machinery executed.",
+      "prior_reason": "Public reproducible fixture identities and process-local anchor only.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_BOUND"
+    },
+    {
+      "id": "INDEPENDENT_REVIEW",
+      "local_evidence": "Exact frozen predecessor, reproductions, repairs, replay and independent review work order preserved.",
+      "prior_reason": "Same builder performed this review; connected read-only courthouse attempt returned account connection error.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "PENDING"
+    },
+    {
+      "id": "INHERITED_UCM_REVIEW",
+      "local_evidence": "Selected unchanged source/courts, not full-UCM requalification.",
+      "prior_reason": "Product regression and review do not close original c4 inherited review obligations.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "OPEN"
+    },
+    {
+      "id": "HUMAN_MAINTENANCE_ECONOMICS",
+      "local_evidence": "Old evidence refusal and successful changed-source requalification.",
+      "prior_reason": "Recipe change was builder scripted; machine time is not human productivity.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_MEASURED"
+    },
+    {
+      "id": "PRODUCTION_ADMISSION",
+      "local_evidence": "Engineering candidate only.",
+      "prior_reason": "No real Governor disposition, deployment, operational signer or production effect was granted.",
+      "reason": "Inherited gate remains open; this reconstruction does not claim this external acceptance.",
+      "status": "NOT_AUTHORIZED"
+    },
+    {
+      "id": "WINDOWS_CONSOLIDATED_REPLAY",
+      "local_evidence": "Targeted stat/fstat regressions plus fresh Linux consolidated replay. Not Windows acceptance.",
+      "prior_observation": "User-reported earlier e3dd build blocked at RUN_MIW.bat inventory metadata comparison.",
+      "status": "REPAIR_TESTED_WITH_SIMULATED_METADATA_REAL_WINDOWS_NOT_RUN"
+    }
+  ],
+  "schema": "miw.reconstruction_external_gates.v1",
+  "standing": "INFORMATION_ONLY"
+}

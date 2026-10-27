@@ -1,0 +1,68 @@
+{
+  "authority_effect": "NONE",
+  "campaign": "MIW_ZUCCHINI_PINNED_LIVE_ACCEPTANCE",
+  "dependencies": {
+    "CPM.cmake": "456cb6754daaa010d57444d0c8ce6d95ecf006ab",
+    "cucumber/gherkin": "33693f4b5a76bb86dee61d0b287d6f2c700813e4",
+    "cucumber/messages": "073f951ce615149a1532185fbae013ad908a918e",
+    "google/googletest": "58d77fa8070e8cec2dc1ed015d66b454c8d78850",
+    "nlohmann/json": "55f93686c01528224f448c19128836e7df245f72",
+    "pboettch/json-schema-validator": "349cba9f7e3cb423bbc1811bdd9f6770f520b468",
+    "pantoniou/libfyaml": "1ed9bae3b1e5fc57e31a14a2ea12810fdf423473",
+    "AnarchoSystems/tpp": "63645a9949d4a2b01a3da8d996a859183a9f5cb5"
+  },
+  "evidence_files": [
+    {"bytes": 28732, "path": "build.log", "sha256": "b0721428ea929ae8be1b7f1020cb03b98b0245910e030fa8bd7830b865521f68"},
+    {"bytes": 2324, "path": "configure.log", "sha256": "90a60cf53ea9921d6bf1b70410cfa5c37b08e61f10ebcf1be710a1b5a6ddd92c"},
+    {"bytes": 223016, "path": "ctest.xml", "sha256": "0354cffec43b45f11f9771b271edd7eee0b33d5c8b80b548f92fa497bf81dbdc"},
+    {"bytes": 6898094, "path": "ENVELOPE-MANIFEST.json", "sha256": "796f72bd327c21f8102061e125d519a50acedb9a430c1b518aef3416285d7029"},
+    {"bytes": 32990, "path": "shop-report/dashboard.js", "sha256": "9695d4be096a10c2bd230c344a02447e288e8e4e9dab0fd6bc9ccc1fec33df37"},
+    {"bytes": 8850, "path": "shop-report/index.html", "sha256": "5717956c3bc331ee78df4ba8850a29d0dabac53211e0b5a48490299fe26b04fe"},
+    {"bytes": 18177, "path": "shop-report/rules.js", "sha256": "7260504b1f46e4cbedeb5a50ce674f6ff43d23b0edea09b1efff6155402bdef3"},
+    {"bytes": 27460, "path": "shop-report/rules.json", "sha256": "75eb68956b28ebe58d0e424077a2a0e53e21307ec7986fb4f1cda8c61f6f6761"},
+    {"bytes": 1258297, "path": "SUMMARY.json", "sha256": "fd4b478f7d1a2ec1728194aa79e2843295ed5b09dec1929bcf0af493124d49ca"},
+    {"bytes": 1826, "path": "TERMINAL.json", "sha256": "fcd122118baf61f2a9b38d7c10503915a89206096697176327fa2d5da96af7da"},
+    {"bytes": 102936, "path": "test.log", "sha256": "9b1ba7d1c3fe634bc4cd2084f44a8a9b686b9f56e7085e5e21518364b7af3549"},
+    {"bytes": 5068908, "path": "tpp-prep/ENVELOPE-MANIFEST.json", "sha256": "7026bb0649cb3db901c9ac4199e599cc749000a2549b6139cb9c40cc076582d2"},
+    {"bytes": 1207, "path": "tpp-prep/SUMMARY.json", "sha256": "84b4bbe27cb2628e500fac0a9c6ffa2e192f3e3cb5a2623794cb88719e5302c2"},
+    {"bytes": 258, "path": "tpp-prep/TERMINAL.json", "sha256": "cd7e90ef1e9581691c7939a4b5e753ce39ab4abb86cca2e108f2b499cb1d8843"},
+    {"bytes": 55672, "path": "ZUCCHINI-SNAPSHOT.json", "sha256": "3b700a24fa83c60358cfc9fd5f20cad3480890d9806f79c5b58e6fb31cd4af84"}
+  ],
+  "isolation": {
+    "bubblewrap": true,
+    "network_unshared": true,
+    "source_envelope_read_only": true,
+    "windows_filesystem_mounted": false,
+    "writable_source_copy_verified_before_and_after": true
+  },
+  "named_acceptance_report": "Examples/Good/BusinessRules/zucchini-reports/Shop/Release/rules.json",
+  "result": {
+    "configured": true,
+    "built": true,
+    "ctest_failed": 0,
+    "ctest_passed": 267,
+    "matched_named_executions": 4,
+    "named_execution_statuses": ["PASSED", "PASSED", "PASSED", "PASSED"],
+    "observed_report_refusals": 0,
+    "source_unchanged": true,
+    "supported_reports": 35,
+    "successful_acceptance": true
+  },
+  "record_root": "475d4ab578dbcdb4b54715c2b2f701889af4a83b3304d76f10bdc0cada65db30",
+  "schema": "miw.zucchini_live_acceptance_receipt.v1",
+  "standing": "INFORMATION_ONLY",
+  "toolchain": {
+    "build_config": "Release",
+    "cmake": "3.31.8",
+    "cmake_archive_sha256": "630615d8e98ac33eba7fbe472626dff5c899c85af3c024585ae109166a6909d0",
+    "generator": "Ninja",
+    "platform": "WSL2 Ubuntu Linux x86_64"
+  },
+  "upstream": {
+    "commit": "e8595c9ae94e45c1e28a3effeb7555725c3ac741",
+    "git_tree": "4b835316082df150d7683fa983e8c6d750e5d39c",
+    "repository": "https://github.com/AnarchoSystems/Zucchini",
+    "source_export_sha256": "3b700a24fa83c60358cfc9fd5f20cad3480890d9806f79c5b58e6fb31cd4af84",
+    "source_root": "e948fc1830887feeaff4f591d6064efdfea9ee93b9b7778c4c552e17ba224b1b"
+  }
+}

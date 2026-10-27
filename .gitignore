@@ -1,0 +1,14 @@
+# Release-bundle-only historical binaries. Publish their external identities and
+# receipts, not the embedded predecessor archives, in a source-hosted repository.
+/history/turn3/FROZEN-CANDIDATE.zip
+/history/turn4-delivered/FROZEN-CANDIDATE.zip
+
+# Local interpreter, test, and qualification outputs.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+/evidence/my-*
+/evidence/local-*

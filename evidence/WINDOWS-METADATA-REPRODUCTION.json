@@ -1,0 +1,1 @@
+{"authority_effect":"NONE","observations":{"earlier_build":{"code":"FILE_CHANGED_DURING_READ","status":"REFUSED"},"reconstruction":{"matches_actual_bytes":true,"status":"READ_SUCCEEDED"}},"scope":"SIMULATED_WINDOWS_METADATA_WITH_REAL_LOCAL_BYTES_ON_LINUX_NOT_WINDOWS_ACCEPTANCE","standing":"INFORMATION_ONLY"}

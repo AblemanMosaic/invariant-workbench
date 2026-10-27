@@ -1,0 +1,259 @@
+[0/2] Re-checking globbed directories...
+[1/258] Building CXX object _deps/nlohmann_json_schema_validator-local/CMakeFiles/nlohmann_json_schema_validator.dir/src/smtp-address-validator.cpp.o
+[2/258] Building CXX object _deps/nlohmann_json_schema_validator-local/CMakeFiles/nlohmann_json_schema_validator.dir/src/json-uri.cpp.o
+[3/258] Building CXX object _deps/nlohmann_json_schema_validator-local/CMakeFiles/nlohmann_json_schema_validator.dir/src/json-schema-draft7.json.cpp.o
+[4/258] Building CXX object _deps/nlohmann_json_schema_validator-local/CMakeFiles/nlohmann_json_schema_validator.dir/src/json-patch.cpp.o
+[5/258] Building CXX object _deps/nlohmann_json_schema_validator-local/CMakeFiles/nlohmann_json_schema_validator.dir/src/string-format-check.cpp.o
+[6/258] Building C object _deps/libfyaml-local/CMakeFiles/b3portable.dir/src/blake3/blake3_portable.c.o
+[7/258] Building CXX object _deps/nlohmann_json_schema_validator-local/CMakeFiles/nlohmann_json_schema_validator.dir/src/json-validator.cpp.o
+[8/258] Linking CXX static library _deps/nlohmann_json_schema_validator-local/libnlohmann_json_schema_validator.a
+[9/258] Building C object _deps/libfyaml-local/CMakeFiles/b3portable.dir/src/blake3/blake3.c.o
+[10/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-accel.c.o
+[11/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-composer.c.o
+[12/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-diag.c.o
+[13/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-atom.c.o
+[14/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-docbuilder.c.o
+[15/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-docstate.c.o
+[16/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-dump.c.o
+[17/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-emit.c.o
+[18/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-doc.c.o
+[19/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-input.c.o
+[20/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-event.c.o
+[21/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-path.c.o
+[22/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-token.c.o
+[23/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-types.c.o
+[24/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-walk.c.o
+[25/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/util/fy-blob.c.o
+[26/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/util/fy-ctype.c.o
+[27/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/util/fy-utf8.c.o
+[28/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/util/fy-utils.c.o
+[29/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/xxhash/xxhash.c.o
+[30/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/thread/fy-thread.c.o
+[31/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/allocator/fy-allocator.c.o
+[32/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/allocator/fy-allocator-linear.c.o
+[33/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/allocator/fy-allocator-malloc.c.o
+[34/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/allocator/fy-allocator-mremap.c.o
+[35/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-parse.c.o
+[36/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/allocator/fy-allocator-auto.c.o
+[37/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/allocator/fy-allocator-dedup.c.o
+[38/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/blake3/blake3_host_state.c.o
+[39/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/blake3/blake3_backend.c.o
+[40/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/blake3/blake3_be_cpusimd.c.o
+[41/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/blake3/fy-blake3.c.o
+[42/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-composer-diag.c.o
+[43/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-doc-diag.c.o
+[44/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-docbuilder-diag.c.o
+[45/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-input-diag.c.o
+[46/258] Building C object _deps/libfyaml-local/CMakeFiles/fyaml.dir/src/lib/fy-parse-diag.c.o
+[47/258] Linking C static library _deps/libfyaml-local/libfyaml.a
+[48/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/attachment_content_encoding.cpp.o
+[49/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/attachment.cpp.o
+[50/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/ci.cpp.o
+[51/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/background.cpp.o
+[52/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/comment.cpp.o
+[53/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/data_table.cpp.o
+[54/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/doc_string.cpp.o
+[55/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/duration.cpp.o
+[56/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/examples.cpp.o
+[57/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/envelope.cpp.o
+[58/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/exception.cpp.o
+[59/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/external_attachment.cpp.o
+[60/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/feature_child.cpp.o
+[61/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/feature.cpp.o
+[62/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/gherkin_document.cpp.o
+[63/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/git.cpp.o
+[64/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/hook.cpp.o
+[65/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/group.cpp.o
+[66/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/hook_type.cpp.o
+[67/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/java_method.cpp.o
+[68/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/java_stack_trace_element.cpp.o
+[69/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/location.cpp.o
+[70/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/meta.cpp.o
+[71/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/parameter_type.cpp.o
+[72/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/parse_error.cpp.o
+[73/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/pickle_doc_string.cpp.o
+[74/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/pickle.cpp.o
+[75/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/pickle_step_argument.cpp.o
+[76/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/pickle_step.cpp.o
+[77/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/pickle_step_type.cpp.o
+[78/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/pickle_table.cpp.o
+[79/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/pickle_table_cell.cpp.o
+[80/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/pickle_table_row.cpp.o
+[81/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/pickle_tag.cpp.o
+[82/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/product.cpp.o
+[83/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/rule_child.cpp.o
+[84/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/rule.cpp.o
+[85/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/snippet.cpp.o
+[86/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/scenario.cpp.o
+[87/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/source.cpp.o
+[88/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/source_media_type.cpp.o
+[89/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/source_reference.cpp.o
+[90/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/step.cpp.o
+[91/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/step_definition.cpp.o
+[92/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/step_definition_pattern.cpp.o
+[93/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/step_definition_pattern_type.cpp.o
+[94/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/step_keyword_type.cpp.o
+[95/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/step_match_argument.cpp.o
+[96/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/step_match_arguments_list.cpp.o
+[97/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/suggestion.cpp.o
+[98/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/table_cell.cpp.o
+[99/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/table_row.cpp.o
+[100/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/tag.cpp.o
+[101/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_case.cpp.o
+[102/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_case_finished.cpp.o
+[103/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_case_started.cpp.o
+[104/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_run_finished.cpp.o
+[105/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_run_hook_finished.cpp.o
+[106/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_run_hook_started.cpp.o
+[107/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_run_started.cpp.o
+[108/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_step.cpp.o
+[109/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_step_finished.cpp.o
+[110/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_step_result.cpp.o
+[111/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_step_result_status.cpp.o
+[112/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/test_step_started.cpp.o
+[113/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/timestamp.cpp.o
+[114/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/messages/cucumber/messages/utils.cpp.o
+[115/258] Building CXX object _deps/cucumber_messages-build/CMakeFiles/cucumber_messages_lib.dir/src/generated/cucumber/messages/undefined_parameter_type.cpp.o
+[116/258] Linking CXX static library _deps/cucumber_messages-build/libcucumber_messages.a
+[117/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/app.cpp.o
+[118/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/ast_node.cpp.o
+[119/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/demangle.cpp.o
+[120/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/ast_builder.cpp.o
+[121/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/exceptions.cpp.o
+[122/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/id_generator.cpp.o
+[123/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/keywords.cpp.o
+[124/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/line.cpp.o
+[125/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/parse_error.cpp.o
+[126/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/dialect.cpp.o
+[127/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/pickle_compiler_context.cpp.o
+[128/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/pickle_compiler.cpp.o
+[129/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/rule_type.cpp.o
+[130/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/token.cpp.o
+[131/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/regex.cpp.o
+[132/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/token_formatter_builder.cpp.o
+[133/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/token_matcher.cpp.o
+[134/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/token_scanner.cpp.o
+[135/258] Building CXX object _deps/cucumber_gherkin-local/src/lib/gherkin/CMakeFiles/cucumber_gherkin_lib.dir/cucumber/gherkin/utils.cpp.o
+[136/258] Linking CXX static library _deps/cucumber_gherkin-local/src/lib/gherkin/libcucumber_gherkin.a
+[137/258] Building CXX object _deps/googletest-local/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[138/258] Building CXX object LibZucchini/CMakeFiles/LibZucchini.dir/src/Diagnostics.cpp.o
+[139/258] Building CXX object LibZucchini/CMakeFiles/LibZucchini.dir/src/StepDefinitions.cpp.o
+[140/258] Building CXX object _deps/googletest-local/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[141/258] Linking CXX static library lib/libgtest.a
+[142/258] Linking CXX static library lib/libgtest_main.a
+[143/258] Building CXX object LibZucchini/CMakeFiles/LibZucchini.dir/src/YamlDocument.cpp.o
+[144/258] Building CXX object LibZucchini/CMakeFiles/LibZucchini.dir/src/ManifestParser.cpp.o
+[145/258] Building CXX object LibZucchini/CMakeFiles/LibZucchini.dir/src/SchemaValidator.cpp.o
+[146/258] Linking CXX static library LibZucchini/libLibZucchini.a
+[147/258] Building CXX object LibZucchini/Test/CMakeFiles/LibZucchiniTest.dir/DiagnosticsTest.cpp.o
+[148/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/AssertedFact.cpp.o
+[149/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/AssertionJustification.cpp.o
+[150/258] Building CXX object LibZucchini/Test/CMakeFiles/LibZucchiniTest.dir/ManifestParserTest.cpp.o
+[151/258] Linking CXX executable LibZucchini/Test/LibZucchiniTest
+[152/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/ExecutionPlan.cpp.o
+[153/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/RuleReport.cpp.o
+[154/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/FeatureParser.cpp.o
+[155/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/MakeZucchini.cpp.o
+[156/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/ManifestStore.cpp.o
+[157/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/ManifestUpdate.cpp.o
+[158/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/MediaType.cpp.o
+[159/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/Naming.cpp.o
+[160/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/Snippets.cpp.o
+[161/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/SourceLocation.cpp.o
+[162/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/PlanDiscovery.cpp.o
+[163/258] Building CXX object ZucchiniRuntime/CMakeFiles/ZucchiniRuntime.dir/src/Zucchini.cpp.o
+[164/258] Linking CXX static library ZucchiniRuntime/libZucchiniRuntime.a
+[165/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/RuleReportTest.cpp.o
+[166/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/RuleTest.cpp.o
+[167/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/DataTableTest.cpp.o
+[168/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/DiscoveryTest.cpp.o
+[169/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/FeatureParserTest.cpp.o
+[170/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/JustificationTest.cpp.o
+[171/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/MakeZucchiniTest.cpp.o
+[172/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/PlanDiscoveryTest.cpp.o
+[173/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/NamingTest.cpp.o
+[174/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/StepContextTest.cpp.o
+[175/258] tpp: compiling ZucchiniTemplates
+[176/258] tpp2cpp: ZucchiniTemplates_types.h
+[177/258] tpp2cpp: ZucchiniTemplates_functions.h
+[178/258] tpp2cpp: ZucchiniTemplates_implementation.cc
+[179/258] Building CXX object ZucchiniRuntime/Test/CMakeFiles/ZucchiniRuntimeTest.dir/ZucchiniJsonTest.cpp.o
+[180/258] Linking CXX executable ZucchiniRuntime/Test/ZucchiniRuntimeTest
+[181/258] Building CXX object Zucchini/CMakeFiles/Zucchini.dir/src/main.cpp.o
+[182/258] Building CXX object Zucchini/CMakeFiles/Zucchini.dir/src/Stylesheet.cpp.o
+[183/258] Building CXX object Zucchini/CMakeFiles/Zucchini.dir/src/Lowering.cpp.o
+[184/258] Building CXX object Zucchini/CMakeFiles/Zucchini.dir/src/StylesheetParser.cpp.o
+[185/258] Generating zucchini-manifests/Calculator/features.stamp
+[186/258] Generating zucchini-manifests/Tables/features.stamp
+[187/258] Generating zucchini-manifests/DocStrings/features.stamp
+[188/258] Generating zucchini-manifests/Notes/features.stamp
+[189/258] Generating zucchini-manifests/Shop/features.stamp
+[190/258] Generating zucchini-manifests/Basket/features.stamp
+[191/258] Generating zucchini-manifests/LegacyStringDemo/features.stamp
+[192/258] Generating zucchini-manifests/NamingConventionsDemo/features.stamp
+[193/258] Generating zucchini-manifests/UserTags/features.stamp
+[194/258] Generating zucchini-manifests/TagNaming/features.stamp
+[195/258] Generating zucchini-manifests/ScalarLists/features.stamp
+[196/258] Generating zucchini-manifests/ExecutionPlans/features.stamp
+[197/258] Building CXX object Zucchini/CMakeFiles/Zucchini.dir/tpp-generated/ZucchiniTemplates_implementation.cc.o
+[198/258] Linking CXX executable Zucchini/Zucchini
+[199/258] Building CXX object Zucchini/Test/CMakeFiles/ZucchiniGeneratorTest.dir/StylesheetParserTest.cpp.o
+[200/258] Building CXX object Zucchini/Test/CMakeFiles/ZucchiniGeneratorTest.dir/LoweringTest.cpp.o
+[201/258] Building CXX object Zucchini/Test/CMakeFiles/ZucchiniGeneratorTest.dir/__/src/Lowering.cpp.o
+[202/258] Building CXX object Zucchini/Test/CMakeFiles/ZucchiniGeneratorTest.dir/__/src/Stylesheet.cpp.o
+[203/258] Generating regression/IRegression.h
+[204/258] Building CXX object Zucchini/Test/CMakeFiles/ZucchiniGeneratedParsingTest.dir/GeneratedParsingTest.cpp.o
+[205/258] Linking CXX executable Zucchini/Test/ZucchiniGeneratedParsingTest
+[206/258] Zucchini: generating Calculator fixture
+[207/258] Building CXX object Zucchini/Test/CMakeFiles/ZucchiniGeneratorTest.dir/__/src/StylesheetParser.cpp.o
+[208/258] Linking CXX executable Zucchini/Test/ZucchiniGeneratorTest
+[209/258] Building CXX object Examples/Good/Calculator/CMakeFiles/CalculatorTest.dir/CalculatorMain.cc.o
+[210/258] Zucchini: generating Tables fixture
+[211/258] Building CXX object Examples/Good/Calculator/CMakeFiles/CalculatorTest.dir/zucchini-generated/Calculator/CalculatorTest.cc.o
+[212/258] Linking CXX executable Examples/Good/Calculator/CalculatorTest
+[213/258] Building CXX object Examples/Good/Tables/CMakeFiles/TablesTest.dir/TablesJsonTest.cpp.o
+[214/258] Building CXX object Examples/Good/Tables/CMakeFiles/TablesTest.dir/TablesMain.cc.o
+[215/258] Zucchini: generating DocStrings fixture
+[216/258] Building CXX object Examples/Good/Tables/CMakeFiles/TablesTest.dir/zucchini-generated/Tables/TablesTest.cc.o
+[217/258] Linking CXX executable Examples/Good/Tables/TablesTest
+[218/258] Building CXX object Examples/Good/DocStrings/CMakeFiles/DocStringsTest.dir/DocStringsMain.cc.o
+[219/258] Zucchini: generating Notes fixture
+[220/258] Building CXX object Examples/Good/DocStrings/CMakeFiles/DocStringsTest.dir/zucchini-generated/DocStrings/DocStringsTest.cc.o
+[221/258] Linking CXX executable Examples/Good/DocStrings/DocStringsTest
+[222/258] Building CXX object Examples/Good/Notes/CMakeFiles/NotesTest.dir/NotesMain.cc.o
+[223/258] Zucchini: generating Shop fixture
+[224/258] Building CXX object Examples/Good/Notes/CMakeFiles/NotesTest.dir/zucchini-generated/Notes/NotesTest.cc.o
+[225/258] Linking CXX executable Examples/Good/Notes/NotesTest
+[226/258] Building CXX object Examples/Good/BusinessRules/CMakeFiles/BusinessRulesTest.dir/ShopMain.cc.o
+[227/258] Zucchini: generating Basket fixture
+[228/258] Building CXX object Examples/Good/BusinessRules/CMakeFiles/BusinessRulesTest.dir/zucchini-generated/Shop/ShopTest.cc.o
+[229/258] Linking CXX executable Examples/Good/BusinessRules/BusinessRulesTest
+[230/258] Building CXX object Examples/Good/AssertionJustification/CMakeFiles/AssertionJustificationTest.dir/BasketMain.cc.o
+[231/258] Zucchini: generating LegacyStringDemo fixture
+[232/258] Building CXX object Examples/Good/AssertionJustification/CMakeFiles/AssertionJustificationTest.dir/zucchini-generated/Basket/BasketTest.cc.o
+[233/258] Linking CXX executable Examples/Good/AssertionJustification/AssertionJustificationTest
+[234/258] Building CXX object Examples/Good/LegacyString/CMakeFiles/LegacyStringTest.dir/LegacyStringDemoMain.cc.o
+[235/258] Zucchini: generating NamingConventionsDemo fixture
+[236/258] Building CXX object Examples/Good/LegacyString/CMakeFiles/LegacyStringTest.dir/zucchini-generated/LegacyStringDemo/LegacyStringDemoTest.cc.o
+[237/258] Linking CXX executable Examples/Good/LegacyString/LegacyStringTest
+[238/258] Building CXX object Examples/Good/NamingConventions/CMakeFiles/NamingConventionsTest.dir/NamingConventionsDemoMain.cc.o
+[239/258] Zucchini: generating UserTags fixture
+[240/258] Building CXX object Examples/Good/NamingConventions/CMakeFiles/NamingConventionsTest.dir/zucchini-generated/NamingConventionsDemo/NamingConventionsDemoTest.cc.o
+[241/258] Building CXX object Examples/Good/UserTags/CMakeFiles/UserTagsTest.dir/UserTagsApiTest.cpp.o
+[242/258] Linking CXX executable Examples/Good/NamingConventions/NamingConventionsTest
+[243/258] Building CXX object Examples/Good/UserTags/CMakeFiles/UserTagsTest.dir/UserTagsMain.cc.o
+[244/258] Zucchini: generating TagNaming fixture
+[245/258] Building CXX object Examples/Good/UserTags/CMakeFiles/UserTagsTest.dir/zucchini-generated/UserTags/UserTagsTest.cc.o
+[246/258] Linking CXX executable Examples/Good/UserTags/UserTagsTest
+[247/258] Building CXX object Examples/Good/TagNaming/CMakeFiles/TagNamingTest.dir/zucchini-generated/TagNaming/TagNamingTest.cc.o
+[248/258] Zucchini: generating ScalarLists fixture
+[249/258] Building CXX object Examples/Good/TagNaming/CMakeFiles/TagNamingTest.dir/TagNamingMain.cc.o
+[250/258] Linking CXX executable Examples/Good/TagNaming/TagNamingTest
+[251/258] Building CXX object Examples/Good/ScalarLists/CMakeFiles/ScalarListsTest.dir/ScalarListsMain.cc.o
+[252/258] Zucchini: generating ExecutionPlans fixture
+[253/258] Building CXX object Examples/Good/ExecutionPlans/CMakeFiles/ExecutionPlansTest.dir/StorageChecks.cpp.o
+[254/258] Building CXX object Examples/Good/ScalarLists/CMakeFiles/ScalarListsTest.dir/zucchini-generated/ScalarLists/ScalarListsTest.cc.o
+[255/258] Linking CXX executable Examples/Good/ScalarLists/ScalarListsTest
+[256/258] Building CXX object Examples/Good/ExecutionPlans/CMakeFiles/ExecutionPlansTest.dir/ExecutionPlansMain.cc.o
+[257/258] Building CXX object Examples/Good/ExecutionPlans/CMakeFiles/ExecutionPlansTest.dir/zucchini-generated/ExecutionPlans/ExecutionPlansTest.cc.o
+[258/258] Linking CXX executable Examples/Good/ExecutionPlans/ExecutionPlansTest

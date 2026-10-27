@@ -1,0 +1,30 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"urn:miw:invariant-evidence-space-contract:v0.1",
+  "title":"MIW invariant-evidence space contract",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["schema","contract_id","contract_version","subject","possibility","operations","axes","constraints","preferred_regions","selection","lowering","evidence","authority"],
+  "properties":{
+    "schema":{"const":"miw.invariant-evidence-space-contract.v0.1"},
+    "contract_id":{"type":"string","pattern":"^[A-Z][A-Z0-9_]{0,63}$"},
+    "contract_version":{"type":"string"},
+    "subject":{"type":"object"},
+    "possibility":{"type":"object"},
+    "operations":{"type":"array","uniqueItems":true,"items":{"enum":["ENUMERATE","VALIDATE","NORMALIZE","SAMPLE","SELECT","LOWER","REALIZE","COMPARE","EXPLAIN","RECEIPT"]}},
+    "axes":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/axis"}},
+    "constraints":{"type":"array","items":{"$ref":"#/$defs/constraint"}},
+    "preferred_regions":{"type":"array","items":{"$ref":"#/$defs/region"}},
+    "selection":{"type":"object","additionalProperties":false,"required":["policies","default_policy","fallback_policy","locks"],"properties":{"policies":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},"default_policy":{"type":"string"},"fallback_policy":{"type":"string","minLength":1},"locks":{"type":"array","uniqueItems":true,"items":{"type":"string"}}}},
+    "lowering":{"type":"object","additionalProperties":false,"required":["allowed_results","targets"],"properties":{"allowed_results":{"type":"array","uniqueItems":true,"items":{"enum":["EXACT","BOUNDED","FALLBACK","LOSSY","REFUSED"]}},"targets":{"type":"array","items":{"$ref":"#/$defs/target"}}}},
+    "evidence":{"type":"object"},
+    "authority":{"type":"object","additionalProperties":false,"required":["standing","authority_effect","self_admission","release_gate","track_a_dependency"],"properties":{"standing":{"type":"string"},"authority_effect":{"const":"NONE"},"self_admission":{"const":false},"release_gate":{"const":false},"track_a_dependency":{"const":"NONE"}}},
+    "revision":{"type":"object","additionalProperties":false,"required":["predecessor_root","trigger_evidence_roots"],"properties":{"predecessor_root":{"type":"string","pattern":"^[0-9a-f]{64}$"},"trigger_evidence_roots":{"type":"array","minItems":1,"items":{"type":"string","pattern":"^[0-9a-f]{64}$"}}}}
+  },
+  "$defs":{
+    "axis":{"type":"object","additionalProperties":false,"required":["id","label","value_type","domain","default","ownership","mutability","continuity","state_effect","effect_owner","apply_mode","persistence_effect","replay_effect","authority_effect","lockable"],"properties":{"id":{"type":"string","pattern":"^[A-Z][A-Z0-9_]{0,63}$"},"label":{"type":"string"},"value_type":{"enum":["ENUM","BOOLEAN","INTEGER","DECIMAL","REFERENCE"]},"domain":{"type":"object"},"default":{},"ownership":{"type":"string"},"mutability":{"type":"string"},"continuity":{"type":"string"},"state_effect":{"type":"string"},"effect_owner":{"type":"string"},"apply_mode":{"type":"string"},"persistence_effect":{"type":"string"},"replay_effect":{"type":"string"},"authority_effect":{"const":"NONE"},"lockable":{"type":"boolean"}},"allOf":[{"if":{"properties":{"state_effect":{"enum":["SIMULATION_RULE","WORLD_GENERATION","PERSISTENCE_SCHEMA"]}},"required":["state_effect"]},"then":{"properties":{"apply_mode":{"not":{"enum":["IMMEDIATE","FRAME_BOUNDARY"]}}}}}]},
+    "constraint":{"type":"object","additionalProperties":false,"required":["id","kind","severity","expression","expression_language","explanation","refusal_code"],"properties":{"id":{"type":"string"},"kind":{"type":"string"},"severity":{"enum":["HARD","SOFT"]},"expression":{"type":"string"},"expression_language":{"const":"miw.rsc.expr.v0.1"},"explanation":{"type":"string"},"refusal_code":{"type":"string"}}},
+    "region":{"type":"object","additionalProperties":false,"required":["id","purpose","predicate","predicate_language","standing","profile_defaults"],"properties":{"id":{"type":"string","pattern":"^[A-Z][A-Z0-9_]{0,63}$"},"purpose":{"type":"string"},"predicate":{"type":"string"},"predicate_language":{"const":"miw.rsc.expr.v0.1"},"standing":{"type":"string"},"profile_defaults":{"type":"object"}}},
+    "target":{"type":"object","additionalProperties":false,"required":["id","required_realizer_capabilities","axis_mapping","refusal_conditions","output_schema","required_evidence_fields","preserved","known_losses"],"properties":{"id":{"type":"string","pattern":"^[A-Z][A-Z0-9_]{0,63}$"},"required_realizer_capabilities":{"type":"array","uniqueItems":true,"items":{"type":"string"}},"axis_mapping":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["axis_id","target_setting","transform"],"properties":{"axis_id":{"type":"string"},"target_setting":{"type":"string"},"transform":{"type":"string"}}}},"refusal_conditions":{"type":"array","items":{"type":"string"}},"output_schema":{"type":"string"},"required_evidence_fields":{"type":"array","items":{"type":"string"}},"preserved":{"type":"array","items":{"type":"string"}},"known_losses":{"type":"array","items":{"type":"string"}}}}
+  }
+}

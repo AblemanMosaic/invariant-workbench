@@ -1,0 +1,40 @@
+{
+  "authority_effect": "NONE",
+  "dossier_check_root": "cf8e0de311b86c4ed118d6807a1ba9f5c0ce927c0b2a6b555ac059982f1c8a1b",
+  "foundry_generated_root": "26352f46e35590c081c1be806f132b8d5b3616b98cf4f2f17cf1fe2c62a99931",
+  "independent_review": false,
+  "local_regression": {
+    "application_tests": 382,
+    "errors": 0,
+    "failures": 0,
+    "inherited_native_proof_tests": 9,
+    "qualification_root": "0b94a7d156fb72f320a6c4d2ddf435602c52af61ba01bd3b7a6c6354b2dac05d",
+    "skips": 0,
+    "tests_run": 391
+  },
+  "replay": {
+    "commands_passed": ["qualification", "custody", "integration", "foundry", "headless"],
+    "record_root": "5f856ba25b75d1ce19e85d7834c60ebb9b2629b9c77864aae4d8bdf1b374b51b",
+    "source_root": "d51756f8a8f3fba04771caa49b3895655babc4489caa4153dd53e3ee433eff8c",
+    "source_unchanged": true,
+    "status": "PASSED_LOCAL_REPLAY"
+  },
+  "record_root": "e5d90d847b8fc011d603ba98911786a13924b7bf4f185a078daa2757d3ffe0d1",
+  "schema": "miw.zucchini_live_successor_qualification.v1",
+  "standing": "INFORMATION_ONLY",
+  "ucm_custody_regression": {
+    "errors": 0,
+    "failures": 0,
+    "record_root": "0474f691b38d1b813020a9ee15d8e79bb02a6ae26d69ef2097aa8f669bb0ab5e",
+    "skips": 0,
+    "tests_run": 38
+  },
+  "unique_local_tests": 429,
+  "zucchini_live": {
+    "ctest_failed": 0,
+    "ctest_passed": 267,
+    "receipt_root": "475d4ab578dbcdb4b54715c2b2f701889af4a83b3304d76f10bdc0cada65db30",
+    "successful_acceptance": true,
+    "upstream_commit": "e8595c9ae94e45c1e28a3effeb7555725c3ac741"
+  }
+}

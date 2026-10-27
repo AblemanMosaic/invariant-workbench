@@ -1,0 +1,19 @@
+{
+  "schema":"miw.requirement-binding-set.v1",
+  "standing":"PROPOSED",
+  "authority_effect":"NONE",
+  "bindings":[
+    {
+      "miw_requirement_id":"REQ_ACCEPTANCE",
+      "zucchini_tag":"NoAssemblyWithoutStock",
+      "relation":"CANDIDATE_CORRESPONDENCE",
+      "rationale":"Both artifacts address refusal when required inventory is absent, but their semantic equivalence remains a human review obligation."
+    },
+    {
+      "miw_requirement_id":"REQ_FINISHED_ACCOUNTING",
+      "zucchini_tag":"OutputRecorded",
+      "relation":"SUPPORTS_TEST_DESIGN",
+      "rationale":"The Zucchini declaration supplies scenario-design evidence for output recording; it is not promoted to proof of the MIW accounting requirement."
+    }
+  ]
+}

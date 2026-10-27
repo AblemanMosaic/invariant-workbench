@@ -1,0 +1,52 @@
+from pathlib import Path
+import sys,tempfile,copy,json,shutil,os
+R=Path(sys.argv[1]);W=Path(sys.argv[2])
+sys.dont_write_bytecode=True;sys.path[:0]=[str(R/'src'),str(R/'vendor/ucm'),str(R/'tests')]
+from miw.common import *
+from miw.zucchini import parse_junit
+from miw.postgres import PostgresRepository,OutcomeUnknown
+from miw.lifecycle import initial_state,command
+from pg_fixture import Database,Connection
+from miw.proposals import proposal_request,review_proposal
+from miw.dossier import verify_dossier,generate_demo
+from miw.external_build import run_zucchini
+from miw.governance import snapshot
+rows=[]
+def report(id,title,observation): rows.append({'id':id,'title':title,'observation':observation})
+report('T4-01','Unrecognized explicit JUnit status becomes PASSED',parse_junit(b'<testsuite><testcase name="x" status="failed"/></testsuite>'))
+db=Database(initial_state(2,1));cmd=command('RESERVE',{'order_id':'one','recipe_id':'r1','quantity':1},'reserve')
+def wrong_connection():
+ c=Connection(db);c.autocommit=True;return c
+r=PostgresRepository(wrong_connection,allow_experimental_effects=True).apply(cmd)
+report('T4-02','Autocommit connector not refused',{'outcome':r['outcome'],'driver':'SQL protocol fixture, not PostgreSQL'})
+class TypedLost(Connection):
+ def commit(self):
+  super().commit();raise Refusal('TYPED_ACK_LOST')
+db=Database(initial_state(2,1));repo=PostgresRepository(lambda:TypedLost(db),allow_experimental_effects=True)
+try:repo.apply(cmd)
+except Refusal as e:report('T4-03','Typed exception after commit bypasses unknown-outcome classification',{'returned_code':e.code,'is_outcome_unknown':isinstance(e,OutcomeUnknown),'fixture_state_revision_after_commit':db.state['revision']})
+with tempfile.TemporaryDirectory() as tmp:
+ base=Path(tmp);target=base/'protected.json';target.write_text('ORIGINAL');alias=base/'output.json';os.link(target,alias)
+ write_json(alias,{'new':'OUTPUT'})
+ report('T4-04','Output writer overwrites existing hardlink target',{'protected_bytes_unchanged':target.read_text()=='ORIGINAL','scope':'Disposable local fixture only'})
+# Semantic consistency of a stored execution, not authentication or actual replay.
+generate_demo(R,W/'baseline_qualification/demo')
+d=W/'tampered_dossier';shutil.copytree(W/'baseline_qualification/demo',d)
+r=read_json(d/'assembly.execution.json');r['runs'][0]['assertions'][0]['status']='FAILED'
+r=seal({k:v for k,v in r.items() if k!='execution_root'},'execution_root');write_json(d/'assembly.execution.json',r)
+m=read_json(d/'DEMO-MANIFEST.json')
+for f in m['files']:
+ if f['path']=='assembly.execution.json':b=(d/f['path']).read_bytes();f.update(sha256=digest(b),bytes=len(b))
+m=seal({k:v for k,v in m.items() if k!='manifest_root'},'manifest_root');write_json(d/'DEMO-MANIFEST.json',m)
+v=verify_dossier(d)
+report('T4-05','Dossier accepts contradictory recorded assertion and scenario outcomes',{'accepted':True,'recorded_assertion_status':'FAILED','scenario_status':r['runs'][0]['status'],'replay_scope':v['observed_tests']})
+c=read_json(R/'examples/assembly/contract.json');s=(R/'examples/assembly/operation.py').read_text();f=(R/'examples/assembly/inventory.feature').read_text()
+request=proposal_request(c,s,c['decision_requirement'],'a'*64,budget=8);request['source']='This is not the source named by source_sha256.';request['standing']='ADMITTED';request=seal({k:v for k,v in request.items() if k!='request_root'},'request_root')
+response=json.dumps({'kind':'SCENARIO_PROPOSAL','request_root':request['request_root'],'feature':f}).encode()
+r=review_proposal(request,response,expected_request_root=request['request_root'],current_contract=c,current_source=s,current_basis_root='a'*64)
+report('T4-06','Resealed internally inconsistent proposal request accepted',{'review_accepted':True,'actual_output_standing':r['standing'],'independent_authority_not_granted':True})
+source=W/'empty_cmake_source';source.mkdir();(source/'CMakeLists.txt').write_text('cmake_minimum_required(VERSION 3.15)\nproject(MIWEmptyAcceptance NONE)\nenable_testing()\n')
+r=run_zucchini(source,W/'empty_cmake_run',expected_source_root=snapshot(source)['snapshot_root'],allow_trusted_build=True)
+report('T4-07','Empty CMake project satisfies upstream-runner command success',{'status':r['status'],'commands_returncodes':[x['returncode'] for x in r['commands']],'supported_reports':len(r['reports']),'fixture_is_not_zucchini':True})
+(W/'TURN3-CHALLENGE-OBSERVATIONS.json').write_text(json.dumps({'subject_sha256':'bedce795797dbb2f170aa293c60fea19f371bc34f41440e1f6ea8eba860b9ef7','review_class':'SAME_ASSISTANT_BUILDER_CHALLENGE_NOT_INDEPENDENT','observations':rows},indent=2))
+print(json.dumps(rows,indent=2))

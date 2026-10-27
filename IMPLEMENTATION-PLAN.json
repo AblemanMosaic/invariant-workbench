@@ -1,0 +1,81 @@
+{
+  "authority_effect": "NONE",
+  "external_acceptance": "Pinned Linux Zucchini lane accepted; PostgreSQL, native Windows GUI, Windows/Visual Studio Zucchini, later Zucchini revisions, consuming MES integration and independent product review remain open",
+  "manager_execution": "ACTUAL_FIXTURE_CAMPAIGN_ONLY_NOT_FULL_BUILD_PLAN_AUTHENTICATION",
+  "no_automatic_next_release": true,
+  "portability_cleanup_tasks": [
+    {
+      "id": "PC-GATES",
+      "status": "COMPLETE",
+      "work": "Correct the current gate register to the exact accepted Zucchini commit, environment and 19-success/16-diagnostic report scope while preserving the prior register as lineage"
+    },
+    {
+      "id": "PC-WINDOWS-LABELS",
+      "status": "COMPLETE",
+      "work": "Report Windows local Python qualification separately from native GUI and Windows/Visual Studio Zucchini acceptance"
+    },
+    {
+      "id": "PC-DOSSIER",
+      "status": "COMPLETE",
+      "work": "Use explicit UTF-8/LF fixture bytes and platform-independent manifest ordering"
+    },
+    {
+      "id": "PC-CROSS-PLATFORM",
+      "status": "COMPLETE",
+      "work": "Run complete Windows and Linux qualification and compare all 51 regenerated dossier files byte-for-byte"
+    }
+  ],
+  "reconstruction_tasks": [
+    {
+      "id": "R-BASELINE",
+      "work": "Byte-verify actual delivered archive and rerun baseline core checks"
+    },
+    {
+      "id": "R-PATCH",
+      "work": "Reconstruct helper safety repair and Windows metadata compatibility without changing contracts or vendors"
+    },
+    {
+      "id": "R-QUALIFY",
+      "work": "Run 33 targeted new methods, full local regression, proof replay, UCM custody, lifecycle and Foundry"
+    },
+    {
+      "id": "R-DELIVER",
+      "work": "Seal a uniquely named archive; extract and qualify that exact final ZIP; derive checksum and external receipt from its bytes"
+    }
+  ],
+  "review_identity": "BUILDER_NOT_INDEPENDENT",
+  "schema": "miw.turn4_portability_cleanup_plan.v1",
+  "standing": "INFORMATION_ONLY",
+  "tasks": [
+    {
+      "evidence": "evidence/review/baseline/",
+      "id": "T4-BASELINE",
+      "work": "Verify frozen transport and replay baseline"
+    },
+    {
+      "evidence": "evidence/review/TURN3-CHALLENGE-OBSERVATIONS.json",
+      "id": "T4-CHALLENGE",
+      "work": "Preserve concrete seven-finding reproductions before repair"
+    },
+    {
+      "evidence": "evidence/review/FINDINGS.json",
+      "id": "T4-REPAIR",
+      "work": "One consolidated repair successor and targeted regressions"
+    },
+    {
+      "evidence": "evidence/TURN4-COMPLETION.md",
+      "id": "T4-REQUALIFY",
+      "work": "Full regression, proof replay, fixture integration, Foundry and fresh extraction"
+    },
+    {
+      "evidence": "evidence/EXTERNAL-GATES.json",
+      "id": "T4-EXTERNAL",
+      "work": "Preserve the accepted pinned Linux Zucchini result and keep every unexecuted external lane explicitly open"
+    },
+    {
+      "evidence": "evidence/GOVERNOR-DISPOSITION-PENDING.json",
+      "id": "T4-DISPOSITION",
+      "work": "Prepare a pending Governor decision, not issue it"
+    }
+  ]
+}

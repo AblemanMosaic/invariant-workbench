@@ -1,0 +1,166 @@
+{
+  "archive": "mosaic-ui-0.2.0rc1-rich-document-candidate.zip",
+  "archive_sha256": "5bca2ad0f2ed675a056a3a83b3f06af7b2f0049a910cb2c2054c365110c6407d",
+  "distribution_version": "0.2.0rc1",
+  "runtime_version": "0.1.0",
+  "mismatch_preserved": true,
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "fe920cbbec30bb8fb0b83237aa85f78c52fd0ccf744b69d359d95be5fb7e4c8f",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic-ui-slice-cba3a39cfaa6.receipt.json",
+      "sha256": "a8290e2a3b479ac055442b1ebc77aa301c220acd4bb3a2a4fae18a3b4a0c4f46",
+      "origin": "UPSTREAM_SLICER_GENERATED_PROFILE"
+    },
+    {
+      "path": "mosaic_ui/__init__.py",
+      "sha256": "e9ddf1c359dac9897c2c62b4314c45d03bdd5163bfca111b4395c6d1ae3b5399",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/canonical.py",
+      "sha256": "de4529989e0ec57b3f6991a5e1ba0e362d164fcaf249169f9e3061aa47b5af7f",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/components/__init__.py",
+      "sha256": "6ab0c67ab429e02799a0b833e30af8e8d0e48ff090bc385ed568b1d10884d6e5",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/components/base.py",
+      "sha256": "bb1f1a9b6743a6ac2ffdfc29cacb08966d6ca061c5cfaf61a9a5fff851caf1ca",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/components/button.py",
+      "sha256": "b1671810528e5f6713cbaeb919ce8b9471826c86aeebc878a0d415cdcdb701fc",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/components/dependencies.json",
+      "sha256": "af468ba9a9164ebed395e5c19d6a94b2570b4183edabefb718a45af8029f82ef",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/components/label.py",
+      "sha256": "faf38cd47fce8d6713f318a05a039823bf2aac31f67d4bc87e2730dbf8a9d719",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/components/registry.py",
+      "sha256": "5ea875202e1751a922e91cdf37f28540c0349db114f2307ce86eb48634f8d4b7",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/components/status.py",
+      "sha256": "2b7a69feb71336bb6ca57d03dd5963936e9d366c3dc0dccd44da4b8be438f52b",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/components/table.py",
+      "sha256": "ec1382aa5d2a90f64114fe605277e1e283ecdbbd184a6166bea0e8dc7cf9ad99",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/components/text_field.py",
+      "sha256": "725bc15be1f51574734c43b4f52d9bc2a312443e9fec393f470bebcb23796012",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/components/window.py",
+      "sha256": "38184183a5ff57123fdd752d7664b0bf9ee7ce123294a0791deb682b097bb53c",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/foundry.py",
+      "sha256": "c6e5d240858d82cf9e75888691a4157ce40d3354e77cce694cadc1093b5dde3b",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/headless.py",
+      "sha256": "ffb6bace5b9729464e77f61dfd927ade7530752a5ebf72eef6e4e0ebb965d0c6",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/layout.py",
+      "sha256": "37a523b568b1ca3fcbffe65fb4401fbc6be29ddf60906b63a52139c0c558f2c2",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/localization.py",
+      "sha256": "257086bf6f506191245a068cdef4b1b2f323e62295f2fbe90287cdc606d5dffc",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/model.py",
+      "sha256": "60ffbc0ddc138b22136504f32b9592512068c826e5cd336b9a0306aaeb0a428f",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/native_realizer.py",
+      "sha256": "0f2dc61e45d8089d7f7e413bf2b9e94c4e8e8a0d390ab5fcfb2072519b97e03d",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/win32.py",
+      "sha256": "69310913e79f2d66b34aaf863f46c68bde4b6054c2d8b01bcade80eae8ac7d2f",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/win32_accessibility.py",
+      "sha256": "d89a141ae35169fed4ea4ac739df97c48d68e858881d5a45c3bb290f75c9710f",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/win32_image.py",
+      "sha256": "3c68914ce2d28b6c9dd5f7d905bb7ab26593c63d6ec700d25cc489f194d34e0b",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui/win32_vector.py",
+      "sha256": "9dbccf5ec236711e2cac5c4989f65b744552d5b3a350011eafe76ef55a88ebad",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui_std/__init__.py",
+      "sha256": "7a526adda28371439eb56831733fad06050a4ef4e65f60dfaee651c3f2a3a611",
+      "origin": "UPSTREAM_SLICER_GENERATED_PROFILE"
+    },
+    {
+      "path": "mosaic_ui_std/catalog.json",
+      "sha256": "0a03aebde3ed1fb1e4ea950599cb2f057f50015c0db1193b36f42b1f079fdd21",
+      "origin": "UPSTREAM_SLICER_GENERATED_PROFILE"
+    },
+    {
+      "path": "mosaic_ui_std/catalog.py",
+      "sha256": "41a8e89d65baa2079ef2e3eff3d533604c51e7530377b5002247219fd276480d",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui_std/lifecycle.py",
+      "sha256": "01b0e2b274387f49bca9769180eb2ac393e1fefe1df4da3ddb6afda1a8b916a8",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui_std/theme.py",
+      "sha256": "447d47ea5434379094d0604afa45cfd1a9d3bb7b1f85301753fb994fdb27f4be",
+      "origin": "UNCHANGED_UPSTREAM"
+    },
+    {
+      "path": "mosaic_ui_std/themes/operations-dark.json",
+      "sha256": "6b1f71c6c63708d338307de7a7a45fd8c5e9339fb0dc18346872e21f71c94756",
+      "origin": "UNCHANGED_UPSTREAM"
+    }
+  ],
+  "native_windows_execution": "NOT_RUN",
+  "no_font_files": true
+}

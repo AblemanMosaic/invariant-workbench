@@ -1,0 +1,9 @@
+{
+  "schema": "miw.ui_specification.v1",
+  "standing": "INFORMATION_ONLY",
+  "authority_effect": "NONE",
+  "realization": "WIN32_CTYPES_NATIVE",
+  "read_only": false,
+  "interaction_scope": "IN_MEMORY_BIND_SELECT_LOWER_EXPLAIN_LOCAL_RECHECK_CAPABILITY_PLAN_DIAGNOSTIC_AND_HEADLESS_COURT_ONLY",
+  "external_effects": "WITHHELD"
+}

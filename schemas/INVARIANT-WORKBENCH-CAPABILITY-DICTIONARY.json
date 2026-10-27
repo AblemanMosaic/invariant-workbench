@@ -1,0 +1,18 @@
+{
+  "schema": "miw.workbench-capability-dictionary.v0.1",
+  "authority_effect": "NONE",
+  "capabilities": [
+    {"id":"OBLIGATION_LEDGER","meaning":"Build a rooted matrix without merging evidence classes.","state_effect_class":"ANALYSIS","consumed_value_types":["DOSSIER"],"measurable_metrics":["obligation_count","unbound_count"]},
+    {"id":"NATIVE_SCALAR_PROOF","meaning":"Recheck the restricted scalar proof subject.","state_effect_class":"LOCAL_EXECUTION","consumed_value_types":["CONTRACT","SOURCE","PROOF"],"measurable_metrics":["vc_count","residual_count"]},
+    {"id":"BDD_EXECUTION","meaning":"Run bounded native feature examples.","state_effect_class":"LOCAL_EXECUTION","consumed_value_types":["CONTRACT","SOURCE","FEATURE"],"measurable_metrics":["scenario_count","failure_count"]},
+    {"id":"ZUCCHINI_IMPORT","meaning":"Import supported Zucchini declarations without execution or proof promotion.","state_effect_class":"ANALYSIS","consumed_value_types":["ZUCCHINI_REPORT"],"measurable_metrics":["requirement_count","scenario_count"]},
+    {"id":"JUNIT_LINK","meaning":"Link exact JUnit observations under an explicit caller binding.","state_effect_class":"ANALYSIS","consumed_value_types":["ZUCCHINI_REPORT","JUNIT","BINDING"],"measurable_metrics":["linked_count","unmatched_count"]},
+    {"id":"DRIFT_COMPARE","meaning":"Compare exact rooted workspaces without inferring semantic equivalence.","state_effect_class":"ANALYSIS","consumed_value_types":["WORKSPACE","WORKSPACE"],"measurable_metrics":["subject_changes","obligation_changes"]},
+    {"id":"RECEIPT_EXPORT","meaning":"Export a canonical zero-authority receipt.","state_effect_class":"PRESENTATION","consumed_value_types":["ROOTED_RECORD"],"measurable_metrics":["receipt_root"]},
+    {"id":"MOSAIC_NATIVE_UI","meaning":"Project the workbench through the pinned Mosaic native runtime.","state_effect_class":"PRESENTATION","consumed_value_types":["WORKSPACE"],"measurable_metrics":["projection_root","control_count"]},
+    {"id":"POSTGRES_REFERENCE","meaning":"Describe the PostgreSQL reference adapter boundary.","state_effect_class":"EXTERNAL_EXECUTION","consumed_value_types":["DATABASE_CONFIG"],"measurable_metrics":["transaction_count","retry_count"]},
+    {"id":"CPP_CORRESPONDENCE","meaning":"Run the bounded builder-authored C++ differential probe.","state_effect_class":"EXTERNAL_EXECUTION","consumed_value_types":["CPP_SOURCE","COMPILER"],"measurable_metrics":["case_count","mismatch_count"]},
+    {"id":"UCM_CUSTODY","meaning":"Exercise the unchanged fixture UCM custody campaign.","state_effect_class":"LOCAL_EXECUTION","consumed_value_types":["WORK_ORDER","FIXTURE_KEY"],"measurable_metrics":["receipt_count","refusal_count"]},
+    {"id":"CONFORMANCE_WITNESS","meaning":"Render a bounded evidence witness without granting conformance.","state_effect_class":"PRESENTATION","consumed_value_types":["OBLIGATION_SELECTION"],"measurable_metrics":["witness_root"]}
+  ]
+}

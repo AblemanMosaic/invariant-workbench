@@ -1,0 +1,9 @@
+{
+  "authority_effect": "NONE",
+  "authoritative_summary": "SUMMARY.json",
+  "original_record": "HOST_PATH_BEARING_LOG_OMITTED",
+  "reason": "Local absolute output path removed from the public source distribution.",
+  "retained_status": "PASSED_HEADLESS_ONLY",
+  "schema": "miw.public_evidence_redaction.v1",
+  "standing": "INFORMATION_ONLY"
+}

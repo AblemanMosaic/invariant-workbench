@@ -1,0 +1,35 @@
+{
+  "schema": "miw.public-slim-declared-hash-audit.v1",
+  "standing": "INFORMATION_ONLY",
+  "authority_effect": "NONE",
+  "subject": "evidence/zucchini-live-acceptance/RECEIPT.json",
+  "parent_archive_sha256": "0e7426bf1876bffc1741132ff9cd31d024a624a1e0ccf1461966c65f7428647b",
+  "parent_manifest_root": "41be40913ec5ac0605a42444ba54084aa5074ad75c7a9f4c273538d8ad535e89",
+  "declarations_checked": 15,
+  "declarations_matched": 14,
+  "declarations_mismatched": 1,
+  "retained_public_slim_files_matched": 13,
+  "omitted_parent_files_matched": 1,
+  "mismatches": [
+    {
+      "path": "ENVELOPE-MANIFEST.json",
+      "inherited_declared_bytes": 6898094,
+      "inherited_declared_sha256": "796f72bd327c21f8102061e125d519a50acedb9a430c1b518aef3416285d7029",
+      "parent_archive_bytes": 6898115,
+      "parent_archive_sha256": "11246d638368ca99389478c9d27b7f4110246429fba6937234d56365375c064c",
+      "status": "STALE_NESTED_DECLARATION_NOT_PROMOTED"
+    }
+  ],
+  "matched_omitted_file": {
+    "path": "tpp-prep/ENVELOPE-MANIFEST.json",
+    "bytes": 5068908,
+    "sha256": "7026bb0649cb3db901c9ac4199e599cc749000a2549b6139cb9c40cc076582d2"
+  },
+  "handling": [
+    "The inherited receipt is preserved unchanged as historical evidence.",
+    "The parent archive remains valid under its own closed-world manifest.",
+    "The public-slim package uses the parent manifest-bound current file identity for disclosure only.",
+    "No claim is made that the omitted envelope member rows are present in the public-slim subset."
+  ],
+  "record_root": "5afe74f31657c828f19ddfb34dbf2bd09a06d19dbc9afa5b7748538621199bad"
+}

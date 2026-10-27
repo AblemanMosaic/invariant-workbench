@@ -1,0 +1,253 @@
+{
+  "build_id": "SYNTHETIC_BUILD_T2",
+  "discovered_at_ms": 0,
+  "discovery_diagnostics": [],
+  "discovery_id": "SYNTHETIC_DISCOVERY_T2",
+  "discovery_success": true,
+  "executable": "InventoryTest",
+  "feature_directory": "fixtures/synthetic_features",
+  "fixture": "Inventory",
+  "miw_fixture_notice": "SYNTHETIC_CONTRACT_FIXTURE_NOT_OUTPUT_FROM_RUNNING_ZUCCHINI",
+  "rules": [
+    {
+      "description": "Synthetic fixture requirements",
+      "events": [
+        {
+          "column": 3,
+          "feature": "Synthetic inventory example",
+          "gherkin_rule": "",
+          "kind": "coverage",
+          "line": 6,
+          "message": "Synthetic declared coverage",
+          "scenario": "Assembly succeeds",
+          "scenario_accepted": true,
+          "scenario_id": 0,
+          "scenario_line": 3,
+          "scenario_tags": [],
+          "step": "the outcome is correct",
+          "tag": "NoAssemblyWithoutStock",
+          "test_name": "Inventory.0",
+          "uri": "inventory.feature"
+        },
+        {
+          "column": 3,
+          "feature": "Synthetic inventory example",
+          "gherkin_rule": "",
+          "kind": "coverage",
+          "line": 6,
+          "message": "Synthetic declared coverage",
+          "scenario": "Assembly succeeds",
+          "scenario_accepted": true,
+          "scenario_id": 0,
+          "scenario_line": 3,
+          "scenario_tags": [],
+          "step": "the outcome is correct",
+          "tag": "OutputRecorded",
+          "test_name": "Inventory.0",
+          "uri": "inventory.feature"
+        },
+        {
+          "column": 3,
+          "feature": "Synthetic inventory example",
+          "gherkin_rule": "",
+          "kind": "coverage",
+          "line": 14,
+          "message": "Synthetic declared coverage",
+          "scenario": "Empty inventory refuses",
+          "scenario_accepted": true,
+          "scenario_id": 1,
+          "scenario_line": 11,
+          "scenario_tags": [],
+          "step": "the outcome is correct",
+          "tag": "NoAssemblyWithoutStock",
+          "test_name": "Inventory.1",
+          "uri": "inventory.feature"
+        },
+        {
+          "column": 3,
+          "feature": "Synthetic inventory example",
+          "gherkin_rule": "",
+          "kind": "coverage",
+          "line": 22,
+          "message": "Synthetic declared coverage",
+          "scenario": "Skipped capacity check",
+          "scenario_accepted": true,
+          "scenario_id": 2,
+          "scenario_line": 19,
+          "scenario_tags": [],
+          "step": "the outcome is correct",
+          "tag": "OutputRecorded",
+          "test_name": "Inventory.2",
+          "uri": "inventory.feature"
+        }
+      ],
+      "kind": "business",
+      "name": "InventoryAccounting",
+      "requirements": [
+        {
+          "description": "No assembly without required inventory",
+          "strictness": "exact",
+          "tag": "NoAssemblyWithoutStock",
+          "value": 0
+        },
+        {
+          "description": "Output corresponds to consumed stock",
+          "strictness": "exact",
+          "tag": "OutputRecorded",
+          "value": 1
+        },
+        {
+          "description": "Deliberately uncovered",
+          "tag": "UnusedRequirement",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "accepted": true,
+      "feature": "Synthetic inventory example",
+      "feature_relative_path": "inventory.feature",
+      "gherkin_rule": "",
+      "id": 0,
+      "line": 3,
+      "name": "Assembly succeeds",
+      "plan_fingerprint": "synthetic-plan-0",
+      "result_key": "synthetic-result-0",
+      "steps": [
+        {
+          "argument": null,
+          "captures": [],
+          "column": 3,
+          "keywordType": "context",
+          "line": 4,
+          "methodName": "setStock",
+          "regex": ".*",
+          "text": "inventory is configured"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 3,
+          "keywordType": "action",
+          "line": 5,
+          "methodName": "assemble",
+          "regex": ".*",
+          "text": "assembly is requested"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 3,
+          "keywordType": "outcome",
+          "line": 6,
+          "methodName": "checkOutcome",
+          "regex": ".*",
+          "text": "the outcome is correct"
+        }
+      ],
+      "tags": [],
+      "test_name": "Inventory.0",
+      "uri": "inventory.feature"
+    },
+    {
+      "accepted": true,
+      "feature": "Synthetic inventory example",
+      "feature_relative_path": "inventory.feature",
+      "gherkin_rule": "",
+      "id": 1,
+      "line": 11,
+      "name": "Empty inventory refuses",
+      "plan_fingerprint": "synthetic-plan-1",
+      "result_key": "synthetic-result-1",
+      "steps": [
+        {
+          "argument": null,
+          "captures": [],
+          "column": 3,
+          "keywordType": "context",
+          "line": 12,
+          "methodName": "setStock",
+          "regex": ".*",
+          "text": "inventory is configured"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 3,
+          "keywordType": "action",
+          "line": 13,
+          "methodName": "assemble",
+          "regex": ".*",
+          "text": "assembly is requested"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 3,
+          "keywordType": "outcome",
+          "line": 14,
+          "methodName": "checkOutcome",
+          "regex": ".*",
+          "text": "the outcome is correct"
+        }
+      ],
+      "tags": [],
+      "test_name": "Inventory.1",
+      "uri": "inventory.feature"
+    },
+    {
+      "accepted": true,
+      "feature": "Synthetic inventory example",
+      "feature_relative_path": "inventory.feature",
+      "gherkin_rule": "",
+      "id": 2,
+      "line": 19,
+      "name": "Skipped capacity check",
+      "plan_fingerprint": "synthetic-plan-2",
+      "result_key": "synthetic-result-2",
+      "steps": [
+        {
+          "argument": null,
+          "captures": [],
+          "column": 3,
+          "keywordType": "context",
+          "line": 20,
+          "methodName": "setStock",
+          "regex": ".*",
+          "text": "inventory is configured"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 3,
+          "keywordType": "action",
+          "line": 21,
+          "methodName": "assemble",
+          "regex": ".*",
+          "text": "assembly is requested"
+        },
+        {
+          "argument": null,
+          "captures": [],
+          "column": 3,
+          "keywordType": "outcome",
+          "line": 22,
+          "methodName": "checkOutcome",
+          "regex": ".*",
+          "text": "the outcome is correct"
+        }
+      ],
+      "tags": [],
+      "test_name": "Inventory.2",
+      "uri": "inventory.feature"
+    }
+  ],
+  "schema_version": "2.2.0",
+  "sources": {
+    "inventory.feature": [
+      "Feature: Synthetic inventory example"
+    ]
+  }
+}

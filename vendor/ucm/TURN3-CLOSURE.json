@@ -1,0 +1,102 @@
+{
+  "source_archive_sha256": "6bb3d7eb05cfb830d9dbe4253be5326ce67f7b306c6646b94107a321e355cd69",
+  "files": [
+    {
+      "upstream_path": "src/uclop/__init__.py",
+      "path": "uclop/__init__.py",
+      "sha256": "af190bc9f4b2e7dc2f1bd4a2dbd02d375044838d5902c2a3f430af44ef509b8c"
+    },
+    {
+      "upstream_path": "src/uclop/autonomous_project_manager.py",
+      "path": "uclop/autonomous_project_manager.py",
+      "sha256": "275cfbaf201087dda0b863ba8871d9621eb732f9ae3e7f106974c140b844b5ce"
+    },
+    {
+      "upstream_path": "src/uclop/canonical.py",
+      "path": "uclop/canonical.py",
+      "sha256": "ded8082f84c52ea3ee24d1d0e92c5e4b3850b702dc3178c1ad1e3778d1381db0"
+    },
+    {
+      "upstream_path": "src/uclop/checkers.py",
+      "path": "uclop/checkers.py",
+      "sha256": "6be3462072b3670c515a6c057f059f94fc553a1f6bf225d794456b389cbd46aa"
+    },
+    {
+      "upstream_path": "src/uclop/custody.py",
+      "path": "uclop/custody.py",
+      "sha256": "3e71e38c837cf71a520111f9f37bd9f155222e53f6d339c0e88613c7b1955dd0"
+    },
+    {
+      "upstream_path": "src/uclop/deductive_proofs.py",
+      "path": "uclop/deductive_proofs.py",
+      "sha256": "933677edd228bc530417ea75ba77d07424a415e8fd008a2cba0f513618171619"
+    },
+    {
+      "upstream_path": "src/uclop/eligibility.py",
+      "path": "uclop/eligibility.py",
+      "sha256": "769834f0a2a94df5fbff0dff28ffac99b6fbbb6980bc1dcfb2d0cd0306e8a6fc"
+    },
+    {
+      "upstream_path": "src/uclop/obligations.py",
+      "path": "uclop/obligations.py",
+      "sha256": "96ac56ee6b927c6f429d7832e889ac8f9a61bc1a87d8116a7c196e95ac9cda6e"
+    },
+    {
+      "upstream_path": "src/uclop/project_intelligence.py",
+      "path": "uclop/project_intelligence.py",
+      "sha256": "991a141845c97cecb7cd74112ba37ce8b6fc63526b85b40b302d7715fddf881e"
+    },
+    {
+      "upstream_path": "src/uclop/proofs.py",
+      "path": "uclop/proofs.py",
+      "sha256": "3ee0d50e520d5092d8e33052a225dea7338ff52254b75a0520e489d6b56f74fb"
+    },
+    {
+      "upstream_path": "src/uclop/protected_state.py",
+      "path": "uclop/protected_state.py",
+      "sha256": "89680f73ab1ca1cfa92096233da347eb2300776bf13c3818b69b622702c991a6"
+    },
+    {
+      "upstream_path": "src/uclop/resources.py",
+      "path": "uclop/resources.py",
+      "sha256": "fa73dba218c574b686de0a48fa0ddde376051218c7a099c1026d925b9874b615"
+    },
+    {
+      "upstream_path": "src/uclop/workbench_contracts.py",
+      "path": "uclop/workbench_contracts.py",
+      "sha256": "41b096f4aba92d81b87e21c65bd89f457fac88d22f9200b6ddc84d1cb7f19ebb"
+    },
+    {
+      "upstream_path": "src/uclop/workbench_manager.py",
+      "path": "uclop/workbench_manager.py",
+      "sha256": "a6ad74c3c8e8ce79c600f23c3ce46504c80ffe855acd3f40fb9b4a22b522569c"
+    },
+    {
+      "upstream_path": "src/uclop/workbench_migration.py",
+      "path": "uclop/workbench_migration.py",
+      "sha256": "d701f65b29a9ce88801289576cd17468b931b9bfbd1b207c6548da0665956576"
+    },
+    {
+      "upstream_path": "src/uclop/workbench_orientation.py",
+      "path": "uclop/workbench_orientation.py",
+      "sha256": "625bc282a5737ef3b4091269218c6e80dfae99482884eae0614765e8239a651b"
+    },
+    {
+      "upstream_path": "src/uclop/workbench_workers.py",
+      "path": "uclop/workbench_workers.py",
+      "sha256": "1c2f71377f78c7795f15f3874d9551297b37ff0b3a5217ce47ccc27169ce890c"
+    },
+    {
+      "upstream_path": "tests/test_workbench_manager.py",
+      "path": "tests/test_workbench_manager.py",
+      "sha256": "cfb154c0f27a0cc1e9650ed2bb262c1d1999f682d3229aa2fd6bfa36eb69153a"
+    },
+    {
+      "upstream_path": "tests/test_workbench_migration.py",
+      "path": "tests/test_workbench_migration.py",
+      "sha256": "3ed1c7cf2444d9fcaca3eaa3450540d53425695ced5be0d2f0a6879d7458067d"
+    }
+  ],
+  "modified_upstream_files": [],
+  "standing": "INFORMATION_ONLY"
+}

@@ -1,0 +1,10 @@
+{
+  "authority_effect": "NONE",
+  "decision": "NOT_RECORDED",
+  "g0_open": false,
+  "independent_review": "PENDING",
+  "production_admission": "HOLD_NOT_AUTHORIZED",
+  "real_a5": false,
+  "schema": "miw.reconstruction_disposition.v1",
+  "standing": "INFORMATION_ONLY"
+}
