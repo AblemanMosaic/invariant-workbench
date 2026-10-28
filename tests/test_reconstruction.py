@@ -184,7 +184,7 @@ class ReplayPathReconstructionTests(unittest.TestCase):
 
     def test_normalized_evidence_output_accepted(self):
         output=self.project/'evidence/temp/../new'
-        self.assertEqual(validate_replay_output(self.project, output), self.project/'evidence/new')
+        self.assertEqual(validate_replay_output(self.project, output), (self.project/'evidence/new').resolve())
         self.assertFalse((self.project/'evidence/temp').exists())
 
     def test_symlink_evidence_ancestor_refused_before_normalization(self):

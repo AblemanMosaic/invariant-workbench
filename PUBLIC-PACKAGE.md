@@ -21,7 +21,8 @@ members, and the optional predecessor-defect helper requires the exact separatel
 preserved Turn 3 archive at its documented path.
 
 The package is closed-world sealed by `MANIFEST.json`. Verify the external archive
-SHA-256 first, then run `VERIFY.py`. The external public-slim receipt records the full
+with `VERIFY.py ARCHIVE --sha256 SHA256`, or verify a Git checkout with
+`VERIFY.py --directory .`. The external public-slim receipt records the full
 successor parent identity, deterministic-build comparison, qualification results, and
 the boundary-manifest verification.
 

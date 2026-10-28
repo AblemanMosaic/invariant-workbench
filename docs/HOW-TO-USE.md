@@ -19,16 +19,21 @@ separate and open. Do not reuse an earlier proof dossier against changed engine 
 ## 1. Inspect the exact software
 
 Keep the original ZIP and its externally supplied checksum. The standalone VERIFY.py
-checks closed byte inventory without importing candidate application code.
+checks either the release archive or an ordinary Git clone against the closed byte
+inventory without importing candidate application code. Clone verification ignores
+only `.git/`; undeclared files and changed bytes refuse.
 
 ```console
 python -I -B ./VERIFY.py --help
+python -I -B ./VERIFY.py --directory .
+python -I -B ./VERIFY.py ./Invariant_Workbench_v0.1.zip --sha256 <SHA256-FROM-SIDECAR>
 python -I -B ./tools/miw.py --help
 python -I -B ./tools/miw.py preflight
 ```
 
-The core uses Python's standard library. The full regression and UCM fixture campaign
-also need `cryptography`; the recorded builder version is in the host evidence. There
+The core uses Python's standard library. The full regression needs `cryptography` for
+the UCM fixture campaign and `jsonschema` for the realization-space schema court. The
+recorded builder version is in the host evidence. There
 is no implicit package installer. Optional PostgreSQL needs an explicitly installed
 psycopg 3 and a dedicated, nonproduction server. Keep tool versions pinned when comparing
 results. Native Windows execution remains an acceptance task on your machine.

@@ -69,6 +69,12 @@ Extract to a short local path, for example `C:\MIW`. Python 3.12+ is intended;
 actual acceptance in this package identifies the specific interpreter tested.
 No auto-install, auto-upgrade, telemetry, hosted account or AI call occurs at startup.
 
+Verify a Git clone before running it:
+
+```console
+python -I -B ./VERIFY.py --directory .
+```
+
 ```console
 python -I -B ./tools/miw.py verify-dossier --directory ./evidence/qualification/demo
 python -I -B ./tools/miw.py lifecycle-demo
@@ -100,7 +106,8 @@ python -I -B ./tools/recompile_ui.py --out ./evidence/my-ui-recompile
 ```
 
 Use a new output directory for each replay. Core proof, BDD, model and Foundry
-headless use the standard library. Fixture custody needs `cryptography`.
+headless use the standard library. Fixture custody needs `cryptography`, and the
+realization-space schema court needs `jsonschema`.
 Full self-test includes that custody integration and will not silently skip it.
 The optional live PostgreSQL lane separately needs psycopg 3 and a disposable server.
 See `./docs/HOW-TO-USE.md` before enabling any effectful command.

@@ -2,9 +2,10 @@
 
 Core proof, BDD, pure lifecycle, adapters-as-data, static reports and Mosaic HEADLESS
 use the Python standard library plus bundled, exact pinned source. Full acceptance
-also invokes native UCM fixture signature code, which requires `cryptography`.
-Its builder-observed version is in the final host record; no package is installed
-implicitly and the user may retain a working pinned environment.
+also invokes native UCM fixture signature code, which requires `cryptography`, and
+validates the realization-space examples against Draft 2020-12 with `jsonschema`.
+Builder-observed versions belong in host evidence; no package is installed implicitly
+and the user may retain a working pinned environment.
 
 Optional live database work requires psycopg 3 and PostgreSQL. Their actual versions
 were not exercised by this builder, so no verified version tuple is invented.

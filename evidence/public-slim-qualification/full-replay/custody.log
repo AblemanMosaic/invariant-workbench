@@ -38,7 +38,7 @@ test_wrong_governor_signature_is_refused (tests.test_workbench_migration.Workben
 test_wrong_project_and_tenant_refuse (tests.test_workbench_migration.WorkbenchMigrationTests.test_wrong_project_and_tenant_refuse) ... ok
 
 ----------------------------------------------------------------------
-Ran 38 tests in 20.987s
+Ran 38 tests in 15.937s
 
 OK
 

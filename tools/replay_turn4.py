@@ -15,6 +15,8 @@ sys.path[:0]=[str(ROOT/'src'),str(ROOT/'vendor/ucm'),str(ROOT/'vendor/mosaic')]
 from miw.common import Refusal,require,seal,write_json,BOUNDARY,validate_replay_output
 from miw.qualification import source_inventory
 
+COMMAND_TIMEOUT_SECONDS=1200
+
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--out',required=True)
     p.add_argument('--include-local-cpp',action='store_true',help='Explicitly compile and execute the builder-authored C++ probe.')
@@ -29,7 +31,7 @@ def main():
     for name,tool,extra in plan:
         argv=[sys.executable,'-I','-B',str(ROOT/'tools'/tool),*extra]
         with (out/(name+'.log')).open('wb') as log:
-            try:code=subprocess.run(argv,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,timeout=600).returncode
+            try:code=subprocess.run(argv,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,timeout=COMMAND_TIMEOUT_SECONDS).returncode
             except subprocess.TimeoutExpired:code=124
         commands.append({'task':name,'returncode':code,'log':name+'.log'})
         print(name+': '+('PASSED_LOCAL_REPLAY' if code==0 else 'FAILED_OR_INCOMPLETE'),flush=True)

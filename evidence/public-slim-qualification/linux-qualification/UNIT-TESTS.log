@@ -23,8 +23,12 @@ test_authority_promotion_refused (test_capsule.CapsuleTests.test_authority_promo
 test_bytecode_refused (test_capsule.CapsuleTests.test_bytecode_refused) ... ok
 test_case_collision_refused (test_capsule.CapsuleTests.test_case_collision_refused) ... ok
 test_closed_world_archive_pass (test_capsule.CapsuleTests.test_closed_world_archive_pass) ... ok
+test_closed_world_directory_pass_and_git_metadata_is_ignored (test_capsule.CapsuleTests.test_closed_world_directory_pass_and_git_metadata_is_ignored) ... ok
+test_directory_changed_member_refused (test_capsule.CapsuleTests.test_directory_changed_member_refused) ... ok
+test_directory_extra_member_refused (test_capsule.CapsuleTests.test_directory_extra_member_refused) ... ok
 test_extra_member_refused (test_capsule.CapsuleTests.test_extra_member_refused) ... ok
 test_path_traversal_refused (test_capsule.CapsuleTests.test_path_traversal_refused) ... ok
+test_sealer_excludes_only_root_git_metadata (test_capsule.CapsuleTests.test_sealer_excludes_only_root_git_metadata) ... ok
 test_wrong_external_pin_refused (test_capsule.CapsuleTests.test_wrong_external_pin_refused) ... ok
 test_bad_json_does_not_traceback (test_cli.CLITests.test_bad_json_does_not_traceback) ... ok
 test_bdd_command (test_cli.CLITests.test_bdd_command) ... ok
@@ -160,8 +164,10 @@ test_unobserved_is_not_nonexecution (test_lifecycle.LifecycleTests.test_unobserv
 test_unsupported_fields_refused (test_lifecycle.LifecycleTests.test_unsupported_fields_refused) ... ok
 test_windows_gates_keep_three_execution_scopes_separate (test_portability_cleanup.CurrentGateRegisterTests.test_windows_gates_keep_three_execution_scopes_separate) ... ok
 test_zucchini_gate_is_exactly_scoped_and_history_is_preserved (test_portability_cleanup.CurrentGateRegisterTests.test_zucchini_gate_is_exactly_scoped_and_history_is_preserved) ... ok
+test_linux_tool_observation_names_simulated_constant_lane (test_portability_cleanup.HostObservationTests.test_linux_tool_observation_names_simulated_constant_lane) ... ok
 test_non_windows_local_pass_does_not_claim_windows_execution (test_portability_cleanup.HostObservationTests.test_non_windows_local_pass_does_not_claim_windows_execution) ... ok
 test_windows_regression_is_distinct_from_gui_and_visual_studio (test_portability_cleanup.HostObservationTests.test_windows_regression_is_distinct_from_gui_and_visual_studio) ... ok
+test_windows_tool_observation_names_real_constant_lane (test_portability_cleanup.HostObservationTests.test_windows_tool_observation_names_real_constant_lane) ... ok
 test_absent_receipt_does_not_prove_nonexecution (test_postgres_protocol.PostgresProtocolFixtureTests.test_absent_receipt_does_not_prove_nonexecution) ... ok
 test_commit_serialization_abort_is_retryable (test_postgres_protocol.PostgresProtocolFixtureTests.test_commit_serialization_abort_is_retryable) ... ok
 test_corrupt_database_state_detected (test_postgres_protocol.PostgresProtocolFixtureTests.test_corrupt_database_state_detected) ... ok
@@ -432,6 +438,6 @@ test_unknown_is_checked_as_unknown_without_becoming_a_proof (ucm_inherited_nativ
 test_untrusted_solver_response_is_accepted_only_after_kernel_recheck (ucm_inherited_native_tests.NativeDeductiveProofTests.test_untrusted_solver_response_is_accepted_only_after_kernel_recheck) ... ok
 
 ----------------------------------------------------------------------
-Ran 432 tests in 466.913s
+Ran 438 tests in 547.100s
 
 OK

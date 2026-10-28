@@ -28,10 +28,21 @@ evidence. Their identities and the omission boundary remain recorded.
 
 ## Verify
 
-Verify the published SHA-256 sidecar, extract into a new directory, and run:
+Verify the published ZIP from a clone or extracted verifier using the SHA-256 sidecar:
 
 ```console
-python -I -B ./VERIFY.py
+python -I -B ./VERIFY.py ./Invariant_Workbench_v0.1.zip --sha256 <SHA256-FROM-SIDECAR>
+```
+
+Verify an ordinary Git clone directly against `MANIFEST.json`:
+
+```console
+python -I -B ./VERIFY.py --directory .
+```
+
+After extracting the verified ZIP into a new directory, run:
+
+```console
 python -I -B ./tools/miw.py verify-dossier --directory ./evidence/qualification/demo
 python -I -B ./tools/miw.py self-contract-check --out ../iw-self-contract.json
 ```

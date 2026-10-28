@@ -1,3 +1,4 @@
+import importlib.util
 import json
 import unittest
 
@@ -5,10 +6,14 @@ from helpers import ROOT
 from miw.common import check_seal
 from miw.qualification import host_observation
 
+spec=importlib.util.spec_from_file_location('miw_qualify_tool',ROOT/'tools/qualify.py')
+qualify_tool=importlib.util.module_from_spec(spec);spec.loader.exec_module(qualify_tool)
+
 
 class HostObservationTests(unittest.TestCase):
     def report(self,status='PASSED'):
-        return {'status':status,'source_root':'1'*64,'tests_run':17}
+        return {'status':status,'source_root':'1'*64,'tests_run':17,'records':[
+            {'id':'test_constitutional_control.ConstitutionalControlTests.test_headless_runner_suppresses_windows_console','outcome':'PASSED'}]}
 
     def test_windows_regression_is_distinct_from_gui_and_visual_studio(self):
         record=check_seal(host_observation(self.report(),os_name='nt',
@@ -23,6 +28,16 @@ class HostObservationTests(unittest.TestCase):
         record=host_observation(self.report(),os_name='posix',platform_value='Linux-test',python_value='Python-test')
         self.assertEqual(record['local_python_regression'],'PASSED')
         self.assertEqual(record['windows_local_python_regression'],'NOT_RUN_ON_THIS_HOST')
+
+    def test_windows_tool_observation_names_real_constant_lane(self):
+        record=qualify_tool.release_host_observation(self.report(),host_os='nt')
+        self.assertEqual(record['windows_console_suppression_constant_lane'],
+                         'SIMULATED_AND_REAL_WINDOWS_CONSTANTS_PASSED')
+
+    def test_linux_tool_observation_names_simulated_constant_lane(self):
+        record=qualify_tool.release_host_observation(self.report(),host_os='posix')
+        self.assertEqual(record['windows_console_suppression_constant_lane'],
+                         'SIMULATED_WINDOWS_CONSTANTS_PASSED_REAL_CONSTANTS_NOT_RUN')
 
 
 class CurrentGateRegisterTests(unittest.TestCase):

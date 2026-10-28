@@ -21,13 +21,13 @@
   "postgres_live": "NOT_RUN_BY_INTEGRATION_DEMO",
   "production_custody": "NOT_BOUND",
   "proposals": "PASSED_OFFLINE_PROPOSAL_REVIEW",
-  "record_root": "47c5d65fc437a45029aea13b26e10bfe977753bd743bfb09f0b15ac7b4abf1af",
+  "record_root": "1b15c17598981d5a6b83a95f83e83627d11f4b1cdd94b82604d46d83ac0e87f7",
   "record_roots": {
-    "custody": "bbe036b17532fb9ba3c1f96834a58745b44143944fea9bf945f6f9896afedd42",
+    "custody": "b34e3568a329391f3ca304a37dc0eff742d40580acf5f6d908a0fd62f3faf783",
     "exploration": "1a5d907613afb3bcde26928ea0149b076e21dee94cb0eef6490be1a219661af5",
     "headless": "374da806d3f5d3212bfe448399832598d60037fbb0612e5138d489eeff54894d",
     "lifecycle": "2e3a5475a70378b244a729cb951617a7bcfffa3a5cd4d628e97ec205fb5d1f38",
-    "maintenance": "ef535211b918a49d3fdf8b761c4cea9245d0a1f6d8703ed639ab8e4cbb8ec694",
+    "maintenance": "a9ee1ef2309dde3fab59fbb9a2f667360669b00105a969cd4c772312a5e30fc8",
     "proposals": "a4dd7378541b49aed468bd49fbc79a9996fc21cca7ec2e966c58c0b9c5f5edd9"
   },
   "schema": "miw.turn3_integration_summary.v1",

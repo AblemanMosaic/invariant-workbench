@@ -22,37 +22,45 @@
     "host_path_scan": "PASSED_NO_MATCHES",
     "personal_name_scan": "PASSED_NO_MATCHES",
     "credential_marker_scan": "PASSED_NO_MATCHES",
-    "embedded_archive_scan": "PASSED_NO_EMBEDDED_ARCHIVES"
+    "embedded_archive_scan": "PASSED_NO_EMBEDDED_ARCHIVES",
+    "clone_verifier": "VERIFY.py --directory .",
+    "clone_verifier_git_exclusion": "ROOT_DOT_GIT_ONLY",
+    "checkout_policy": "LF_TEXT_AND_BYTE_PRESERVED_CRLF_BATCH",
+    "continuous_integration": "UBUNTU_AND_WINDOWS_WORKFLOW_INCLUDED"
   },
   "windows": {
     "platform": "Windows-11-10.0.26200-SP0",
     "python": "3.12.10",
-    "qualification_root": "cae4a62840b86f7ffd428960bcbea5103a4e6a5886f1d4e88204ba817272af67",
-    "tests": 432,
+    "qualification_root": "b180c625e56357519b07e5e47e399f4b91f1be360820f4490a567b8fc19a0a8e",
+    "tests": 438,
     "failures": 0,
     "errors": 0,
     "skips": 0,
     "ctr": "9_OF_9_PASSED",
-    "ctr_root": "cfefb14c6f8e430e5552bf5e6d799e73c13088e28c9041e38a4710b0ad6ce3b0"
+    "ctr_root": "cfefb14c6f8e430e5552bf5e6d799e73c13088e28c9041e38a4710b0ad6ce3b0",
+    "windows_console_suppression_constant_lane": "SIMULATED_AND_REAL_WINDOWS_CONSTANTS_PASSED"
   },
   "linux": {
     "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
     "python": "3.12.3",
-    "qualification_root": "cae4a62840b86f7ffd428960bcbea5103a4e6a5886f1d4e88204ba817272af67",
-    "tests": 432,
+    "qualification_root": "b180c625e56357519b07e5e47e399f4b91f1be360820f4490a567b8fc19a0a8e",
+    "tests": 438,
     "failures": 0,
     "errors": 0,
     "skips": 0,
     "ctr": "9_OF_9_PASSED",
-    "ctr_root": "5cdcf54609f62614a568e60da256a720954bec27377913452cdfcfa605a29008"
+    "ctr_root": "5cdcf54609f62614a568e60da256a720954bec27377913452cdfcfa605a29008",
+    "windows_console_suppression_constant_lane": "SIMULATED_WINDOWS_CONSTANTS_PASSED_REAL_CONSTANTS_NOT_RUN"
   },
   "cross_host": {
-    "source_root": "c5b9832762850fe4f5f2025069538b0222e16948dab4470a8fdbb4b9e370a615",
+    "source_root": "aa8fc3dbb54d15c8f1194f0744d66de06f2120d859ffa199d0c730ba68146dc9",
     "source_roots_equal": true,
     "qualification_roots_equal": true,
     "per_test_records_equal": true,
     "dossier_replay_root": "2534ed17733615945c86047571d145cdf3cc495095dfdd951d2634304c0b0e9a",
     "dossier_replay_roots_equal": true,
+    "host_observation_roots_equal": false,
+    "host_observation_root_difference": "Host observations intentionally bind platform, Python runtime, and the real-versus-simulated Windows console-constant lane.",
     "native_verification_conditions": 86,
     "reproduced_mutations": 7,
     "ctr_roots_equal": false,
@@ -60,8 +68,8 @@
   },
   "full_local_replay": {
     "status": "PASSED_LOCAL_REPLAY",
-    "record_root": "79bc77d180e65683352174124dceeaef23922ea102aff6d94c4a6df168e2de55",
-    "source_root": "c5b9832762850fe4f5f2025069538b0222e16948dab4470a8fdbb4b9e370a615",
+    "record_root": "f3eec22b87c182b4c8234f19b0f4f9f1600fffbb40c9a7f8ae568b7ca9ca5fab",
+    "source_root": "aa8fc3dbb54d15c8f1194f0744d66de06f2120d859ffa199d0c730ba68146dc9",
     "source_unchanged": true,
     "tasks": ["qualification", "custody", "integration", "foundry", "headless"]
   },
@@ -101,5 +109,5 @@
     "A consuming MES checkout, its semantic mappings, and its real database writer boundary are not yet supplied or accepted.",
     "Live PostgreSQL acceptance, physical-inventory correspondence, production authority, and independent review remain open."
   ],
-  "record_root": "07f1227a32fb72493740c94f37d0c63136eab01588ba437b50a54c15c9da9414"
+  "record_root": "87c963a014d7c9869b39888c243d889b2c9478e660bc314bfe8e9259da046cf0"
 }
